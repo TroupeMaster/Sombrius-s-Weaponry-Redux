@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/steel_pike",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/steel_pike",
+    "particle": "mortius_weaponry_redux:item/steel_gladius"
+  }
+}

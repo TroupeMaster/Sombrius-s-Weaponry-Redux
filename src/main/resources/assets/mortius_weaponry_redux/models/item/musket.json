@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/musket_new",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/musket_new",
+    "particle": "mortius_weaponry_redux:item/long_flintlock_barrel"
+  }
+}

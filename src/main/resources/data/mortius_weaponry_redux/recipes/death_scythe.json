@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "abc",
+    " ad",
+    " ef"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "c": {
+      "item": "minecraft:ender_eye"
+    },
+    "d": {
+      "item": "mortius_weaponry_redux:netherite_scythe"
+    },
+    "e": {
+      "item": "mortius_weaponry_redux:blaze_rod_pole"
+    },
+    "f": {
+      "item": "minecraft:end_crystal"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:death_scythe",
+    "count": 1
+  }
+}

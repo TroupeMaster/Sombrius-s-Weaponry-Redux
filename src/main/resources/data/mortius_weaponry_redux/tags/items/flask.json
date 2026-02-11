@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:flask_of_poison",
+    "mortius_weaponry_redux:flask_of_blindness",
+    "mortius_weaponry_redux:flask_of_fire",
+    "mortius_weaponry_redux:flask_of_soul_fire",
+    "mortius_weaponry_redux:flask_of_slowness",
+    "mortius_weaponry_redux:flask_of_wither",
+    "mortius_weaponry_redux:flask_of_slow_falling",
+    "mortius_weaponry_redux:flask_of_glowing",
+    "mortius_weaponry_redux:flask_of_lightning",
+    "mortius_weaponry_redux:flask_of_gunpowder",
+    "mortius_weaponry_redux:flask_of_volatile_concoction",
+    "mortius_weaponry_redux:flask_of_levitation",
+    "mortius_weaponry_redux:flask_of_weakness",
+    "mortius_weaponry_redux:water_flask"
+  ]
+}

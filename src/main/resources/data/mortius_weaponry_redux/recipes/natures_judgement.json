@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " a ",
+    "bca",
+    "bd "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:emerald"
+    },
+    "b": {
+      "item": "minecraft:gold_ingot"
+    },
+    "c": {
+      "item": "minecraft:slime_ball"
+    },
+    "d": {
+      "item": "mortius_weaponry_redux:blaze_rod_handle"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:natures_judgement",
+    "count": 1
+  }
+}

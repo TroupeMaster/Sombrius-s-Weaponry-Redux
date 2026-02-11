@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_schiavona",
+    "mortius_weaponry_redux:stone_schiavona",
+    "mortius_weaponry_redux:golden_schiavona",
+    "mortius_weaponry_redux:iron_schiavona",
+    "mortius_weaponry_redux:diamond_schiavona",
+    "mortius_weaponry_redux:netherite_schiavona",
+    "mortius_weaponry_redux:steel_schiavona",
+    "mortius_weaponry_redux:bronze_schiavona",
+    "mortius_weaponry_redux:silver_schiavona",
+    "mortius_weaponry_redux:rose_gold_schiavona",
+    "mortius_weaponry_redux:copper_schiavona"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stick"
+    },
+    "b": {
+      "item": "mortius_weaponry_redux:weapon_handle"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:weapon_pole",
+    "count": 1
+  }
+}

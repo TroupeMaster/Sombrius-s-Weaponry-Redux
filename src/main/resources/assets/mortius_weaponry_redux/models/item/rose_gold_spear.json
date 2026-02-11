@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/rose_gold_spear",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/rose_gold_spear",
+    "particle": "mortius_weaponry_redux:item/rose_gold_sword"
+  }
+}

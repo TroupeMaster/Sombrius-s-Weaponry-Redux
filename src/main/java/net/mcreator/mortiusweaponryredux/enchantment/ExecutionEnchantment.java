@@ -1,0 +1,26 @@
+
+package net.mcreator.mortiusweaponryredux.enchantment;
+
+import net.minecraft.world.item.enchantment.EnchantmentCategory;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
+
+public class ExecutionEnchantment extends Enchantment {
+	public ExecutionEnchantment(EquipmentSlot... slots) {
+		super(Enchantment.Rarity.COMMON, EnchantmentCategory.WEAPON, slots);
+	}
+
+	@Override
+	public int getMaxLevel() {
+		return 4;
+	}
+
+	@Override
+	public boolean canApplyAtEnchantingTable(ItemStack itemstack) {
+		return Ingredient.of(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:executionersword"))).test(itemstack);
+	}
+}

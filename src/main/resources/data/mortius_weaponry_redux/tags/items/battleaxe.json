@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_battle_axe",
+    "mortius_weaponry_redux:stone_battle_axe",
+    "mortius_weaponry_redux:golden_battle_axe",
+    "mortius_weaponry_redux:iron_battle_axe",
+    "mortius_weaponry_redux:diamond_battle_axe",
+    "mortius_weaponry_redux:netherite_battle_axe",
+    "mortius_weaponry_redux:steel_battle_axe",
+    "mortius_weaponry_redux:bronze_battle_axe",
+    "mortius_weaponry_redux:silver_battle_axe",
+    "mortius_weaponry_redux:rose_gold_battle_axe",
+    "mortius_weaponry_redux:copper_battle_axe"
+  ]
+}

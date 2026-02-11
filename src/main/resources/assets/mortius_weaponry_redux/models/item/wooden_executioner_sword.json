@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/wooden_executioner_sword",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/wooden_executioner_sword",
+    "particle": "mortius_weaponry_redux:item/wooden_sword"
+  }
+}

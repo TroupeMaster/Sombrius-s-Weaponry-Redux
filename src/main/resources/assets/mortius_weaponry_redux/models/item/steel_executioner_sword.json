@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/steel_executioner_sword",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/steel_executioner_sword",
+    "particle": "mortius_weaponry_redux:item/steel_gladius"
+  }
+}

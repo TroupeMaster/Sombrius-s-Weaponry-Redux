@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_khopesh",
+    "mortius_weaponry_redux:stone_khopesh",
+    "mortius_weaponry_redux:golden_khopesh",
+    "mortius_weaponry_redux:iron_khopesh",
+    "mortius_weaponry_redux:diamond_khopesh",
+    "mortius_weaponry_redux:netherite_khopesh",
+    "mortius_weaponry_redux:steel_khopesh",
+    "mortius_weaponry_redux:bronze_khopesh",
+    "mortius_weaponry_redux:silver_khopesh",
+    "mortius_weaponry_redux:rose_gold_khopesh",
+    "mortius_weaponry_redux:copper_khopesh"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/opposing_winds",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/opposing_winds",
+    "particle": "mortius_weaponry_redux:item/diamond_sword"
+  }
+}

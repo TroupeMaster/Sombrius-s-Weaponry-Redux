@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "#mortius_weaponry_redux:twinblade",
+    "#mortius_weaponry_redux:executionersword",
+    "#mortius_weaponry_redux:halberd",
+    "#mortius_weaponry_redux:greatsword",
+    "#mortius_weaponry_redux:pike",
+    "#mortius_weaponry_redux:scythe",
+    "#mortius_weaponry_redux:glaive",
+    "#mortius_weaponry_redux:odachi"
+  ]
+}

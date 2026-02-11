@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "b": {
+      "item": "mortius_weaponry_redux:weapon_handle"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:netherite_chakram",
+    "count": 8
+  }
+}

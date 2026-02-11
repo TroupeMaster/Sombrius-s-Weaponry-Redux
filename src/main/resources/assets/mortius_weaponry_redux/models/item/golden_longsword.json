@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/golden_longsword",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/golden_longsword",
+    "particle": "mortius_weaponry_redux:item/golden_sword"
+  }
+}

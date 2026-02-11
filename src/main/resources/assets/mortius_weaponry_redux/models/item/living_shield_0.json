@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/living_shield_block",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/living_shield_texture",
+    "particle": "mortius_weaponry_redux:item/blaze_powder"
+  }
+}

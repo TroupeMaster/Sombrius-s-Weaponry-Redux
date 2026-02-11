@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/diamond_halberd",
+  "textures": {
+    "1": "mortius_weaponry_redux:block/iron_halberd",
+    "particle": "mortius_weaponry_redux:item/diamond_sword"
+  }
+}

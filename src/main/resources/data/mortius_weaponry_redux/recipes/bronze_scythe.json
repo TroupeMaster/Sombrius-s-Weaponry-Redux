@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aa ",
+    "  a",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/bronze"
+    },
+    "b": {
+      "item": "mortius_weaponry_redux:weapon_pole"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:bronze_scythe",
+    "count": 1
+  }
+}

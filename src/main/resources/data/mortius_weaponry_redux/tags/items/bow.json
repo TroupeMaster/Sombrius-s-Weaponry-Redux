@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:iron_bow",
+    "mortius_weaponry_redux:diamond_bow",
+    "mortius_weaponry_redux:netherite_bow",
+    "mortius_weaponry_redux:auto_bow",
+    "mortius_weaponry_redux:copper_bow"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " a ",
+    "aaa",
+    "ab "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "mortius_weaponry_redux:weapon_handle"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:iron_schiavona",
+    "count": 1
+  }
+}

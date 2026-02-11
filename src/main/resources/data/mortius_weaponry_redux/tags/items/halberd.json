@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_halberd",
+    "mortius_weaponry_redux:stone_halberd",
+    "mortius_weaponry_redux:golden_halberd",
+    "mortius_weaponry_redux:iron_halberd",
+    "mortius_weaponry_redux:diamond_halberd",
+    "mortius_weaponry_redux:netherite_halberd",
+    "mortius_weaponry_redux:steel_halberd",
+    "mortius_weaponry_redux:bronze_halberd",
+    "mortius_weaponry_redux:silver_halberd",
+    "mortius_weaponry_redux:rose_gold_halberd",
+    "mortius_weaponry_redux:copper_halberd"
+  ]
+}

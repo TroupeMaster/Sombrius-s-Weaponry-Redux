@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/stone_glaive",
+  "textures": {
+    "missing": "mortius_weaponry_redux:block/stone_glaive",
+    "particle": "mortius_weaponry_redux:item/stone_sword"
+  }
+}

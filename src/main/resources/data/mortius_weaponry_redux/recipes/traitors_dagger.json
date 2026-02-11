@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " ab",
+    "cda",
+    "ec "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    "b": {
+      "item": "minecraft:redstone_block"
+    },
+    "c": {
+      "item": "minecraft:rotten_flesh"
+    },
+    "d": {
+      "item": "mortius_weaponry_redux:netherite_dagger"
+    },
+    "e": {
+      "item": "mortius_weaponry_redux:blaze_rod_handle"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:traitors_dagger",
+    "count": 1
+  }
+}

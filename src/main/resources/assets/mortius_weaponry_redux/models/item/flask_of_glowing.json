@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mortius_weaponry_redux:item/glowing_vial"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:axes",
+    "#minecraft:swords",
+    "#mortius_weaponry_redux:allweapons",
+    "minecraft:trident"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/golden_executioner_sword",
+  "textures": {
+    "missing": "mortius_weaponry_redux:block/golden_executioner_sword",
+    "particle": "mortius_weaponry_redux:item/golden_sword"
+  }
+}

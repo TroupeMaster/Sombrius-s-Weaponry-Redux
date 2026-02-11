@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/steel_glaive",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/steel_glaive",
+    "particle": "mortius_weaponry_redux:item/steel_gladius"
+  }
+}

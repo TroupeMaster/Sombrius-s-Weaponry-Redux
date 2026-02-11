@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/diamond_lance",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/diamond_lance",
+    "particle": "mortius_weaponry_redux:item/diamond_sword"
+  }
+}

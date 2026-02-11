@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/stone_greatsword",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/stone_greatsword",
+    "particle": "mortius_weaponry_redux:item/stone_sword"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/catastrophe",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/catastrophe",
+    "particle": "mortius_weaponry_redux:item/diamond_sword"
+  }
+}

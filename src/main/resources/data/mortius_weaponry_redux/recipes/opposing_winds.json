@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "cde",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:gold_ingot"
+    },
+    "b": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "c": {
+      "item": "minecraft:prismarine_crystals"
+    },
+    "d": {
+      "item": "mortius_weaponry_redux:blaze_rod_pole"
+    },
+    "e": {
+      "item": "mortius_weaponry_redux:netherite_twin_blade"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:opposing_winds",
+    "count": 1
+  }
+}

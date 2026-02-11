@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " aa",
+    "a  ",
+    "b  "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/rose_gold"
+    },
+    "b": {
+      "item": "mortius_weaponry_redux:weapon_handle"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:rose_gold_khopesh",
+    "count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/bronze_scythe",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/bronze_scythe",
+    "particle": "mortius_weaponry_redux:item/bronze_gladius"
+  }
+}

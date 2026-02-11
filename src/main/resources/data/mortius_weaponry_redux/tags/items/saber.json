@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_saber",
+    "mortius_weaponry_redux:stone_saber",
+    "mortius_weaponry_redux:golden_saber",
+    "mortius_weaponry_redux:iron_saber",
+    "mortius_weaponry_redux:diamond_saber",
+    "mortius_weaponry_redux:netherite_saber",
+    "mortius_weaponry_redux:steel_saber",
+    "mortius_weaponry_redux:bronze_saber",
+    "mortius_weaponry_redux:silver_saber",
+    "mortius_weaponry_redux:rose_gold_saber",
+    "mortius_weaponry_redux:natures_judgement",
+    "mortius_weaponry_redux:copper_saber"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/blaze_rod_pole",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/blaze_rod_pole",
+    "particle": "mortius_weaponry_redux:item/blaze_rod"
+  }
+}

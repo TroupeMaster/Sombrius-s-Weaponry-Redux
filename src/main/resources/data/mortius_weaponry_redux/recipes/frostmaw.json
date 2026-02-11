@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a a",
+    "bc ",
+    "dba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:blue_ice"
+    },
+    "b": {
+      "item": "minecraft:prismarine_crystals"
+    },
+    "c": {
+      "item": "mortius_weaponry_redux:netherite_rapier"
+    },
+    "d": {
+      "item": "mortius_weaponry_redux:blaze_rod_handle"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:frostmaw",
+    "count": 1
+  }
+}

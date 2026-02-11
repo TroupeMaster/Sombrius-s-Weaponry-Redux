@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stone_button"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:musket_ball",
+    "count": 2
+  }
+}

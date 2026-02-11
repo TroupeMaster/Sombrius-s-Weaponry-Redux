@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_throwing_knife",
+    "mortius_weaponry_redux:stone_throwing_knife",
+    "mortius_weaponry_redux:golden_throwing_knife",
+    "mortius_weaponry_redux:iron_throwing_knife",
+    "mortius_weaponry_redux:diamond_throwing_knife",
+    "mortius_weaponry_redux:netherite_throwing_knife",
+    "mortius_weaponry_redux:obsidian_knife"
+  ]
+}

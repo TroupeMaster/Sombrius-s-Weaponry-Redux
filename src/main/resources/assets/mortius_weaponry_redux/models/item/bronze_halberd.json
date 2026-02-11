@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/bronze_halberd",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/bronze_halberd",
+    "particle": "mortius_weaponry_redux:item/bronze_gladius"
+  }
+}

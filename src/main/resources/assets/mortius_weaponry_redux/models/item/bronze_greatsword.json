@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/bronze_greatsword",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/bronze_greatsword",
+    "particle": "mortius_weaponry_redux:item/bronze_gladius"
+  }
+}

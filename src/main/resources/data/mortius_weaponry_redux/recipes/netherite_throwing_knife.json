@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "mortius_weaponry_redux:weapon_handle"
+    },
+    "b": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:netherite_throwing_knife",
+    "count": 4
+  }
+}

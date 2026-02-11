@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aab",
+    " cd"
+  ],
+  "key": {
+    "a": {
+      "item": "mortius_weaponry_redux:netherite_throwing_knife"
+    },
+    "b": {
+      "item": "minecraft:ender_eye"
+    },
+    "c": {
+      "item": "mortius_weaponry_redux:blaze_rod_handle"
+    },
+    "d": {
+      "item": "minecraft:crying_obsidian"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:obsidian_knife",
+    "count": 1
+  }
+}

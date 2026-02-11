@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " aa",
+    " aa",
+    "b  "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/bronze"
+    },
+    "b": {
+      "item": "mortius_weaponry_redux:weapon_handle"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:bronze_mace",
+    "count": 1
+  }
+}

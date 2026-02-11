@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/death_scythe_newer",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/death_scythe_new",
+    "particle": "mortius_weaponry_redux:item/death_scythe_yeeyeeasstexture"
+  }
+}

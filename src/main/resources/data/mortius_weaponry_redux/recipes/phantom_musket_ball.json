@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "mortius_weaponry_redux:musket_ball"
+    },
+    "b": {
+      "item": "minecraft:phantom_membrane"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:phantom_musket_ball",
+    "count": 8
+  }
+}

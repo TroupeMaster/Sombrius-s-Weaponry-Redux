@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_gladius",
+    "mortius_weaponry_redux:stone_gladius",
+    "mortius_weaponry_redux:golden_gladius",
+    "mortius_weaponry_redux:iron_gladius",
+    "mortius_weaponry_redux:diamond_gladius",
+    "mortius_weaponry_redux:netherite_gladius",
+    "mortius_weaponry_redux:steel_gladius",
+    "mortius_weaponry_redux:bronze_gladius",
+    "mortius_weaponry_redux:silver_gladius",
+    "mortius_weaponry_redux:rose_gold_gladius",
+    "mortius_weaponry_redux:soul_eater",
+    "mortius_weaponry_redux:copper_gladius"
+  ]
+}

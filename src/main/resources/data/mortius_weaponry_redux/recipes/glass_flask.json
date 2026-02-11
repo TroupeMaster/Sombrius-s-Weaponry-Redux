@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:glass_flask",
+    "count": 3
+  }
+}

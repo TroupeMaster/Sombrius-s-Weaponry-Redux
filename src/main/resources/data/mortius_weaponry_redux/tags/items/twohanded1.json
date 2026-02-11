@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#mortius_weaponry_redux:lance",
+    "#mortius_weaponry_redux:warhammer",
+    "#mortius_weaponry_redux:katana",
+    "#mortius_weaponry_redux:longsword",
+    "mortius_weaponry_redux:estoc",
+    "#mortius_weaponry_redux:quarterstaff"
+  ]
+}

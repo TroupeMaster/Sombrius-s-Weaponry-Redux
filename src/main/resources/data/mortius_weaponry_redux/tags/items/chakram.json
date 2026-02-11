@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_chakram",
+    "mortius_weaponry_redux:stone_chakram",
+    "mortius_weaponry_redux:golden_chakram",
+    "mortius_weaponry_redux:iron_chakram",
+    "mortius_weaponry_redux:diamond_chakram",
+    "mortius_weaponry_redux:netherite_chakram"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/blunderbuss_new",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/blunderbuss_new",
+    "particle": "mortius_weaponry_redux:item/blunderbuss_barrel"
+  }
+}

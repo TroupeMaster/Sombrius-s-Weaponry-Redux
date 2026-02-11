@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/seraph",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/seraph",
+    "particle": "mortius_weaponry_redux:item/seraph"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " aa",
+    "  a",
+    "bcd"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:echo_shard"
+    },
+    "b": {
+      "item": "minecraft:sculk_catalyst"
+    },
+    "c": {
+      "item": "mortius_weaponry_redux:blaze_rod_handle"
+    },
+    "d": {
+      "item": "mortius_weaponry_redux:netherite_sickle"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:echoing_sickle",
+    "count": 1
+  }
+}

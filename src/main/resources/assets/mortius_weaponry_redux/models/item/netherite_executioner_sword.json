@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/netherite_executioner_sword",
+  "textures": {
+    "missing": "mortius_weaponry_redux:block/netherite_executioner_sword",
+    "particle": "mortius_weaponry_redux:item/netherite_sword"
+  }
+}

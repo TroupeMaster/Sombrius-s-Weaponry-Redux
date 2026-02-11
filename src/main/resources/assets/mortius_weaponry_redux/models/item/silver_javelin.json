@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/silver_javelin",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/silver_javelin",
+    "particle": "mortius_weaponry_redux:item/rose_gold_javelin"
+  }
+}

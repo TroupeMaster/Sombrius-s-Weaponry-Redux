@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:diamond_chakram_proj",
+    "mortius_weaponry_redux:golden_chakram_proj",
+    "mortius_weaponry_redux:iron_chakram_proj",
+    "mortius_weaponry_redux:netherite_chakram_proj",
+    "mortius_weaponry_redux:stone_chakram_proj",
+    "mortius_weaponry_redux:wooden_chakram_proj",
+    "mortius_weaponry_redux:diamond_javelin_proj",
+    "mortius_weaponry_redux:golden_javelin_proj",
+    "mortius_weaponry_redux:iron_javelin_proj",
+    "mortius_weaponry_redux:netherite_javelin_proj",
+    "mortius_weaponry_redux:stone_javelin_proj",
+    "mortius_weaponry_redux:wooden_javelin_proj",
+    "mortius_weaponry_redux:diamond_throwing_knife_proj",
+    "mortius_weaponry_redux:golden_throwing_knife_proj",
+    "mortius_weaponry_redux:iron_throwing_knife_proj",
+    "mortius_weaponry_redux:netherite_throwing_knife_proj",
+    "mortius_weaponry_redux:obsidian_knife_proj",
+    "mortius_weaponry_redux:stone_throwing_knife_proj",
+    "mortius_weaponry_redux:wooden_throwing_knife_proj",
+    "mortius_weaponry_redux:bronze_javelin_proj",
+    "mortius_weaponry_redux:copper_javelin_proj",
+    "mortius_weaponry_redux:rose_gold_javelin_proj",
+    "mortius_weaponry_redux:silver_javelin_proj",
+    "mortius_weaponry_redux:steel_javelin_proj"
+  ]
+}

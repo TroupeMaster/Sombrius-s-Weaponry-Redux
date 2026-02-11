@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_rapier",
+    "mortius_weaponry_redux:stone_rapier",
+    "mortius_weaponry_redux:golden_rapier",
+    "mortius_weaponry_redux:iron_rapier",
+    "mortius_weaponry_redux:diamond_rapier",
+    "mortius_weaponry_redux:netherite_rapier",
+    "mortius_weaponry_redux:steel_rapier",
+    "mortius_weaponry_redux:bronze_rapier",
+    "mortius_weaponry_redux:silver_rapier",
+    "mortius_weaponry_redux:rose_gold_rapier",
+    "mortius_weaponry_redux:frostmaw",
+    "mortius_weaponry_redux:copper_rapier"
+  ]
+}

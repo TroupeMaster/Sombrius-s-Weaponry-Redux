@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/diamond_javelin",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/diamond_javelin",
+    "particle": "mortius_weaponry_redux:item/iron_javelin"
+  }
+}

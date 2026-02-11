@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/necromance",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/necromance",
+    "particle": "mortius_weaponry_redux:item/necromance"
+  }
+}

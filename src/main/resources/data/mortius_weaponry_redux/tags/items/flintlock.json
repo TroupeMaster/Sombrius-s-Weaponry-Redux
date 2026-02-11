@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:flintlock_pistol",
+    "mortius_weaponry_redux:musket",
+    "mortius_weaponry_redux:blunderbuss"
+  ]
+}

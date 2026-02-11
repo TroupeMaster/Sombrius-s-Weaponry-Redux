@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/rose_gold_twin_blade",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/rose_gold_twin_blade",
+    "particle": "mortius_weaponry_redux:item/rose_gold_sword"
+  }
+}

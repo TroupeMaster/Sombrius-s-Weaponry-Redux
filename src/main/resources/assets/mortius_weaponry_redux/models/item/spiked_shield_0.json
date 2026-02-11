@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/spiked_shield_block",
+  "textures": {
+    "1": "mortius_weaponry_redux:block/spiked_shield_texture",
+    "particle": "mortius_weaponry_redux:item/blaze_powder"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/estoc",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/estoc",
+    "particle": "mortius_weaponry_redux:item/estoc"
+  }
+}

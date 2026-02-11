@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_lance",
+    "mortius_weaponry_redux:stone_lance",
+    "mortius_weaponry_redux:golden_lance",
+    "mortius_weaponry_redux:iron_lance",
+    "mortius_weaponry_redux:diamond_lance",
+    "mortius_weaponry_redux:netherite_lance",
+    "mortius_weaponry_redux:steel_lance",
+    "mortius_weaponry_redux:bronze_lance",
+    "mortius_weaponry_redux:silver_lance",
+    "mortius_weaponry_redux:rose_gold_lance",
+    "mortius_weaponry_redux:copper_lance"
+  ]
+}

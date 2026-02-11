@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/iron_quarterstaff",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/iron_quarterstaff",
+    "particle": "mortius_weaponry_redux:item/wooden_quarterstaff"
+  }
+}

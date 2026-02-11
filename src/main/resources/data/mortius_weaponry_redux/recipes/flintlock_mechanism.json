@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a b",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "b": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:flintlock_mechanism",
+    "count": 1
+  }
+}

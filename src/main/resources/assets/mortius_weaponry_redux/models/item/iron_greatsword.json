@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/iron_greatsword",
+  "textures": {
+    "missing": "mortius_weaponry_redux:block/iron_greatsword",
+    "particle": "mortius_weaponry_redux:item/iron_sword"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:musket_ball",
+    "mortius_weaponry_redux:cracked_musket_ball",
+    "mortius_weaponry_redux:crystallized_musket_ball",
+    "mortius_weaponry_redux:fiery_musket_ball",
+    "mortius_weaponry_redux:hellfire_musket_ball",
+    "mortius_weaponry_redux:spiked_musket_ball",
+    "mortius_weaponry_redux:ender_ball",
+    "mortius_weaponry_redux:explosive_musket_ball",
+    "mortius_weaponry_redux:heavy_musket_ball",
+    "mortius_weaponry_redux:phantom_musket_ball"
+  ]
+}

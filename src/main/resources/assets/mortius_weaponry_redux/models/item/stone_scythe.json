@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/stone_scythe_newer",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/stone_scythe_newer",
+    "particle": "mortius_weaponry_redux:item/stone_sword"
+  }
+}

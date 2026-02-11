@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/kraken_hunter",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/kraken_hunter",
+    "particle": "mortius_weaponry_redux:item/diamond_sword"
+  }
+}

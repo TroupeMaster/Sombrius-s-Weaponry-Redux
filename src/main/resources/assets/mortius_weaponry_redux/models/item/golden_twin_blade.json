@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/golden_twin_blade",
+  "textures": {
+    "missing": "mortius_weaponry_redux:block/golden_twin_blade",
+    "particle": "mortius_weaponry_redux:item/golden_sword"
+  }
+}

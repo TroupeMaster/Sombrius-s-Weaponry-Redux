@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_mace",
+    "mortius_weaponry_redux:stone_mace",
+    "mortius_weaponry_redux:golden_mace",
+    "mortius_weaponry_redux:iron_mace",
+    "mortius_weaponry_redux:diamond_mace",
+    "mortius_weaponry_redux:netherite_mace",
+    "mortius_weaponry_redux:steel_mace",
+    "mortius_weaponry_redux:bronze_mace",
+    "mortius_weaponry_redux:silver_mace",
+    "mortius_weaponry_redux:rose_gold_mace",
+    "mortius_weaponry_redux:copper_mace"
+  ]
+}

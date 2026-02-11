@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "abc",
+    "bad",
+    " ef"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:fire_charge"
+    },
+    "b": {
+      "item": "minecraft:gold_block"
+    },
+    "c": {
+      "item": "minecraft:magma_cream"
+    },
+    "d": {
+      "item": "minecraft:glowstone"
+    },
+    "e": {
+      "item": "mortius_weaponry_redux:blaze_rod_handle"
+    },
+    "f": {
+      "item": "mortius_weaponry_redux:netherite_flail"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:sun_fury",
+    "count": 1
+  }
+}

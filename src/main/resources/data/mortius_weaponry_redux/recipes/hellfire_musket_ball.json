@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:magma_cream"
+    },
+    "b": {
+      "item": "mortius_weaponry_redux:fiery_musket_ball"
+    },
+    "c": {
+      "item": "minecraft:blaze_powder"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:hellfire_musket_ball",
+    "count": 4
+  }
+}

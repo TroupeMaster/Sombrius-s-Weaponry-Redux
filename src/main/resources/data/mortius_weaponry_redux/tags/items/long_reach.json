@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:estoc",
+    "#mortius_weaponry_redux:lance",
+    "#mortius_weaponry_redux:halberd",
+    "#mortius_weaponry_redux:greatsword",
+    "#mortius_weaponry_redux:pike",
+    "#mortius_weaponry_redux:spear",
+    "#mortius_weaponry_redux:glaive",
+    "#mortius_weaponry_redux:longsword",
+    "#mortius_weaponry_redux:flail",
+    "#mortius_weaponry_redux:odachi"
+  ]
+}

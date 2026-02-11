@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/netherite_halberd",
+  "textures": {
+    "1": "mortius_weaponry_redux:block/netherite_halberd",
+    "particle": "mortius_weaponry_redux:item/netherite_sword"
+  }
+}

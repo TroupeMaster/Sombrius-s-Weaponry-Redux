@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_flail",
+    "mortius_weaponry_redux:stone_flail",
+    "mortius_weaponry_redux:golden_flail",
+    "mortius_weaponry_redux:iron_flail",
+    "mortius_weaponry_redux:diamond_flail",
+    "mortius_weaponry_redux:netherite_flail",
+    "mortius_weaponry_redux:steel_flail",
+    "mortius_weaponry_redux:bronze_flail",
+    "mortius_weaponry_redux:silver_flail",
+    "mortius_weaponry_redux:rose_gold_flail",
+    "mortius_weaponry_redux:sun_fury",
+    "mortius_weaponry_redux:copper_flail"
+  ]
+}

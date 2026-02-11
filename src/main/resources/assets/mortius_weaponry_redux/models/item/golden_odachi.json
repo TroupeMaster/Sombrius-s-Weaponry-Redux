@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/golden_odachi",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/golden_odachi",
+    "particle": "mortius_weaponry_redux:item/iron_odachi"
+  }
+}

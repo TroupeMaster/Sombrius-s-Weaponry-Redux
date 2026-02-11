@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "mortius_weaponry_redux:cracked_musket_ball"
+    },
+    "b": {
+      "item": "minecraft:fire_charge"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:fiery_musket_ball",
+    "count": 4
+  }
+}

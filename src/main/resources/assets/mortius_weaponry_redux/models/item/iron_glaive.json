@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/iron_glaive",
+  "textures": {
+    "missing": "mortius_weaponry_redux:block/iron_glaive",
+    "particle": "mortius_weaponry_redux:item/iron_sword"
+  }
+}

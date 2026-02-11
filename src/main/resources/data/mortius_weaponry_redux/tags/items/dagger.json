@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_dagger",
+    "mortius_weaponry_redux:stone_dagger",
+    "mortius_weaponry_redux:golden_dagger",
+    "mortius_weaponry_redux:iron_dagger",
+    "mortius_weaponry_redux:diamond_dagger",
+    "mortius_weaponry_redux:netherite_dagger",
+    "mortius_weaponry_redux:steel_dagger",
+    "mortius_weaponry_redux:bronze_dagger",
+    "mortius_weaponry_redux:silver_dagger",
+    "mortius_weaponry_redux:rose_gold_dagger",
+    "mortius_weaponry_redux:traitors_dagger",
+    "mortius_weaponry_redux:copper_dagger"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_twin_blade",
+    "mortius_weaponry_redux:stone_twin_blade",
+    "mortius_weaponry_redux:golden_twin_blade",
+    "mortius_weaponry_redux:iron_twin_blade",
+    "mortius_weaponry_redux:diamond_twin_blade",
+    "mortius_weaponry_redux:netherite_twin_blade",
+    "mortius_weaponry_redux:steel_twin_blade",
+    "mortius_weaponry_redux:bronze_twin_blade",
+    "mortius_weaponry_redux:silver_twin_blade",
+    "mortius_weaponry_redux:rose_gold_twin_blade",
+    "mortius_weaponry_redux:opposing_winds",
+    "mortius_weaponry_redux:copper_twin_blade"
+  ]
+}

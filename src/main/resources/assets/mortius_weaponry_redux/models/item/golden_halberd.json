@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/golden_halberd",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/stone_halberd",
+    "particle": "mortius_weaponry_redux:item/golden_sword"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "parent": "mortius_weaponry_redux:custom/buckler",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/buckler_texture",
+    "particle": "mortius_weaponry_redux:item/blaze_powder"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "mortius_weaponry_redux:item/buckler_0"
+    }
+  ]
+}

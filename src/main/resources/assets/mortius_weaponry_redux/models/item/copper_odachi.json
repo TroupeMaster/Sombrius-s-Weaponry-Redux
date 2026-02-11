@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/copper_odachi",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/copper_odachi",
+    "particle": "mortius_weaponry_redux:item/copper_odachi"
+  }
+}

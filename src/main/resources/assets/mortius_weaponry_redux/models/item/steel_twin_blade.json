@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/steel_twin_blade",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/steel_twin_blade",
+    "particle": "mortius_weaponry_redux:item/steel_gladius"
+  }
+}

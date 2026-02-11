@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_longsword",
+    "mortius_weaponry_redux:stone_longsword",
+    "mortius_weaponry_redux:golden_longsword",
+    "mortius_weaponry_redux:iron_longsword",
+    "mortius_weaponry_redux:diamond_longsword",
+    "mortius_weaponry_redux:netherite_longsword",
+    "mortius_weaponry_redux:steel_longsword",
+    "mortius_weaponry_redux:bronze_longsword",
+    "mortius_weaponry_redux:silver_longsword",
+    "mortius_weaponry_redux:rose_gold_longsword",
+    "mortius_weaponry_redux:copper_longsword"
+  ]
+}

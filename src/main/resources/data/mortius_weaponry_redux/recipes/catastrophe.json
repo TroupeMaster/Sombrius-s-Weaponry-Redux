@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " a ",
+    "bcd",
+    "efe"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:magma_cream"
+    },
+    "b": {
+      "item": "minecraft:warped_wart_block"
+    },
+    "c": {
+      "item": "mortius_weaponry_redux:netherite_greatsword"
+    },
+    "d": {
+      "item": "minecraft:nether_wart_block"
+    },
+    "e": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "f": {
+      "item": "mortius_weaponry_redux:blaze_rod_handle"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:catastrophe",
+    "count": 1
+  }
+}

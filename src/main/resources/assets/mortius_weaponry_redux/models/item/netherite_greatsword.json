@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/netherite_greatsword",
+  "textures": {
+    "missing": "mortius_weaponry_redux:block/netherite_greatsword",
+    "particle": "mortius_weaponry_redux:item/netherite_sword"
+  }
+}

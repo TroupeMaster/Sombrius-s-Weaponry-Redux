@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/stone_twin_blade",
+  "textures": {
+    "missing": "mortius_weaponry_redux:block/stone_twin_blade",
+    "particle": "mortius_weaponry_redux:item/stone_sword"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "  a",
+    "ab ",
+    "ca "
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:stone_tool_materials"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    },
+    "c": {
+      "item": "mortius_weaponry_redux:weapon_handle"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:stone_lance",
+    "count": 1
+  }
+}

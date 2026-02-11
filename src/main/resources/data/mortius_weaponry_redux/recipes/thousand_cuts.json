@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "  a",
+    " bc",
+    "dc "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:redstone_block"
+    },
+    "b": {
+      "item": "mortius_weaponry_redux:netherite_katana"
+    },
+    "c": {
+      "item": "minecraft:magma_cream"
+    },
+    "d": {
+      "item": "mortius_weaponry_redux:blaze_rod_handle"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:thousand_cuts",
+    "count": 1
+  }
+}

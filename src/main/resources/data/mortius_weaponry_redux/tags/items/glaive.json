@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_glaive",
+    "mortius_weaponry_redux:stone_glaive",
+    "mortius_weaponry_redux:golden_glaive",
+    "mortius_weaponry_redux:iron_glaive",
+    "mortius_weaponry_redux:diamond_glaive",
+    "mortius_weaponry_redux:netherite_glaive",
+    "mortius_weaponry_redux:steel_glaive",
+    "mortius_weaponry_redux:bronze_glaive",
+    "mortius_weaponry_redux:silver_glaive",
+    "mortius_weaponry_redux:rose_gold_glaive",
+    "mortius_weaponry_redux:copper_glaive"
+  ]
+}

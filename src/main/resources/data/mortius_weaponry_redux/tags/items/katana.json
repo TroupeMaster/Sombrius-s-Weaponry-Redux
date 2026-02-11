@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_katana",
+    "mortius_weaponry_redux:stone_katana",
+    "mortius_weaponry_redux:golden_katana",
+    "mortius_weaponry_redux:iron_katana",
+    "mortius_weaponry_redux:diamond_katana",
+    "mortius_weaponry_redux:netherite_katana",
+    "mortius_weaponry_redux:steel_katana",
+    "mortius_weaponry_redux:bronze_katana",
+    "mortius_weaponry_redux:silver_katana",
+    "mortius_weaponry_redux:rose_gold_katana",
+    "mortius_weaponry_redux:thousand_cuts",
+    "mortius_weaponry_redux:copper_katana"
+  ]
+}

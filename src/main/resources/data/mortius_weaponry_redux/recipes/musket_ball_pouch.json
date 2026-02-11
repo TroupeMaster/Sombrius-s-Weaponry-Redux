@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "cac"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:leather"
+    },
+    "b": {
+      "item": "mortius_weaponry_redux:musket_ball"
+    },
+    "c": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:musket_ball_pouch",
+    "count": 1
+  }
+}

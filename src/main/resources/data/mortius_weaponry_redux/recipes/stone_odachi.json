@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " aa",
+    " a ",
+    "ba "
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:stone_tool_materials"
+    },
+    "b": {
+      "item": "mortius_weaponry_redux:weapon_handle"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:stone_odachi",
+    "count": 1
+  }
+}

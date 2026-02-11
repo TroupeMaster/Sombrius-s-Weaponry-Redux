@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "cdc",
+    "efe"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:blaze_powder"
+    },
+    "b": {
+      "item": "mortius_weaponry_redux:opposing_winds"
+    },
+    "c": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "d": {
+      "item": "mortius_weaponry_redux:kraken_hunter"
+    },
+    "e": {
+      "item": "minecraft:nether_star"
+    },
+    "f": {
+      "item": "mortius_weaponry_redux:blaze_rod_pole"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:seraph",
+    "count": 1
+  }
+}

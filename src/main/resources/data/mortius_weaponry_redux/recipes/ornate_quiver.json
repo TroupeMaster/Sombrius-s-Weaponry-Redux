@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "minecraft:gold_ingot"
+    },
+    "c": {
+      "item": "mortius_weaponry_redux:quiver"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:ornate_quiver",
+    "count": 1
+  }
+}

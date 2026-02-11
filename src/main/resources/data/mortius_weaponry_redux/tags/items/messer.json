@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_messer",
+    "mortius_weaponry_redux:stone_messer",
+    "mortius_weaponry_redux:golden_messer",
+    "mortius_weaponry_redux:iron_messer",
+    "mortius_weaponry_redux:diamond_messer",
+    "mortius_weaponry_redux:netherite_messer",
+    "mortius_weaponry_redux:steel_messer",
+    "mortius_weaponry_redux:bronze_messer",
+    "mortius_weaponry_redux:silver_messer",
+    "mortius_weaponry_redux:rose_gold_messer",
+    "mortius_weaponry_redux:retribution",
+    "mortius_weaponry_redux:copper_messer"
+  ]
+}

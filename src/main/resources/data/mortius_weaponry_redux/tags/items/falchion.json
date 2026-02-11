@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_falchion",
+    "mortius_weaponry_redux:stone_falchion",
+    "mortius_weaponry_redux:golden_falchion",
+    "mortius_weaponry_redux:iron_falchion",
+    "mortius_weaponry_redux:diamond_falchion",
+    "mortius_weaponry_redux:netherite_falchion",
+    "mortius_weaponry_redux:steel_falchion",
+    "mortius_weaponry_redux:bronze_falchion",
+    "mortius_weaponry_redux:silver_falchion",
+    "mortius_weaponry_redux:rose_gold_falchion",
+    "mortius_weaponry_redux:copper_falchion"
+  ]
+}

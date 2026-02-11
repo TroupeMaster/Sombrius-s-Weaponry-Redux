@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:gunpowder"
+    },
+    "b": {
+      "item": "mortius_weaponry_redux:glass_flask"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:flask_of_gunpowder",
+    "count": 3
+  }
+}

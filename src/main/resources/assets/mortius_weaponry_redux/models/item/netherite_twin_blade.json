@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/netherite_twin_blade",
+  "textures": {
+    "missing": "mortius_weaponry_redux:block/netherite_twin_blade",
+    "particle": "mortius_weaponry_redux:item/netherite_sword"
+  }
+}

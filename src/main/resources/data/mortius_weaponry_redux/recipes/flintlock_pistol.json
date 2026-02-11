@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "abc",
+    "def",
+    "g  "
+  ],
+  "key": {
+    "a": {
+      "item": "mortius_weaponry_redux:flintlock_mechanism"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "mortius_weaponry_redux:short_barrel"
+    },
+    "d": {
+      "tag": "minecraft:planks"
+    },
+    "e": {
+      "item": "minecraft:tripwire_hook"
+    },
+    "f": {
+      "item": "mortius_weaponry_redux:ramrod"
+    },
+    "g": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:flintlock_pistol",
+    "count": 1
+  }
+}

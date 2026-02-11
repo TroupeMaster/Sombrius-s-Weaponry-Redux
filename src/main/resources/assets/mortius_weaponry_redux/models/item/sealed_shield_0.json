@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/sealed_shield_block",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/sealed_shield",
+    "particle": "mortius_weaponry_redux:item/blaze_powder"
+  }
+}

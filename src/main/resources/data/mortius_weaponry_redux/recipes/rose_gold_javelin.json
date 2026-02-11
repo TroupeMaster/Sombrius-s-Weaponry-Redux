@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "  a",
+    " a ",
+    "b  "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/rose_gold"
+    },
+    "b": {
+      "item": "mortius_weaponry_redux:weapon_pole"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:rose_gold_javelin",
+    "count": 1
+  }
+}

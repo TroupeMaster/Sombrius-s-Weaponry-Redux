@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/diamond_twin_blade",
+  "textures": {
+    "missing": "mortius_weaponry_redux:block/diamond_twin_blade",
+    "particle": "mortius_weaponry_redux:item/diamond_sword"
+  }
+}

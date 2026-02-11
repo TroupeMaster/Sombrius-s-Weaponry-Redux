@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "cdc",
+    " e "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    "b": {
+      "item": "minecraft:diamond"
+    },
+    "c": {
+      "item": "minecraft:bone"
+    },
+    "d": {
+      "item": "mortius_weaponry_redux:spiked_shield"
+    },
+    "e": {
+      "item": "minecraft:rotten_flesh"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:living_shield",
+    "count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/stone_spear",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/stone_spear",
+    "particle": "mortius_weaponry_redux:item/stone_sword"
+  }
+}

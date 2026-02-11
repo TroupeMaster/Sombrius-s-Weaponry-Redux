@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/netherite_lance",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/netherite_lance",
+    "particle": "mortius_weaponry_redux:item/netherite_sword"
+  }
+}

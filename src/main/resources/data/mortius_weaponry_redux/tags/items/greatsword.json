@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_greatsword",
+    "mortius_weaponry_redux:stone_greatsword",
+    "mortius_weaponry_redux:golden_greatsword",
+    "mortius_weaponry_redux:iron_greatsword",
+    "mortius_weaponry_redux:diamond_greatsword",
+    "mortius_weaponry_redux:netherite_greatsword",
+    "mortius_weaponry_redux:steel_greatsword",
+    "mortius_weaponry_redux:bronze_greatsword",
+    "mortius_weaponry_redux:silver_greatsword",
+    "mortius_weaponry_redux:rose_gold_greatsword",
+    "mortius_weaponry_redux:catastrophe",
+    "mortius_weaponry_redux:copper_greatsword"
+  ]
+}

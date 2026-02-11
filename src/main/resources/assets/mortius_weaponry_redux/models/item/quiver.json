@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mortius_weaponry_redux:item/quiver"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "mortius_weaponry_redux:quiver_quiver_full": 1
+      },
+      "model": "mortius_weaponry_redux:item/quiver_0"
+    }
+  ]
+}

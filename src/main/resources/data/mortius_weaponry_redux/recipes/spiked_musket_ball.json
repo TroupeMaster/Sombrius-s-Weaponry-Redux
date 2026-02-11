@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "mortius_weaponry_redux:musket_ball"
+    },
+    "c": {
+      "item": "minecraft:quartz"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:spiked_musket_ball",
+    "count": 4
+  }
+}

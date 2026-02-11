@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a",
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:blaze_rod"
+    },
+    "b": {
+      "item": "minecraft:nether_brick"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:blaze_rod_handle",
+    "count": 1
+  }
+}

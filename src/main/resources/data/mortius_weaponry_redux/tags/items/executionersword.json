@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_executioner_sword",
+    "mortius_weaponry_redux:stone_executioner_sword",
+    "mortius_weaponry_redux:golden_executioner_sword",
+    "mortius_weaponry_redux:iron_executioner_sword",
+    "mortius_weaponry_redux:diamond_executioner_sword",
+    "mortius_weaponry_redux:netherite_executioner_sword",
+    "mortius_weaponry_redux:steel_executioner_sword",
+    "mortius_weaponry_redux:bronze_executioner_sword",
+    "mortius_weaponry_redux:silver_executioner_sword",
+    "mortius_weaponry_redux:rose_gold_executioner_sword",
+    "mortius_weaponry_redux:headsman",
+    "mortius_weaponry_redux:copper_executioner_sword"
+  ]
+}

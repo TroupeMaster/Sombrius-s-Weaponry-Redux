@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "  a",
+    "ab ",
+    "ca "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/bronze"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    },
+    "c": {
+      "item": "mortius_weaponry_redux:weapon_handle"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:bronze_lance",
+    "count": 1
+  }
+}

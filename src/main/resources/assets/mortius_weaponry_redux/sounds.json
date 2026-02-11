@@ -1,0 +1,83 @@
+{
+  "flintlock_pistol_shoot": {
+    "subtitle": "subtitles.flintlock_pistol_shoot",
+    "sounds": [
+      {
+        "name": "mortius_weaponry_redux:flintlock_pistol_sound_effect",
+        "stream": false
+      }
+    ]
+  },
+  "musket_shoot": {
+    "subtitle": "subtitles.musket_shoot",
+    "sounds": [
+      {
+        "name": "mortius_weaponry_redux:flintlock_rifle_sound_effect",
+        "stream": false
+      }
+    ]
+  },
+  "blunderbuss_shoot": {
+    "subtitle": "subtitles.blunderbuss_shoot",
+    "sounds": [
+      {
+        "name": "mortius_weaponry_redux:347647__fennelliott__musket",
+        "stream": false
+      }
+    ]
+  },
+  "blunderbuss_shoot_new": {
+    "subtitle": "subtitles.blunderbuss_shoot_new",
+    "sounds": [
+      {
+        "name": "mortius_weaponry_redux:blunderbuss_shoot_new",
+        "stream": false
+      }
+    ]
+  },
+  "zafkiel_pistol_shoot": {
+    "subtitle": "subtitles.zafkiel_pistol_shoot",
+    "sounds": [
+      {
+        "name": "mortius_weaponry_redux:zafkiel_shoot",
+        "stream": false
+      }
+    ]
+  },
+  "slash": {
+    "subtitle": "subtitles.slash",
+    "sounds": [
+      {
+        "name": "mortius_weaponry_redux:ghost_spear_appear",
+        "stream": false
+      }
+    ]
+  },
+  "estoc_after_image": {
+    "subtitle": "subtitles.estoc_after_image",
+    "sounds": [
+      {
+        "name": "mortius_weaponry_redux:estoc_after_image",
+        "stream": false
+      }
+    ]
+  },
+  "zafkiel_shoot": {
+    "subtitle": "subtitles.zafkiel_shoot",
+    "sounds": [
+      {
+        "name": "mortius_weaponry_redux:zafkiel_shoot",
+        "stream": false
+      }
+    ]
+  },
+  "zafkiel_clock_appear": {
+    "subtitle": "subtitles.zafkiel_clock_appear",
+    "sounds": [
+      {
+        "name": "mortius_weaponry_redux:zafkiel_clock_appears",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "parent": "mortius_weaponry_redux:custom/assault_shield",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/assault_shield",
+    "particle": "mortius_weaponry_redux:item/blaze_powder"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "mortius_weaponry_redux:item/assault_shield_0"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT License"
+
+[[mods]]
+modId="mortius_weaponry_redux"
+version="1.12.1"
+displayName="Sombrius's Weaponry Redux"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/mortius-weaponry-redux"
+logoFile="logo.png"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+authors="Sombrius"
+description="A mod that adds a ton of weapons for more variety"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.mortius_weaponry_redux]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+[[dependencies.mortius_weaponry_redux]]
+    modId="bettercombat"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.mortius_weaponry_redux]]
+    modId="playeranimator"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.mortius_weaponry_redux]]
+    modId="cloth-config"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

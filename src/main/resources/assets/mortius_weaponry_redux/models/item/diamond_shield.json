@@ -1,0 +1,15 @@
+{
+  "parent": "mortius_weaponry_redux:custom/diamond_shield",
+  "textures": {
+    "1": "mortius_weaponry_redux:block/diamond_shield_texture",
+    "particle": "mortius_weaponry_redux:item/blaze_powder"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "mortius_weaponry_redux:item/diamond_shield_0"
+    }
+  ]
+}

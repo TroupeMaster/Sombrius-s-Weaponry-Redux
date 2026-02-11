@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "cdc",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:prismarine_crystals"
+    },
+    "b": {
+      "item": "mortius_weaponry_redux:netherite_pike"
+    },
+    "c": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "d": {
+      "item": "mortius_weaponry_redux:blaze_rod_pole"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:kraken_hunter",
+    "count": 1
+  }
+}

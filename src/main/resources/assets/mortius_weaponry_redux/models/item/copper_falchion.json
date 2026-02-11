@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "mortius_weaponry_redux:item/copper_falchion"
+  }
+}

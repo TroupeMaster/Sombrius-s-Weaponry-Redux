@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "mortius_weaponry_redux:musket_ball"
+    },
+    "b": {
+      "tag": "minecraft:coals"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:cracked_musket_ball",
+    "count": 8
+  }
+}

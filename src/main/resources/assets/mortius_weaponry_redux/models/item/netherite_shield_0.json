@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/netherite_shield_block",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/netherite_shield_texture",
+    "particle": "mortius_weaponry_redux:item/blaze_powder"
+  }
+}

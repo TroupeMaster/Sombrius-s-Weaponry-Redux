@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_sickle",
+    "mortius_weaponry_redux:stone_sickle",
+    "mortius_weaponry_redux:golden_sickle",
+    "mortius_weaponry_redux:iron_sickle",
+    "mortius_weaponry_redux:diamond_sickle",
+    "mortius_weaponry_redux:netherite_sickle",
+    "mortius_weaponry_redux:steel_sickle",
+    "mortius_weaponry_redux:bronze_sickle",
+    "mortius_weaponry_redux:silver_sickle",
+    "mortius_weaponry_redux:rose_gold_sickle",
+    "mortius_weaponry_redux:echoing_sickle",
+    "mortius_weaponry_redux:copper_sickle"
+  ]
+}

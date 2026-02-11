@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/steel"
+    },
+    "b": {
+      "item": "mortius_weaponry_redux:weapon_pole"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:steel_spear",
+    "count": 1
+  }
+}

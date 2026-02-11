@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:wooden_parrying_dagger",
+    "mortius_weaponry_redux:stone_parrying_dagger",
+    "mortius_weaponry_redux:golden_parrying_dagger",
+    "mortius_weaponry_redux:iron_parrying_dagger",
+    "mortius_weaponry_redux:diamond_parrying_dagger",
+    "mortius_weaponry_redux:netherite_parrying_dagger",
+    "mortius_weaponry_redux:steel_parrying_dagger",
+    "mortius_weaponry_redux:bronze_parrying_dagger",
+    "mortius_weaponry_redux:silver_parrying_dagger",
+    "mortius_weaponry_redux:rose_gold_parrying_dagger",
+    "mortius_weaponry_redux:copper_parrying_dagger"
+  ]
+}

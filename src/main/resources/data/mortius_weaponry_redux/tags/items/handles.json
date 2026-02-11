@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:weapon_handle",
+    "mortius_weaponry_redux:weapon_pole",
+    "mortius_weaponry_redux:blaze_rod_handle",
+    "mortius_weaponry_redux:blaze_rod_pole"
+  ]
+}

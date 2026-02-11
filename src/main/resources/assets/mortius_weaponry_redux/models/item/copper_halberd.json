@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/copper_halberd",
+  "textures": {
+    "1": "mortius_weaponry_redux:block/copper_halberd",
+    "particle": "mortius_weaponry_redux:item/copper_gladius"
+  }
+}
