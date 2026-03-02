@@ -2,9 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " a ",
+    "aaa",
     "aba",
-    " a "
+    "aaa"
   ],
   "key": {
     "a": {
@@ -16,6 +16,6 @@
   },
   "result": {
     "item": "mortius_weaponry_redux:crystallized_musket_ball",
-    "count": 4
+    "count": 8
   }
 }

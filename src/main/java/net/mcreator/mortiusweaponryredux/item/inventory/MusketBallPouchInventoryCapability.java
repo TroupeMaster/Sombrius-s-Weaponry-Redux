@@ -53,7 +53,7 @@ public class MusketBallPouchInventoryCapability implements ICapabilitySerializab
 	}
 
 	private ItemStackHandler createItemHandler() {
-		return new ItemStackHandler(3) {
+		return new ItemStackHandler(7) {
 			@Override
 			public int getSlotLimit(int slot) {
 				return 64;

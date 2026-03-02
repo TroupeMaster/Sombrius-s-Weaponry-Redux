@@ -48,7 +48,7 @@ public class DiamondBowItem extends Item {
 			ar = InteractionResultHolder.success(entity.getItemInHand(hand));
 			entity.startUsingItem(hand);
 		}
-		DiamondBowRightClickProcedure.execute(entity);
+		DiamondBowRightClickProcedure.execute(ar.getObject());
 		return ar;
 	}
 
@@ -60,7 +60,7 @@ public class DiamondBowItem extends Item {
 
 	@Override
 	public void releaseUsing(ItemStack itemstack, Level world, LivingEntity entity, int time) {
-		DiamondBowUsedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
+		DiamondBowUsedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), itemstack);
 		if (!world.isClientSide() && entity instanceof ServerPlayer player) {
 			float pullingPower = BowItem.getPowerForTime(this.getUseDuration(itemstack) - time);
 			if (pullingPower < 0.1)

@@ -3,6 +3,10 @@
   "values": [
     "mortius_weaponry_redux:flintlock_pistol",
     "mortius_weaponry_redux:musket",
-    "mortius_weaponry_redux:blunderbuss"
+    "mortius_weaponry_redux:bayonet_musket",
+    "mortius_weaponry_redux:terzerol",
+    "mortius_weaponry_redux:blunderbuss",
+    "mortius_weaponry_redux:hand_cannon",
+    "mortius_weaponry_redux:pepperbox"
   ]
 }

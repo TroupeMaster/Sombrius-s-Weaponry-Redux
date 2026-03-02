@@ -48,7 +48,7 @@ public class IronBowItem extends Item {
 			ar = InteractionResultHolder.success(entity.getItemInHand(hand));
 			entity.startUsingItem(hand);
 		}
-		IronBowRightclickedProcedure.execute(entity);
+		IronBowRightclickedProcedure.execute(ar.getObject());
 		return ar;
 	}
 
@@ -60,7 +60,7 @@ public class IronBowItem extends Item {
 
 	@Override
 	public void releaseUsing(ItemStack itemstack, Level world, LivingEntity entity, int time) {
-		IronBowOnPlayerStoppedUsingProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
+		IronBowOnPlayerStoppedUsingProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), itemstack);
 		if (!world.isClientSide() && entity instanceof ServerPlayer player) {
 			float pullingPower = BowItem.getPowerForTime(this.getUseDuration(itemstack) - time);
 			if (pullingPower < 0.1)

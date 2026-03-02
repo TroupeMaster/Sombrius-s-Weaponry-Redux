@@ -35,16 +35,28 @@ public class TwoHandedProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:twohanded1")))
 				&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem())
 				&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:buckler"))))
-				&& !(entity instanceof LivingEntity _livEnt7 && _livEnt7.hasEffect(MortiusWeaponryReduxModMobEffects.TITANBORN.get()))) {
-			if (!(entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(MortiusWeaponryReduxModMobEffects.TWO_HANDED_PENALTY.get()))) {
+				&& !(entity instanceof LivingEntity _livEnt7 && _livEnt7.hasEffect(MortiusWeaponryReduxModMobEffects.TITANBORN.get()))
+				&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:musketball"))))
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:twohanded1")))
+						&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem())
+						&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:buckler"))))
+						&& !(entity instanceof LivingEntity _livEnt17 && _livEnt17.hasEffect(MortiusWeaponryReduxModMobEffects.TITANBORN.get()))
+						&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:musketball"))))) {
+			if (!(entity instanceof LivingEntity _livEnt20 && _livEnt20.hasEffect(MortiusWeaponryReduxModMobEffects.TWO_HANDED_PENALTY.get()))) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MortiusWeaponryReduxModMobEffects.TWO_HANDED_PENALTY.get(), 30, 0, false, false));
 			}
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:twohanded2")))
 				&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem())
 				&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:buckler"))))
-				&& !(entity instanceof LivingEntity _livEnt17 && _livEnt17.hasEffect(MortiusWeaponryReduxModMobEffects.TITANBORN.get()))) {
-			if (!(entity instanceof LivingEntity _livEnt18 && _livEnt18.hasEffect(MortiusWeaponryReduxModMobEffects.TWO_HANDED_PENALTY.get()))) {
+				&& !(entity instanceof LivingEntity _livEnt29 && _livEnt29.hasEffect(MortiusWeaponryReduxModMobEffects.TITANBORN.get()))
+				&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:musketball"))))
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:twohanded2")))
+						&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem())
+						&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:buckler"))))
+						&& !(entity instanceof LivingEntity _livEnt39 && _livEnt39.hasEffect(MortiusWeaponryReduxModMobEffects.TITANBORN.get()))
+						&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:musketball"))))) {
+			if (!(entity instanceof LivingEntity _livEnt42 && _livEnt42.hasEffect(MortiusWeaponryReduxModMobEffects.TWO_HANDED_PENALTY.get()))) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MortiusWeaponryReduxModMobEffects.TWO_HANDED_PENALTY.get(), 30, 1, false, false));
 			}

@@ -1,0 +1,6 @@
+{
+  "parent": "mortius_weaponry_redux:displaysettings/pepperbox",
+  "textures": {
+    "layer0": "mortius_weaponry_redux:item/pepperbox"
+  }
+}

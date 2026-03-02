@@ -48,7 +48,8 @@ public class SunFuryLivingEntityIsHitWithToolProcedure {
 				if (entityiterator instanceof LivingEntity && !(entityiterator == sourceentity) && !((sourceentity.getVehicle()) == entityiterator)
 						&& !(entityiterator instanceof TamableAnimal _tamIsTamedBy && sourceentity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false)) {
 					entityiterator.setSecondsOnFire(10);
-					entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.IN_FIRE)), 4);
+					entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.IN_FIRE), sourceentity),
+							(float) ((LivingEntity) sourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).getValue());
 				}
 			}
 		}

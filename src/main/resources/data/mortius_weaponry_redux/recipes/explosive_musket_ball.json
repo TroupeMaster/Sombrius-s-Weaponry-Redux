@@ -2,13 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aaa",
-    "aba",
-    "aaa"
+    "aba"
   ],
   "key": {
     "a": {
-      "item": "mortius_weaponry_redux:musket_ball"
+      "item": "mortius_weaponry_redux:fiery_musket_ball"
     },
     "b": {
       "item": "minecraft:tnt"
@@ -16,6 +14,6 @@
   },
   "result": {
     "item": "mortius_weaponry_redux:explosive_musket_ball",
-    "count": 8
+    "count": 2
   }
 }

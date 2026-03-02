@@ -20,7 +20,6 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.mortiusweaponryredux.procedures.IronArrowProjectileHitsLivingEntityProcedure;
-import net.mcreator.mortiusweaponryredux.procedures.ArrowHitsEntityFlameProcedure;
 import net.mcreator.mortiusweaponryredux.init.MortiusWeaponryReduxModEntities;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
@@ -68,7 +67,7 @@ public class AutoArrowEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		ArrowHitsEntityFlameProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity(), this.getOwner());
+		IronArrowProjectileHitsLivingEntityProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override
@@ -96,7 +95,7 @@ public class AutoArrowEntity extends AbstractArrow implements ItemSupplier {
 		AutoArrowEntity entityarrow = new AutoArrowEntity(MortiusWeaponryReduxModEntities.AUTO_ARROW.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
-		entityarrow.setCritArrow(true);
+		entityarrow.setCritArrow(false);
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
 		world.addFreshEntity(entityarrow);
@@ -112,7 +111,7 @@ public class AutoArrowEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setSilent(true);
 		entityarrow.setBaseDamage(0);
 		entityarrow.setKnockback(0);
-		entityarrow.setCritArrow(true);
+		entityarrow.setCritArrow(false);
 		entity.level().addFreshEntity(entityarrow);
 		return entityarrow;
 	}

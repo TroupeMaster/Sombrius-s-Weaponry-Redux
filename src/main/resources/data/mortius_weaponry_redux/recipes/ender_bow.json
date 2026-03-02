@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " ab",
+    "cde",
+    " ab"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:dragon_breath"
+    },
+    "b": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "c": {
+      "item": "minecraft:shulker_shell"
+    },
+    "d": {
+      "item": "mortius_weaponry_redux:netherite_bow"
+    },
+    "e": {
+      "item": "mortius_weaponry_redux:blaze_rod_handle"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:ender_bow",
+    "count": 1
+  }
+}

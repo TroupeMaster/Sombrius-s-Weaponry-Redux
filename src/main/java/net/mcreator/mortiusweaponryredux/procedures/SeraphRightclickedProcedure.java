@@ -4,6 +4,7 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.ClipContext;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -15,17 +16,18 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.mortiusweaponryredux.init.MortiusWeaponryReduxModMobEffects;
 import net.mcreator.mortiusweaponryredux.init.MortiusWeaponryReduxModItems;
+import net.mcreator.mortiusweaponryredux.init.MortiusWeaponryReduxModEnchantments;
 import net.mcreator.mortiusweaponryredux.MortiusWeaponryReduxMod;
 
 import java.util.List;
 import java.util.Comparator;
 
 public class SeraphRightclickedProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(MortiusWeaponryReduxModItems.SERAPH.get(), 200);
+			_player.getCooldowns().addCooldown(MortiusWeaponryReduxModItems.SERAPH.get(), (int) (200 / (itemstack.getEnchantmentLevel(MortiusWeaponryReduxModEnchantments.SWIFTNESS.get()) + 1)));
 		entity.setDeltaMovement(new Vec3((Math.sin(Math.toRadians(entity.getYRot() + 180)) * 3), 3, (Math.cos(Math.toRadians(entity.getYRot())) * 3)));
 		{
 			final Vec3 _center = new Vec3(

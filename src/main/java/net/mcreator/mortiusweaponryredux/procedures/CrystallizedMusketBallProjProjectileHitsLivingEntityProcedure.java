@@ -14,11 +14,9 @@ import net.mcreator.mortiusweaponryredux.init.MortiusWeaponryReduxModEntities;
 import net.mcreator.mortiusweaponryredux.entity.CrystalPieceProjEntity;
 
 public class CrystallizedMusketBallProjProjectileHitsLivingEntityProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity immediatesourceentity, Entity sourceentity) {
-		if (entity == null || immediatesourceentity == null || sourceentity == null)
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
+		if (entity == null || sourceentity == null)
 			return;
-		if (!immediatesourceentity.level().isClientSide())
-			immediatesourceentity.discard();
 		world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId(Blocks.AMETHYST_BLOCK.defaultBlockState()));
 		if (world instanceof ServerLevel projectileLevel) {
 			Projectile _entityToSpawn = new Object() {
@@ -32,7 +30,7 @@ public class CrystallizedMusketBallProjProjectileHitsLivingEntityProcedure {
 				}
 			}.getArrow(projectileLevel, sourceentity, 1, 0);
 			_entityToSpawn.setPos((entity.getX()), (entity.getY() + 1), (entity.getZ()));
-			_entityToSpawn.shoot(1, 0.8, 0, (float) 1.2, 5);
+			_entityToSpawn.shoot(1, 0.1, 0, (float) 1.2, 5);
 			projectileLevel.addFreshEntity(_entityToSpawn);
 		}
 		if (world instanceof ServerLevel projectileLevel) {
@@ -47,7 +45,7 @@ public class CrystallizedMusketBallProjProjectileHitsLivingEntityProcedure {
 				}
 			}.getArrow(projectileLevel, sourceentity, 1, 0);
 			_entityToSpawn.setPos((entity.getX()), (entity.getY() + 1), (entity.getZ()));
-			_entityToSpawn.shoot(0, 0.8, 1, (float) 1.2, 5);
+			_entityToSpawn.shoot(0, 0.1, 1, (float) 1.2, 5);
 			projectileLevel.addFreshEntity(_entityToSpawn);
 		}
 		if (world instanceof ServerLevel projectileLevel) {
@@ -62,7 +60,7 @@ public class CrystallizedMusketBallProjProjectileHitsLivingEntityProcedure {
 				}
 			}.getArrow(projectileLevel, sourceentity, 1, 0);
 			_entityToSpawn.setPos((entity.getX()), (entity.getY() + 1), (entity.getZ()));
-			_entityToSpawn.shoot((-1), 0.8, 0, (float) 1.2, 5);
+			_entityToSpawn.shoot((-1), 0.1, 0, (float) 1.2, 5);
 			projectileLevel.addFreshEntity(_entityToSpawn);
 		}
 		if (world instanceof ServerLevel projectileLevel) {
@@ -77,7 +75,7 @@ public class CrystallizedMusketBallProjProjectileHitsLivingEntityProcedure {
 				}
 			}.getArrow(projectileLevel, sourceentity, 1, 0);
 			_entityToSpawn.setPos((entity.getX()), (entity.getY() + 1), (entity.getZ()));
-			_entityToSpawn.shoot(0, 0.8, (-1), (float) 1.2, 5);
+			_entityToSpawn.shoot(0, 0.1, (-1), (float) 1.2, 5);
 			projectileLevel.addFreshEntity(_entityToSpawn);
 		}
 		if (world instanceof ServerLevel projectileLevel) {
@@ -92,7 +90,7 @@ public class CrystallizedMusketBallProjProjectileHitsLivingEntityProcedure {
 				}
 			}.getArrow(projectileLevel, sourceentity, 1, 0);
 			_entityToSpawn.setPos((entity.getX()), (entity.getY() + 1), (entity.getZ()));
-			_entityToSpawn.shoot(1, 0.8, (-1), (float) 1.2, 5);
+			_entityToSpawn.shoot(1, 0.1, (-1), (float) 1.2, 5);
 			projectileLevel.addFreshEntity(_entityToSpawn);
 		}
 		if (world instanceof ServerLevel projectileLevel) {
@@ -107,7 +105,7 @@ public class CrystallizedMusketBallProjProjectileHitsLivingEntityProcedure {
 				}
 			}.getArrow(projectileLevel, sourceentity, 1, 0);
 			_entityToSpawn.setPos((entity.getX()), (entity.getY() + 1), (entity.getZ()));
-			_entityToSpawn.shoot((-1), 0.8, 1, (float) 1.2, 5);
+			_entityToSpawn.shoot((-1), 0.1, 1, (float) 1.2, 5);
 			projectileLevel.addFreshEntity(_entityToSpawn);
 		}
 		if (world instanceof ServerLevel projectileLevel) {
@@ -122,7 +120,7 @@ public class CrystallizedMusketBallProjProjectileHitsLivingEntityProcedure {
 				}
 			}.getArrow(projectileLevel, sourceentity, 1, 0);
 			_entityToSpawn.setPos((entity.getX()), (entity.getY() + 1), (entity.getZ()));
-			_entityToSpawn.shoot(1, 0.8, 1, (float) 1.2, 5);
+			_entityToSpawn.shoot(1, 0.1, 1, (float) 1.2, 5);
 			projectileLevel.addFreshEntity(_entityToSpawn);
 		}
 		if (world instanceof ServerLevel projectileLevel) {
@@ -137,7 +135,7 @@ public class CrystallizedMusketBallProjProjectileHitsLivingEntityProcedure {
 				}
 			}.getArrow(projectileLevel, sourceentity, 1, 0);
 			_entityToSpawn.setPos((entity.getX()), (entity.getY() + 1), (entity.getZ()));
-			_entityToSpawn.shoot((-1), 0.8, (-1), (float) 1.2, 5);
+			_entityToSpawn.shoot((-1), 0.1, (-1), (float) 1.2, 5);
 			projectileLevel.addFreshEntity(_entityToSpawn);
 		}
 	}

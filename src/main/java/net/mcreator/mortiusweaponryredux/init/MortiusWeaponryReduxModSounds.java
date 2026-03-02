@@ -24,4 +24,10 @@ public class MortiusWeaponryReduxModSounds {
 	public static final RegistryObject<SoundEvent> ESTOC_AFTER_IMAGE = REGISTRY.register("estoc_after_image", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mortius_weaponry_redux", "estoc_after_image")));
 	public static final RegistryObject<SoundEvent> ZAFKIEL_SHOOT = REGISTRY.register("zafkiel_shoot", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mortius_weaponry_redux", "zafkiel_shoot")));
 	public static final RegistryObject<SoundEvent> ZAFKIEL_CLOCK_APPEAR = REGISTRY.register("zafkiel_clock_appear", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mortius_weaponry_redux", "zafkiel_clock_appear")));
+	public static final RegistryObject<SoundEvent> FLINTLOCK_TRIGGER = REGISTRY.register("flintlock_trigger", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mortius_weaponry_redux", "flintlock_trigger")));
+	public static final RegistryObject<SoundEvent> FLINTLOCK_HAMMER = REGISTRY.register("flintlock_hammer", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mortius_weaponry_redux", "flintlock_hammer")));
+	public static final RegistryObject<SoundEvent> FLINTLOCK_RAMROD = REGISTRY.register("flintlock_ramrod", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mortius_weaponry_redux", "flintlock_ramrod")));
+	public static final RegistryObject<SoundEvent> HAND_CANNON_SHOOT = REGISTRY.register("hand_cannon_shoot", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mortius_weaponry_redux", "hand_cannon_shoot")));
+	public static final RegistryObject<SoundEvent> HAND_CANNON_FIRE = REGISTRY.register("hand_cannon_fire", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mortius_weaponry_redux", "hand_cannon_fire")));
+	public static final RegistryObject<SoundEvent> HEARTBEAT = REGISTRY.register("heartbeat", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mortius_weaponry_redux", "heartbeat")));
 }

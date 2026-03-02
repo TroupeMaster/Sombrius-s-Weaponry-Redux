@@ -56,9 +56,6 @@ public class FlasksTooltipProcedure {
 		if (itemstack.getOrCreateTag().getBoolean("glowing_flask") == true) {
 			tooltip.add(Component.literal("\u00A75Imbued with Glowing"));
 		}
-		if (itemstack.getOrCreateTag().getBoolean("lightning_flask") == true) {
-			tooltip.add(Component.literal("\u00A75Imbued with Electrified"));
-		}
 		if (itemstack.getOrCreateTag().getBoolean("levitation_flask") == true) {
 			tooltip.add(Component.literal("\u00A75Imbued with Levitation"));
 		}

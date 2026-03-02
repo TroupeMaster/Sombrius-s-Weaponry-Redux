@@ -70,7 +70,7 @@ public class FieryMusketBallProjEntity extends AbstractArrow implements ItemSupp
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		FieryMusketBallProjProjectileHitsLivingEntityProcedure.execute(entityHitResult.getEntity(), this);
+		FieryMusketBallProjProjectileHitsLivingEntityProcedure.execute(entityHitResult.getEntity());
 	}
 
 	@Override

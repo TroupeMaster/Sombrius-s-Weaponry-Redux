@@ -13,6 +13,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.mortiusweaponryredux.init.MortiusWeaponryReduxModItems;
+import net.mcreator.mortiusweaponryredux.init.MortiusWeaponryReduxModEnchantments;
 
 import javax.annotation.Nullable;
 
@@ -61,7 +62,11 @@ public class SetWeaponAttributesProcedure {
 				_event.addModifier(ForgeMod.ENTITY_REACH.get(), (new AttributeModifier(UUID.fromString("48f65eef-7272-48e2-9dab-d9527c1ce7d1"), "sickle_reach", (-0.8), AttributeModifier.Operation.ADDITION)));
 			}
 			if (itemstack.is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:lance")))) {
-				_event.addModifier(ForgeMod.ENTITY_REACH.get(), (new AttributeModifier(UUID.fromString("7445731f-b751-40e4-8a97-323eca6b26cd"), "lance_reach", 1.2, AttributeModifier.Operation.ADDITION)));
+				if (itemstack.getItem() == MortiusWeaponryReduxModItems.ENDER_LANCE.get()) {
+					_event.addModifier(ForgeMod.ENTITY_REACH.get(), (new AttributeModifier(UUID.fromString("09383085-10c1-47b7-9889-68509f1f0641"), "enderLance_reach", 1.4, AttributeModifier.Operation.ADDITION)));
+				} else {
+					_event.addModifier(ForgeMod.ENTITY_REACH.get(), (new AttributeModifier(UUID.fromString("7445731f-b751-40e4-8a97-323eca6b26cd"), "lance_reach", 1.2, AttributeModifier.Operation.ADDITION)));
+				}
 			}
 			if (itemstack.is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:parryingdagger")))) {
 				_event.addModifier(ForgeMod.ENTITY_REACH.get(), (new AttributeModifier(UUID.fromString("b8cc36a4-2975-4405-99a1-766623d56c04"), "parryingdagger_reach", (-1), AttributeModifier.Operation.ADDITION)));
@@ -86,6 +91,16 @@ public class SetWeaponAttributesProcedure {
 			}
 			if (itemstack.getItem() == MortiusWeaponryReduxModItems.ESTOC.get()) {
 				_event.addModifier(ForgeMod.ENTITY_REACH.get(), (new AttributeModifier(UUID.fromString("7b779209-b171-4865-86e9-d89094989e75"), "estoc_reach", 0.6, AttributeModifier.Operation.ADDITION)));
+			}
+			if (itemstack.getItem() == MortiusWeaponryReduxModItems.DRAGONBORN.get()) {
+				_event.addModifier(ForgeMod.ENTITY_REACH.get(), (new AttributeModifier(UUID.fromString("444d6b1c-35fe-46cb-8108-fd9e629acf2e"), "dragonborn_reach", 1.2, AttributeModifier.Operation.ADDITION)));
+			}
+			if (itemstack.getItem() == MortiusWeaponryReduxModItems.BAYONET_MUSKET.get()) {
+				_event.addModifier(ForgeMod.ENTITY_REACH.get(), (new AttributeModifier(UUID.fromString("fdbf8593-ee39-4ea5-b364-d0f81024a51e"), "musket_reach", 1, AttributeModifier.Operation.ADDITION)));
+			}
+			if (itemstack.getItem() == MortiusWeaponryReduxModItems.LIVING_SHIELD.get()) {
+				_event.addModifier(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE, (new AttributeModifier(UUID.fromString("0f5b0a4d-a545-4c80-9edb-08b4ba5c3d34"), "livingShield_attack",
+						(3 + itemstack.getEnchantmentLevel(MortiusWeaponryReduxModEnchantments.SPIKED.get()) * 2), AttributeModifier.Operation.ADDITION)));
 			}
 		}
 	}

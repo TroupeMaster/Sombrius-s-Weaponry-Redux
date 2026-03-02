@@ -11,6 +11,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.gui.screens.Screen;
+
+import net.mcreator.mortiusweaponryredux.init.MortiusWeaponryReduxModItems;
 
 import javax.annotation.Nullable;
 
@@ -33,6 +36,17 @@ public class HalberdDescriptionProcedure {
 			return;
 		if (itemstack.is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:halberd")))) {
 			tooltip.add(Component.literal((" \u00A74" + Component.translatable("item.mortius_weaponry_redux.two_handed2").getString())));
+		}
+		if (itemstack.getItem() == MortiusWeaponryReduxModItems.DRAGONBORN.get()) {
+			tooltip.add(Component.literal((" \u00A74" + Component.translatable("item.mortius_weaponry_redux.two_handed2").getString())));
+			tooltip.add(Component.literal(""));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal(("\u00A76" + Component.translatable("item.mortius_weaponry_redux.special_ability").getString())));
+				tooltip.add(Component.literal((" \u00A7a-" + Component.translatable("item.mortius_weaponry_redux.dragonborn.desc1").getString())));
+				tooltip.add(Component.literal((" \u00A7a-" + Component.translatable("item.mortius_weaponry_redux.dragonborn.desc2").getString())));
+			} else {
+				tooltip.add(Component.literal(("\u00A77" + Component.translatable("item.mortius_weaponry_redux.show_tooltip").getString())));
+			}
 		}
 	}
 }

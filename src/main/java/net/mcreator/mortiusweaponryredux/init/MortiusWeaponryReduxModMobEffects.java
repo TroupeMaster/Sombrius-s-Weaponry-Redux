@@ -21,6 +21,7 @@ import net.mcreator.mortiusweaponryredux.potion.HellfireMobEffect;
 import net.mcreator.mortiusweaponryredux.potion.HealingStrikeMobEffect;
 import net.mcreator.mortiusweaponryredux.potion.FrostBarrierMobEffect;
 import net.mcreator.mortiusweaponryredux.potion.ElectrifiedMobEffect;
+import net.mcreator.mortiusweaponryredux.potion.ComboMobEffect;
 import net.mcreator.mortiusweaponryredux.potion.ChainedMobEffect;
 import net.mcreator.mortiusweaponryredux.potion.BleedOutMobEffect;
 import net.mcreator.mortiusweaponryredux.MortiusWeaponryReduxMod;
@@ -40,4 +41,5 @@ public class MortiusWeaponryReduxModMobEffects {
 	public static final RegistryObject<MobEffect> VULNERABILITY = REGISTRY.register("vulnerability", () -> new VulnerabilityMobEffect());
 	public static final RegistryObject<MobEffect> INCAPACITATED = REGISTRY.register("incapacitated", () -> new IncapacitatedMobEffect());
 	public static final RegistryObject<MobEffect> TWO_HANDED_PENALTY = REGISTRY.register("two_handed_penalty", () -> new TwoHandedPenaltyMobEffect());
+	public static final RegistryObject<MobEffect> COMBO = REGISTRY.register("combo", () -> new ComboMobEffect());
 }

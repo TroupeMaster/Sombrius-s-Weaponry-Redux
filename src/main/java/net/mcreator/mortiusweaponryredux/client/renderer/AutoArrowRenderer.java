@@ -16,7 +16,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class AutoArrowRenderer extends EntityRenderer<AutoArrowEntity> {
-	private static final ResourceLocation texture = new ResourceLocation("mortius_weaponry_redux:textures/entities/invisible_arrow.png");
+	private static final ResourceLocation texture = new ResourceLocation("mortius_weaponry_redux:textures/entities/arrow_texture.png");
 	private final Modelarrow model;
 
 	public AutoArrowRenderer(EntityRendererProvider.Context context) {

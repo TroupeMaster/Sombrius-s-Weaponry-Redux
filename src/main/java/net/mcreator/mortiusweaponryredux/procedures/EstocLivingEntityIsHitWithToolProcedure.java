@@ -6,6 +6,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
@@ -18,8 +19,8 @@ import net.mcreator.mortiusweaponryredux.entity.EstocPointProjEntity;
 import net.mcreator.mortiusweaponryredux.MortiusWeaponryReduxMod;
 
 public class EstocLivingEntityIsHitWithToolProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity sourceentity) {
-		if (sourceentity == null)
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
+		if (entity == null || sourceentity == null)
 			return;
 		MortiusWeaponryReduxMod.queueServerWork(10, () -> {
 			{
@@ -36,7 +37,7 @@ public class EstocLivingEntityIsHitWithToolProcedure {
 							entityToSpawn.setPierceLevel(piercing);
 							return entityToSpawn;
 						}
-					}.getArrow(projectileLevel, sourceentity, 4, 0, (byte) 99);
+					}.getArrow(projectileLevel, sourceentity, Math.round(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).getValue() / 1.7), 0, (byte) 99);
 					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
 					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 2, 0);
 					projectileLevel.addFreshEntity(_entityToSpawn);

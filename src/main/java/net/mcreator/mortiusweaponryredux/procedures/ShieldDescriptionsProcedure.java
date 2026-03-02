@@ -34,87 +34,77 @@ public class ShieldDescriptionsProcedure {
 			return;
 		if (itemstack.getItem() == MortiusWeaponryReduxModItems.NETHERITE_SHIELD.get()) {
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A76Properties:"));
-				tooltip.add(Component.literal(" \u00A7a-Gives resistance when blocking"));
+				tooltip.add(Component.literal(("\u00A76" + Component.translatable("item.mortius_weaponry_redux.special_ability").getString())));
+				tooltip.add(Component.literal((" \u00A7a-" + Component.translatable("item.mortius_weaponry_redux.netherite_shield.desc").getString())));
 			} else {
-				tooltip.add(Component.literal("\u00A76Properties:"));
-				tooltip.add(Component.literal(" \u00A77Press shift to show tooltip"));
+				tooltip.add(Component.literal(("\u00A77" + Component.translatable("item.mortius_weaponry_redux.show_tooltip").getString())));
 			}
 		}
 		if (itemstack.getItem() == MortiusWeaponryReduxModItems.EXPLOSIVE_SHIELD.get()) {
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A76Properties:"));
-				tooltip.add(Component.literal(" \u00A7a-Explodes randomly when blocking"));
+				tooltip.add(Component.literal(("\u00A76" + Component.translatable("item.mortius_weaponry_redux.special_ability").getString())));
+				tooltip.add(Component.literal((" \u00A7a-" + Component.translatable("item.mortius_weaponry_redux.explosive_shield.desc").getString())));
 			} else {
-				tooltip.add(Component.literal("\u00A76Properties:"));
-				tooltip.add(Component.literal(" \u00A77Press shift to show tooltip"));
+				tooltip.add(Component.literal(("\u00A77" + Component.translatable("item.mortius_weaponry_redux.show_tooltip").getString())));
 			}
 		}
 		if (itemstack.getItem() == MortiusWeaponryReduxModItems.BUCKLER.get()) {
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A76Properties:"));
-				tooltip.add(Component.literal(" \u00A7a-Can be used with two-handed weapons"));
-				tooltip.add(Component.literal(" \u00A7a-Only blocks half of the damage"));
+				tooltip.add(Component.literal(("\u00A76" + Component.translatable("item.mortius_weaponry_redux.special_ability").getString())));
+				tooltip.add(Component.literal((" \u00A7a-" + Component.translatable("item.mortius_weaponry_redux.buckler.desc1").getString())));
+				tooltip.add(Component.literal((" \u00A7a-" + Component.translatable("item.mortius_weaponry_redux.buckler.desc2").getString())));
 			} else {
-				tooltip.add(Component.literal("\u00A76Properties:"));
-				tooltip.add(Component.literal(" \u00A77Press shift to show tooltip"));
+				tooltip.add(Component.literal(("\u00A77" + Component.translatable("item.mortius_weaponry_redux.show_tooltip").getString())));
 			}
 		}
 		if (itemstack.getItem() == MortiusWeaponryReduxModItems.DIAMOND_BUCKLER.get()) {
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A76Properties:"));
-				tooltip.add(Component.literal(" \u00A7a-Can be used with two-handed weapons"));
-				tooltip.add(Component.literal(" \u00A7a-Blocks a bit more than half of the damage"));
-				tooltip.add(Component.literal(" \u00A7a-The user's speed is only slightly reduced when using the shield"));
+				tooltip.add(Component.literal(("\u00A76" + Component.translatable("item.mortius_weaponry_redux.special_ability").getString())));
+				tooltip.add(Component.literal((" \u00A7a-" + Component.translatable("item.mortius_weaponry_redux.buckler.desc1").getString())));
+				tooltip.add(Component.literal((" \u00A7a-" + Component.translatable("item.mortius_weaponry_redux.buckler.desc2").getString())));
 			} else {
-				tooltip.add(Component.literal("\u00A76Properties:"));
-				tooltip.add(Component.literal(" \u00A77Press shift to show tooltip"));
+				tooltip.add(Component.literal(("\u00A77" + Component.translatable("item.mortius_weaponry_redux.show_tooltip").getString())));
 			}
 		}
 		if (itemstack.getItem() == MortiusWeaponryReduxModItems.SPIKED_SHIELD.get()) {
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A76Properties:"));
-				tooltip.add(Component.literal(" \u00A7a-Deals damage when blocking"));
+				tooltip.add(Component.literal(("\u00A76" + Component.translatable("item.mortius_weaponry_redux.special_ability").getString())));
+				tooltip.add(Component.literal((" \u00A7a-" + Component.translatable("item.mortius_weaponry_redux.spiked_shield.desc").getString())));
 			} else {
-				tooltip.add(Component.literal("\u00A76Properties:"));
-				tooltip.add(Component.literal(" \u00A77Press shift to show tooltip"));
+				tooltip.add(Component.literal(("\u00A77" + Component.translatable("item.mortius_weaponry_redux.show_tooltip").getString())));
 			}
 		}
 		if (itemstack.getItem() == MortiusWeaponryReduxModItems.ENDER_SHIELD.get()) {
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A76Properties:"));
-				tooltip.add(Component.literal(" \u00A7a-Teleports the user behind the attacker when blocking"));
+				tooltip.add(Component.literal(("\u00A76" + Component.translatable("item.mortius_weaponry_redux.special_ability").getString())));
+				tooltip.add(Component.literal((" \u00A7a-" + Component.translatable("item.mortius_weaponry_redux.ender_shield.desc").getString())));
 			} else {
-				tooltip.add(Component.literal("\u00A76Properties:"));
-				tooltip.add(Component.literal(" \u00A77Press shift to show tooltip"));
+				tooltip.add(Component.literal(("\u00A77" + Component.translatable("item.mortius_weaponry_redux.show_tooltip").getString())));
 			}
 		}
 		if (itemstack.getItem() == MortiusWeaponryReduxModItems.LIVING_SHIELD.get()) {
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A76Properties:"));
-				tooltip.add(Component.literal(" \u00A7a-Deals damage when blocking"));
-				tooltip.add(Component.literal(" \u00A7a-Attacking with the shield will repair the shield"));
+				tooltip.add(Component.literal(("\u00A76" + Component.translatable("item.mortius_weaponry_redux.special_ability").getString())));
+				tooltip.add(Component.literal((" \u00A7a-" + Component.translatable("item.mortius_weaponry_redux.spiked_shield.desc").getString())));
+				tooltip.add(Component.literal((" \u00A7a-" + Component.translatable("item.mortius_weaponry_redux.living_shield.desc").getString())));
 			} else {
-				tooltip.add(Component.literal("\u00A76Properties:"));
-				tooltip.add(Component.literal(" \u00A77Press shift to show tooltip"));
+				tooltip.add(Component.literal(("\u00A77" + Component.translatable("item.mortius_weaponry_redux.show_tooltip").getString())));
 			}
 		}
 		if (itemstack.getItem() == MortiusWeaponryReduxModItems.ASSAULT_SHIELD.get()) {
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A76Properties:"));
-				tooltip.add(Component.literal(" \u00A7a-Dash when blocking, pushing foes away"));
+				tooltip.add(Component.literal(("\u00A76" + Component.translatable("item.mortius_weaponry_redux.special_ability").getString())));
+				tooltip.add(Component.literal((" \u00A7a-" + Component.translatable("item.mortius_weaponry_redux.assault_shield.desc").getString())));
 			} else {
-				tooltip.add(Component.literal("\u00A76Properties:"));
-				tooltip.add(Component.literal(" \u00A77Press shift to show tooltip"));
+				tooltip.add(Component.literal(("\u00A77" + Component.translatable("item.mortius_weaponry_redux.show_tooltip").getString())));
 			}
 		}
 		if (itemstack.getItem() == MortiusWeaponryReduxModItems.SEALED_SHIELD.get()) {
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A76Properties:"));
-				tooltip.add(Component.literal(" \u00A7a-Chains the fate of the user with their foe"));
+				tooltip.add(Component.literal(("\u00A76" + Component.translatable("item.mortius_weaponry_redux.special_ability").getString())));
+				tooltip.add(Component.literal((" \u00A7a-" + Component.translatable("item.mortius_weaponry_redux.sealed_shield.desc").getString())));
 			} else {
-				tooltip.add(Component.literal("\u00A76Properties:"));
-				tooltip.add(Component.literal(" \u00A77Press shift to show tooltip"));
+				tooltip.add(Component.literal(("\u00A77" + Component.translatable("item.mortius_weaponry_redux.show_tooltip").getString())));
 			}
 		}
 	}

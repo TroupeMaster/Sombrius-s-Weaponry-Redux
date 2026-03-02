@@ -6,6 +6,7 @@ package net.mcreator.mortiusweaponryredux.init;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.village.WandererTradesEvent;
 import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.common.BasicItemListing;
 
@@ -15,6 +16,12 @@ import net.minecraft.world.entity.npc.VillagerProfession;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class MortiusWeaponryReduxModTrades {
+	@SubscribeEvent
+	public static void registerWanderingTrades(WandererTradesEvent event) {
+		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD, 32), new ItemStack(MortiusWeaponryReduxModItems.SHORT_BARREL.get()), new ItemStack(MortiusWeaponryReduxModItems.TERZEROL.get()), 1, 10, 0.15f));
+		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD, 32), new ItemStack(MortiusWeaponryReduxModItems.SHORT_BARREL.get()), new ItemStack(MortiusWeaponryReduxModItems.PEPPERBOX.get()), 1, 10, 0.15f));
+	}
+
 	@SubscribeEvent
 	public static void registerTrades(VillagerTradesEvent event) {
 		if (event.getType() == VillagerProfession.WEAPONSMITH) {

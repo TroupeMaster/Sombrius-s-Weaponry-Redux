@@ -3,15 +3,15 @@
   "category": "equipment",
   "pattern": [
     "abc",
-    "def",
-    "g  "
+    "dee",
+    "df "
   ],
   "key": {
     "a": {
-      "item": "mortius_weaponry_redux:flintlock_mechanism"
+      "item": "minecraft:flint_and_steel"
     },
     "b": {
-      "item": "minecraft:iron_ingot"
+      "item": "mortius_weaponry_redux:flintlock_mechanism"
     },
     "c": {
       "item": "mortius_weaponry_redux:blunderbuss_barrel"
@@ -20,13 +20,10 @@
       "tag": "minecraft:planks"
     },
     "e": {
-      "item": "minecraft:tripwire_hook"
-    },
-    "f": {
       "item": "mortius_weaponry_redux:ramrod"
     },
-    "g": {
-      "item": "minecraft:gold_ingot"
+    "f": {
+      "item": "minecraft:tripwire_hook"
     }
   },
   "result": {

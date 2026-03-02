@@ -20,6 +20,7 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.mortiusweaponryredux.init.MortiusWeaponryReduxModMobEffects;
+import net.mcreator.mortiusweaponryredux.init.MortiusWeaponryReduxModEnchantments;
 import net.mcreator.mortiusweaponryredux.MortiusWeaponryReduxMod;
 
 import java.util.List;
@@ -30,7 +31,7 @@ public class DeathScytheRightclickedProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(itemstack.getItem(), 100);
+			_player.getCooldowns().addCooldown(itemstack.getItem(), (int) (100 / (itemstack.getEnchantmentLevel(MortiusWeaponryReduxModEnchantments.SWIFTNESS.get()) + 1)));
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
 				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sculk_shrieker.shriek")), SoundSource.PLAYERS, 1, (float) 0.8);
@@ -43,7 +44,7 @@ public class DeathScytheRightclickedProcedure {
 				final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(30 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
-					if (entityiterator instanceof LivingEntity _livEnt6 && _livEnt6.hasEffect(MortiusWeaponryReduxModMobEffects.CHAINED.get())) {
+					if (entityiterator instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(MortiusWeaponryReduxModMobEffects.CHAINED.get())) {
 						entityiterator.hurt(
 								new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("mortius_weaponry_redux:weapon_attack"))), entity), 10);
 						if (entityiterator instanceof LivingEntity _entity)

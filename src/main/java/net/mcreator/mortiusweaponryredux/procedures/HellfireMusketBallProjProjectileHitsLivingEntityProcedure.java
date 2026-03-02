@@ -49,7 +49,7 @@ public class HellfireMusketBallProjProjectileHitsLivingEntityProcedure {
 					}
 				}.getArrow(projectileLevel, sourceentity, 2, 0);
 				_entityToSpawn.setPos(x, (y + 0.5), z);
-				_entityToSpawn.shoot((Mth.nextDouble(RandomSource.create(), -1, 1)), (Mth.nextDouble(RandomSource.create(), 0.1, 0.6)), (Mth.nextDouble(RandomSource.create(), -1, 1)), (float) 1.2, 80);
+				_entityToSpawn.shoot((Mth.nextDouble(RandomSource.create(), -1, 1)), (Mth.nextDouble(RandomSource.create(), 0, 0.3)), (Mth.nextDouble(RandomSource.create(), -1, 1)), (float) 1.2, 80);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
 		}

@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/dragonborn",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/dragonborn_halberd",
+    "particle": "mortius_weaponry_redux:item/dragonborn_halberd"
+  }
+}

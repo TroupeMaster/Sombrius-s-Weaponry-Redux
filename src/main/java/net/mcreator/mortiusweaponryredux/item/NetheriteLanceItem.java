@@ -3,12 +3,12 @@ package net.mcreator.mortiusweaponryredux.item;
 
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
-public class NetheriteLanceItem extends PickaxeItem {
+public class NetheriteLanceItem extends SwordItem {
 	public NetheriteLanceItem() {
 		super(new Tier() {
 			public int getUses() {
@@ -16,11 +16,11 @@ public class NetheriteLanceItem extends PickaxeItem {
 			}
 
 			public float getSpeed() {
-				return 0f;
+				return 9f;
 			}
 
 			public float getAttackDamageBonus() {
-				return 5f;
+				return 3f;
 			}
 
 			public int getLevel() {
@@ -34,6 +34,6 @@ public class NetheriteLanceItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.NETHERITE_INGOT));
 			}
-		}, 1, -2.6f, new Item.Properties().fireResistant());
+		}, 3, -2.6f, new Item.Properties().fireResistant());
 	}
 }

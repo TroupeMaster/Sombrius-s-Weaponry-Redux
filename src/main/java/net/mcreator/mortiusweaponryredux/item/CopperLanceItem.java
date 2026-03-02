@@ -3,12 +3,12 @@ package net.mcreator.mortiusweaponryredux.item;
 
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
-public class CopperLanceItem extends PickaxeItem {
+public class CopperLanceItem extends SwordItem {
 	public CopperLanceItem() {
 		super(new Tier() {
 			public int getUses() {
@@ -16,11 +16,11 @@ public class CopperLanceItem extends PickaxeItem {
 			}
 
 			public float getSpeed() {
-				return 0f;
+				return 5f;
 			}
 
 			public float getAttackDamageBonus() {
-				return 2f;
+				return 0f;
 			}
 
 			public int getLevel() {
@@ -34,6 +34,6 @@ public class CopperLanceItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.COPPER_INGOT));
 			}
-		}, 1, -2.6f, new Item.Properties());
+		}, 3, -2.6f, new Item.Properties());
 	}
 }

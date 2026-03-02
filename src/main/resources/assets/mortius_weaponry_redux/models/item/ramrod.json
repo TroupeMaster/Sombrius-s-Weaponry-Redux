@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "mortius_weaponry_redux:item/ram_rod"
+    "layer0": "mortius_weaponry_redux:item/ramrod_new"
   }
 }

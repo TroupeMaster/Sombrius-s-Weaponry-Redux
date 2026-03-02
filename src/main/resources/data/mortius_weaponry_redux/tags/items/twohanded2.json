@@ -8,6 +8,9 @@
     "#mortius_weaponry_redux:pike",
     "#mortius_weaponry_redux:scythe",
     "#mortius_weaponry_redux:glaive",
-    "#mortius_weaponry_redux:odachi"
+    "#mortius_weaponry_redux:odachi",
+    "mortius_weaponry_redux:musket",
+    "mortius_weaponry_redux:bayonet_musket",
+    "mortius_weaponry_redux:hand_cannon"
   ]
 }

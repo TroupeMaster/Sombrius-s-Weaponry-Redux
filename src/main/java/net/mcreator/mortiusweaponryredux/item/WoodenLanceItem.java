@@ -3,12 +3,12 @@ package net.mcreator.mortiusweaponryredux.item;
 
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 
-public class WoodenLanceItem extends PickaxeItem {
+public class WoodenLanceItem extends SwordItem {
 	public WoodenLanceItem() {
 		super(new Tier() {
 			public int getUses() {
@@ -16,11 +16,11 @@ public class WoodenLanceItem extends PickaxeItem {
 			}
 
 			public float getSpeed() {
-				return 0f;
+				return 2f;
 			}
 
 			public float getAttackDamageBonus() {
-				return 1f;
+				return -1f;
 			}
 
 			public int getLevel() {
@@ -34,6 +34,6 @@ public class WoodenLanceItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("minecraft:planks")));
 			}
-		}, 1, -2.6f, new Item.Properties());
+		}, 3, -2.6f, new Item.Properties());
 	}
 }

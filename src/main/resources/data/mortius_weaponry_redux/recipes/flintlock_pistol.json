@@ -4,14 +4,14 @@
   "pattern": [
     "abc",
     "def",
-    "g  "
+    "d  "
   ],
   "key": {
     "a": {
-      "item": "mortius_weaponry_redux:flintlock_mechanism"
+      "item": "minecraft:flint_and_steel"
     },
     "b": {
-      "item": "minecraft:iron_ingot"
+      "item": "mortius_weaponry_redux:flintlock_mechanism"
     },
     "c": {
       "item": "mortius_weaponry_redux:short_barrel"
@@ -24,9 +24,6 @@
     },
     "f": {
       "item": "mortius_weaponry_redux:ramrod"
-    },
-    "g": {
-      "item": "minecraft:gold_ingot"
     }
   },
   "result": {

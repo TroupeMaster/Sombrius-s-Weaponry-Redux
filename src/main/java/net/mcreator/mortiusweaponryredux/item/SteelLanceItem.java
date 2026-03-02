@@ -3,12 +3,12 @@ package net.mcreator.mortiusweaponryredux.item;
 
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 
-public class SteelLanceItem extends PickaxeItem {
+public class SteelLanceItem extends SwordItem {
 	public SteelLanceItem() {
 		super(new Tier() {
 			public int getUses() {
@@ -16,11 +16,11 @@ public class SteelLanceItem extends PickaxeItem {
 			}
 
 			public float getSpeed() {
-				return 0f;
+				return 6f;
 			}
 
 			public float getAttackDamageBonus() {
-				return 3.5f;
+				return 1.5f;
 			}
 
 			public int getLevel() {
@@ -34,6 +34,6 @@ public class SteelLanceItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("forge:ingots/steel")));
 			}
-		}, 1, -2.6f, new Item.Properties());
+		}, 3, -2.6f, new Item.Properties());
 	}
 }

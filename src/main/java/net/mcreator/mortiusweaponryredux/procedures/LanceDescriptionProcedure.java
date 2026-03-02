@@ -11,6 +11,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.gui.screens.Screen;
+
+import net.mcreator.mortiusweaponryredux.init.MortiusWeaponryReduxModItems;
 
 import javax.annotation.Nullable;
 
@@ -35,6 +38,16 @@ public class LanceDescriptionProcedure {
 			tooltip.add(Component.literal((" \u00A74" + Component.translatable("item.mortius_weaponry_redux.two_handed1").getString())));
 			tooltip.add(Component.literal(("\u00A77" + Component.translatable("item.mortius_weaponry_redux.on_hit").getString())));
 			tooltip.add(Component.literal((" \u00A72" + Component.translatable("item.mortius_weaponry_redux.lance.special1").getString())));
+		}
+		if (itemstack.getItem() == MortiusWeaponryReduxModItems.ENDER_LANCE.get()) {
+			tooltip.add(Component.literal(""));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal(("\u00A76" + Component.translatable("item.mortius_weaponry_redux.special_ability").getString())));
+				tooltip.add(Component.literal((" \u00A7a-" + Component.translatable("item.mortius_weaponry_redux.ender_lance.desc1").getString())));
+				tooltip.add(Component.literal((" \u00A7a-" + Component.translatable("item.mortius_weaponry_redux.ender_lance.desc2").getString())));
+			} else {
+				tooltip.add(Component.literal(("\u00A77" + Component.translatable("item.mortius_weaponry_redux.show_tooltip").getString())));
+			}
 		}
 	}
 }

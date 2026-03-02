@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aa",
+    "bb",
+    "cc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    "b": {
+      "item": "mortius_weaponry_redux:netherite_halberd"
+    },
+    "c": {
+      "item": "mortius_weaponry_redux:blaze_rod_pole"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:dragonborn",
+    "count": 2
+  }
+}

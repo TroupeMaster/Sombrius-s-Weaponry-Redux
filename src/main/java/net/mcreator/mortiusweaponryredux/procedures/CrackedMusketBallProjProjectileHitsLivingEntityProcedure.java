@@ -31,7 +31,7 @@ public class CrackedMusketBallProjProjectileHitsLivingEntityProcedure {
 					}
 				}.getArrow(projectileLevel, sourceentity, 1, 0);
 				_entityToSpawn.setPos(x, (y + 0.5), z);
-				_entityToSpawn.shoot((Mth.nextDouble(RandomSource.create(), -1, 1)), (Mth.nextDouble(RandomSource.create(), 0.1, 1)), (Mth.nextDouble(RandomSource.create(), -1, 1)), 1, 100);
+				_entityToSpawn.shoot((Mth.nextDouble(RandomSource.create(), -1, 1)), (Mth.nextDouble(RandomSource.create(), 0, 0.3)), (Mth.nextDouble(RandomSource.create(), -1, 1)), 1, 100);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
 		}

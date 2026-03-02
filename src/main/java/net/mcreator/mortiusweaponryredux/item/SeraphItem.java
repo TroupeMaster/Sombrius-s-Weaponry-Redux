@@ -56,7 +56,7 @@ public class SeraphItem extends PickaxeItem {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		SeraphRightclickedProcedure.execute(world, entity);
+		SeraphRightclickedProcedure.execute(world, entity, ar.getObject());
 		return ar;
 	}
 

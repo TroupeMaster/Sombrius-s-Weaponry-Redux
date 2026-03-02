@@ -3,12 +3,12 @@ package net.mcreator.mortiusweaponryredux.item;
 
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
-public class DiamondLanceItem extends PickaxeItem {
+public class DiamondLanceItem extends SwordItem {
 	public DiamondLanceItem() {
 		super(new Tier() {
 			public int getUses() {
@@ -16,11 +16,11 @@ public class DiamondLanceItem extends PickaxeItem {
 			}
 
 			public float getSpeed() {
-				return 0f;
+				return 8f;
 			}
 
 			public float getAttackDamageBonus() {
-				return 4f;
+				return 2f;
 			}
 
 			public int getLevel() {
@@ -34,6 +34,6 @@ public class DiamondLanceItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.DIAMOND));
 			}
-		}, 1, -2.6f, new Item.Properties());
+		}, 3, -2.6f, new Item.Properties());
 	}
 }

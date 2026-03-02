@@ -43,7 +43,7 @@ public class MusketBallPouchGUIMenu extends AbstractContainerMenu implements Sup
 		super(MortiusWeaponryReduxModMenus.MUSKET_BALL_POUCH_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(3);
+		this.internal = new ItemStackHandler(7);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -78,7 +78,7 @@ public class MusketBallPouchGUIMenu extends AbstractContainerMenu implements Sup
 					});
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 62, 28) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 26, 28) {
 			private final int slot = 0;
 
 			@Override
@@ -86,7 +86,7 @@ public class MusketBallPouchGUIMenu extends AbstractContainerMenu implements Sup
 				return !MusketBallPlacementProcedure.execute(itemstack);
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 80, 28) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 44, 28) {
 			private final int slot = 1;
 
 			@Override
@@ -94,8 +94,40 @@ public class MusketBallPouchGUIMenu extends AbstractContainerMenu implements Sup
 				return !MusketBallPlacementProcedure.execute(itemstack);
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 98, 28) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 62, 28) {
 			private final int slot = 2;
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !MusketBallPlacementProcedure.execute(itemstack);
+			}
+		}));
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 80, 28) {
+			private final int slot = 3;
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !MusketBallPlacementProcedure.execute(itemstack);
+			}
+		}));
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 98, 28) {
+			private final int slot = 4;
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !MusketBallPlacementProcedure.execute(itemstack);
+			}
+		}));
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 116, 28) {
+			private final int slot = 5;
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !MusketBallPlacementProcedure.execute(itemstack);
+			}
+		}));
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 134, 28) {
+			private final int slot = 6;
 
 			@Override
 			public boolean mayPlace(ItemStack itemstack) {
@@ -129,16 +161,16 @@ public class MusketBallPouchGUIMenu extends AbstractContainerMenu implements Sup
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 3) {
-				if (!this.moveItemStackTo(itemstack1, 3, this.slots.size(), true))
+			if (index < 7) {
+				if (!this.moveItemStackTo(itemstack1, 7, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 3, false)) {
-				if (index < 3 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 3 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 7, false)) {
+				if (index < 7 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 7 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 3, 3 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 7, 7 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;

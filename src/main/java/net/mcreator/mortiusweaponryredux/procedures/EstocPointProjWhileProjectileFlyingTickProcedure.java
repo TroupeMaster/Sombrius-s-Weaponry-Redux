@@ -1,6 +1,8 @@
 package net.mcreator.mortiusweaponryredux.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
@@ -12,9 +14,11 @@ import net.mcreator.mortiusweaponryredux.init.MortiusWeaponryReduxModParticleTyp
 import net.mcreator.mortiusweaponryredux.MortiusWeaponryReduxMod;
 
 public class EstocPointProjWhileProjectileFlyingTickProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity immediatesourceentity) {
-		if (immediatesourceentity == null)
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity immediatesourceentity) {
+		if (entity == null || immediatesourceentity == null)
 			return;
+		if (entity instanceof AbstractArrow _abstractArrow)
+			_abstractArrow.setBaseDamage(Math.floor(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).getValue() * 0.58));
 		if (world instanceof ServerLevel _level)
 			_level.sendParticles((SimpleParticleType) (MortiusWeaponryReduxModParticleTypes.ESTOC_POINT.get()), x, y, z, 1, 0, 0, 0, 0);
 		if (world instanceof ServerLevel _level)

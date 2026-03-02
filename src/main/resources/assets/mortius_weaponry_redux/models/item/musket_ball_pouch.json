@@ -6,9 +6,69 @@
   "overrides": [
     {
       "predicate": {
-        "mortius_weaponry_redux:musket_ball_pouch_quiver_full": 1
+        "mortius_weaponry_redux:musket_ball_pouch_state": 1
       },
       "model": "mortius_weaponry_redux:item/musket_ball_pouch_0"
+    },
+    {
+      "predicate": {
+        "mortius_weaponry_redux:musket_ball_pouch_state": 2
+      },
+      "model": "mortius_weaponry_redux:item/musket_ball_pouch_1"
+    },
+    {
+      "predicate": {
+        "mortius_weaponry_redux:musket_ball_pouch_state": 3
+      },
+      "model": "mortius_weaponry_redux:item/musket_ball_pouch_2"
+    },
+    {
+      "predicate": {
+        "mortius_weaponry_redux:musket_ball_pouch_state": 4
+      },
+      "model": "mortius_weaponry_redux:item/musket_ball_pouch_3"
+    },
+    {
+      "predicate": {
+        "mortius_weaponry_redux:musket_ball_pouch_state": 5
+      },
+      "model": "mortius_weaponry_redux:item/musket_ball_pouch_4"
+    },
+    {
+      "predicate": {
+        "mortius_weaponry_redux:musket_ball_pouch_state": 6
+      },
+      "model": "mortius_weaponry_redux:item/musket_ball_pouch_5"
+    },
+    {
+      "predicate": {
+        "mortius_weaponry_redux:musket_ball_pouch_state": 7
+      },
+      "model": "mortius_weaponry_redux:item/musket_ball_pouch_6"
+    },
+    {
+      "predicate": {
+        "mortius_weaponry_redux:musket_ball_pouch_state": 8
+      },
+      "model": "mortius_weaponry_redux:item/musket_ball_pouch_7"
+    },
+    {
+      "predicate": {
+        "mortius_weaponry_redux:musket_ball_pouch_state": 9
+      },
+      "model": "mortius_weaponry_redux:item/musket_ball_pouch_8"
+    },
+    {
+      "predicate": {
+        "mortius_weaponry_redux:musket_ball_pouch_state": 10
+      },
+      "model": "mortius_weaponry_redux:item/musket_ball_pouch_9"
+    },
+    {
+      "predicate": {
+        "mortius_weaponry_redux:musket_ball_pouch_state": 11
+      },
+      "model": "mortius_weaponry_redux:item/musket_ball_pouch_10"
     }
   ]
 }

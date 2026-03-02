@@ -1,7 +1,6 @@
 {
-  "parent": "mortius_weaponry_redux:custom/flintlock_pistol_new",
+  "parent": "mortius_weaponry_redux:displaysettings/flintlock_pistol",
   "textures": {
-    "0": "mortius_weaponry_redux:block/flintlock_pistol_new",
-    "particle": "mortius_weaponry_redux:item/short_flintlock_barrel"
+    "layer0": "mortius_weaponry_redux:item/flintlock_pistol"
   }
 }

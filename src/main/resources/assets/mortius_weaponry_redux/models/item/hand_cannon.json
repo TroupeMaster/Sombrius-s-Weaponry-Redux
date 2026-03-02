@@ -1,0 +1,6 @@
+{
+  "parent": "mortius_weaponry_redux:displaysettings/hand_canon",
+  "textures": {
+    "layer0": "mortius_weaponry_redux:item/hand_canon"
+  }
+}

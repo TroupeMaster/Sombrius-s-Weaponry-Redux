@@ -1,0 +1,6 @@
+{
+  "parent": "mortius_weaponry_redux:displaysettings/terzerol",
+  "textures": {
+    "layer0": "mortius_weaponry_redux:item/terzerol"
+  }
+}

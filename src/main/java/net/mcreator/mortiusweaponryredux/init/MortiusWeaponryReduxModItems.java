@@ -19,10 +19,13 @@ import net.minecraft.client.renderer.item.ItemProperties;
 
 import net.mcreator.mortiusweaponryredux.procedures.QuiverPropertyValueProviderProcedure;
 import net.mcreator.mortiusweaponryredux.procedures.NetheriteBowPropertyProcedure;
+import net.mcreator.mortiusweaponryredux.procedures.MusketBallPouchPropertyValueProviderProcedure;
 import net.mcreator.mortiusweaponryredux.procedures.IronBowPropertyValueProviderProcedure;
+import net.mcreator.mortiusweaponryredux.procedures.EnderBowPropertyProcedure;
 import net.mcreator.mortiusweaponryredux.procedures.DiamondBowPropertyProcedure;
 import net.mcreator.mortiusweaponryredux.procedures.CopperBowPropertyProcedure;
 import net.mcreator.mortiusweaponryredux.procedures.AutoBowPropertyProcedure;
+import net.mcreator.mortiusweaponryredux.item.ZafkielItem;
 import net.mcreator.mortiusweaponryredux.item.WoodenWarhammerItem;
 import net.mcreator.mortiusweaponryredux.item.WoodenTwinBladeItem;
 import net.mcreator.mortiusweaponryredux.item.WoodenThrowingKnifeItem;
@@ -59,6 +62,7 @@ import net.mcreator.mortiusweaponryredux.item.WaterFlaskItem;
 import net.mcreator.mortiusweaponryredux.item.TraitorsGreedItem;
 import net.mcreator.mortiusweaponryredux.item.ThousandCutsItem;
 import net.mcreator.mortiusweaponryredux.item.ThickFlaskItem;
+import net.mcreator.mortiusweaponryredux.item.TerzerolItem;
 import net.mcreator.mortiusweaponryredux.item.SunFuryItem;
 import net.mcreator.mortiusweaponryredux.item.StoneWarhammerItem;
 import net.mcreator.mortiusweaponryredux.item.StoneTwinBladeItem;
@@ -184,6 +188,7 @@ import net.mcreator.mortiusweaponryredux.item.RetributionItem;
 import net.mcreator.mortiusweaponryredux.item.RamrodItem;
 import net.mcreator.mortiusweaponryredux.item.QuiverItem;
 import net.mcreator.mortiusweaponryredux.item.PhantomMusketBallItem;
+import net.mcreator.mortiusweaponryredux.item.PepperboxItem;
 import net.mcreator.mortiusweaponryredux.item.OrnateQuiverItem;
 import net.mcreator.mortiusweaponryredux.item.OpposingWindsItem;
 import net.mcreator.mortiusweaponryredux.item.ObsidianKnifeItem;
@@ -234,6 +239,7 @@ import net.mcreator.mortiusweaponryredux.item.IronWarhammerItem;
 import net.mcreator.mortiusweaponryredux.item.IronTwinBladeItem;
 import net.mcreator.mortiusweaponryredux.item.IronThrowingKnifeItem;
 import net.mcreator.mortiusweaponryredux.item.IronSpearItem;
+import net.mcreator.mortiusweaponryredux.item.IronSlugItem;
 import net.mcreator.mortiusweaponryredux.item.IronSickleItem;
 import net.mcreator.mortiusweaponryredux.item.IronScytheItem;
 import net.mcreator.mortiusweaponryredux.item.IronSchiavonaItem;
@@ -264,6 +270,7 @@ import net.mcreator.mortiusweaponryredux.item.IronBattleAxeItem;
 import net.mcreator.mortiusweaponryredux.item.HellfireMusketBallItem;
 import net.mcreator.mortiusweaponryredux.item.HeavyMusketBallItem;
 import net.mcreator.mortiusweaponryredux.item.HeadsmanItem;
+import net.mcreator.mortiusweaponryredux.item.HandCannonItem;
 import net.mcreator.mortiusweaponryredux.item.GoldenWarhammerItem;
 import net.mcreator.mortiusweaponryredux.item.GoldenTwinBladeItem;
 import net.mcreator.mortiusweaponryredux.item.GoldenThrowingKnifeItem;
@@ -305,7 +312,6 @@ import net.mcreator.mortiusweaponryredux.item.FlaskOfSoulFireItem;
 import net.mcreator.mortiusweaponryredux.item.FlaskOfSlownessItem;
 import net.mcreator.mortiusweaponryredux.item.FlaskOfSlowFallingItem;
 import net.mcreator.mortiusweaponryredux.item.FlaskOfPoisonItem;
-import net.mcreator.mortiusweaponryredux.item.FlaskOfLightningItem;
 import net.mcreator.mortiusweaponryredux.item.FlaskOfLevitationItem;
 import net.mcreator.mortiusweaponryredux.item.FlaskOfGunpowderItem;
 import net.mcreator.mortiusweaponryredux.item.FlaskOfGlowingItem;
@@ -316,8 +322,12 @@ import net.mcreator.mortiusweaponryredux.item.ExplosiveShieldItem;
 import net.mcreator.mortiusweaponryredux.item.ExplosiveMusketBallItem;
 import net.mcreator.mortiusweaponryredux.item.EstocItem;
 import net.mcreator.mortiusweaponryredux.item.EnderShieldItem;
+import net.mcreator.mortiusweaponryredux.item.EnderLanceItem;
+import net.mcreator.mortiusweaponryredux.item.EnderDragonFireballItem;
+import net.mcreator.mortiusweaponryredux.item.EnderBowItem;
 import net.mcreator.mortiusweaponryredux.item.EnderBallItem;
 import net.mcreator.mortiusweaponryredux.item.EchoingSickleItem;
+import net.mcreator.mortiusweaponryredux.item.DragonbornItem;
 import net.mcreator.mortiusweaponryredux.item.DiamondWarhammerItem;
 import net.mcreator.mortiusweaponryredux.item.DiamondTwinBladeItem;
 import net.mcreator.mortiusweaponryredux.item.DiamondThrowingKnifeItem;
@@ -385,6 +395,7 @@ import net.mcreator.mortiusweaponryredux.item.CopperExecutionerSwordItem;
 import net.mcreator.mortiusweaponryredux.item.CopperDaggerItem;
 import net.mcreator.mortiusweaponryredux.item.CopperBowItem;
 import net.mcreator.mortiusweaponryredux.item.CopperBattleAxeItem;
+import net.mcreator.mortiusweaponryredux.item.ClocherItem;
 import net.mcreator.mortiusweaponryredux.item.CatastropheItem;
 import net.mcreator.mortiusweaponryredux.item.BucklerItem;
 import net.mcreator.mortiusweaponryredux.item.BronzeWarhammerItem;
@@ -419,6 +430,8 @@ import net.mcreator.mortiusweaponryredux.item.BlunderbussItem;
 import net.mcreator.mortiusweaponryredux.item.BlunderbussBarrelItem;
 import net.mcreator.mortiusweaponryredux.item.BlazeRodPoleItem;
 import net.mcreator.mortiusweaponryredux.item.BlazeRodHandleItem;
+import net.mcreator.mortiusweaponryredux.item.BayonetMusketItem;
+import net.mcreator.mortiusweaponryredux.item.BayonetItem;
 import net.mcreator.mortiusweaponryredux.item.AwkwardFlaskItem;
 import net.mcreator.mortiusweaponryredux.item.AutoBowItem;
 import net.mcreator.mortiusweaponryredux.item.AssaultShieldItem;
@@ -548,9 +561,6 @@ public class MortiusWeaponryReduxModItems {
 	public static final RegistryObject<Item> SHORT_BARREL = REGISTRY.register("short_barrel", () -> new ShortBarrelItem());
 	public static final RegistryObject<Item> LONG_BARREL = REGISTRY.register("long_barrel", () -> new LongBarrelItem());
 	public static final RegistryObject<Item> BLUNDERBUSS_BARREL = REGISTRY.register("blunderbuss_barrel", () -> new BlunderbussBarrelItem());
-	public static final RegistryObject<Item> FLINTLOCK_PISTOL = REGISTRY.register("flintlock_pistol", () -> new FlintlockPistolItem());
-	public static final RegistryObject<Item> MUSKET = REGISTRY.register("musket", () -> new MusketItem());
-	public static final RegistryObject<Item> BLUNDERBUSS = REGISTRY.register("blunderbuss", () -> new BlunderbussItem());
 	public static final RegistryObject<Item> MUSKET_BALL = REGISTRY.register("musket_ball", () -> new MusketBallItem());
 	public static final RegistryObject<Item> CRACKED_MUSKET_BALL = REGISTRY.register("cracked_musket_ball", () -> new CrackedMusketBallItem());
 	public static final RegistryObject<Item> CRYSTALLIZED_MUSKET_BALL = REGISTRY.register("crystallized_musket_ball", () -> new CrystallizedMusketBallItem());
@@ -715,7 +725,6 @@ public class MortiusWeaponryReduxModItems {
 	public static final RegistryObject<Item> FLASK_OF_WITHER = REGISTRY.register("flask_of_wither", () -> new FlaskOfWitherItem());
 	public static final RegistryObject<Item> FLASK_OF_SLOW_FALLING = REGISTRY.register("flask_of_slow_falling", () -> new FlaskOfSlowFallingItem());
 	public static final RegistryObject<Item> FLASK_OF_GLOWING = REGISTRY.register("flask_of_glowing", () -> new FlaskOfGlowingItem());
-	public static final RegistryObject<Item> FLASK_OF_LIGHTNING = REGISTRY.register("flask_of_lightning", () -> new FlaskOfLightningItem());
 	public static final RegistryObject<Item> FLASK_OF_GUNPOWDER = REGISTRY.register("flask_of_gunpowder", () -> new FlaskOfGunpowderItem());
 	public static final RegistryObject<Item> FLASK_OF_VOLATILE_CONCOCTION = REGISTRY.register("flask_of_volatile_concoction", () -> new FlaskOfVolatileConcoctionItem());
 	public static final RegistryObject<Item> FLASK_OF_LEVITATION = REGISTRY.register("flask_of_levitation", () -> new FlaskOfLevitationItem());
@@ -826,6 +835,21 @@ public class MortiusWeaponryReduxModItems {
 	public static final RegistryObject<Item> COPPER_QUARTERSTAFF = REGISTRY.register("copper_quarterstaff", () -> new CopperQuarterstaffItem());
 	public static final RegistryObject<Item> COPPER_ODACHI = REGISTRY.register("copper_odachi", () -> new CopperOdachiItem());
 	public static final RegistryObject<Item> COPPER_BOW = REGISTRY.register("copper_bow", () -> new CopperBowItem());
+	public static final RegistryObject<Item> CLOCHER = REGISTRY.register("clocher", () -> new ClocherItem());
+	public static final RegistryObject<Item> ENDER_LANCE = REGISTRY.register("ender_lance", () -> new EnderLanceItem());
+	public static final RegistryObject<Item> DRAGONBORN = REGISTRY.register("dragonborn", () -> new DragonbornItem());
+	public static final RegistryObject<Item> FLINTLOCK_PISTOL = REGISTRY.register("flintlock_pistol", () -> new FlintlockPistolItem());
+	public static final RegistryObject<Item> MUSKET = REGISTRY.register("musket", () -> new MusketItem());
+	public static final RegistryObject<Item> BAYONET_MUSKET = REGISTRY.register("bayonet_musket", () -> new BayonetMusketItem());
+	public static final RegistryObject<Item> BAYONET = REGISTRY.register("bayonet", () -> new BayonetItem());
+	public static final RegistryObject<Item> TERZEROL = REGISTRY.register("terzerol", () -> new TerzerolItem());
+	public static final RegistryObject<Item> BLUNDERBUSS = REGISTRY.register("blunderbuss", () -> new BlunderbussItem());
+	public static final RegistryObject<Item> IRON_SLUG = REGISTRY.register("iron_slug", () -> new IronSlugItem());
+	public static final RegistryObject<Item> HAND_CANNON = REGISTRY.register("hand_cannon", () -> new HandCannonItem());
+	public static final RegistryObject<Item> ZAFKIEL = REGISTRY.register("zafkiel", () -> new ZafkielItem());
+	public static final RegistryObject<Item> ENDER_BOW = REGISTRY.register("ender_bow", () -> new EnderBowItem());
+	public static final RegistryObject<Item> ENDER_DRAGON_FIREBALL = REGISTRY.register("ender_dragon_fireball", () -> new EnderDragonFireballItem());
+	public static final RegistryObject<Item> PEPPERBOX = REGISTRY.register("pepperbox", () -> new PepperboxItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
@@ -840,20 +864,22 @@ public class MortiusWeaponryReduxModItems {
 			ItemProperties.register(ENDER_SHIELD.get(), new ResourceLocation("blocking"), ItemProperties.getProperty(Items.SHIELD, new ResourceLocation("blocking")));
 			ItemProperties.register(LIVING_SHIELD.get(), new ResourceLocation("blocking"), ItemProperties.getProperty(Items.SHIELD, new ResourceLocation("blocking")));
 			ItemProperties.register(ASSAULT_SHIELD.get(), new ResourceLocation("blocking"), ItemProperties.getProperty(Items.SHIELD, new ResourceLocation("blocking")));
-			ItemProperties.register(IRON_BOW.get(), new ResourceLocation("mortius_weaponry_redux:iron_bow_pulling"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) IronBowPropertyValueProviderProcedure.execute(entity));
-			ItemProperties.register(DIAMOND_BOW.get(), new ResourceLocation("mortius_weaponry_redux:diamond_bow_pulling"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) DiamondBowPropertyProcedure.execute(entity));
-			ItemProperties.register(NETHERITE_BOW.get(), new ResourceLocation("mortius_weaponry_redux:netherite_bow_pulling"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) NetheriteBowPropertyProcedure.execute(entity));
-			ItemProperties.register(AUTO_BOW.get(), new ResourceLocation("mortius_weaponry_redux:auto_bow_pulling"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) AutoBowPropertyProcedure.execute(entity));
+			ItemProperties.register(IRON_BOW.get(), new ResourceLocation("mortius_weaponry_redux:iron_bow_pulling"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) IronBowPropertyValueProviderProcedure.execute(itemStackToRender));
+			ItemProperties.register(DIAMOND_BOW.get(), new ResourceLocation("mortius_weaponry_redux:diamond_bow_pulling"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) DiamondBowPropertyProcedure.execute(itemStackToRender));
+			ItemProperties.register(NETHERITE_BOW.get(), new ResourceLocation("mortius_weaponry_redux:netherite_bow_pulling"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) NetheriteBowPropertyProcedure.execute(itemStackToRender));
+			ItemProperties.register(AUTO_BOW.get(), new ResourceLocation("mortius_weaponry_redux:auto_bow_pulling"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) AutoBowPropertyProcedure.execute(itemStackToRender));
 			ItemProperties.register(DIAMOND_BUCKLER.get(), new ResourceLocation("blocking"), ItemProperties.getProperty(Items.SHIELD, new ResourceLocation("blocking")));
 			ItemProperties.register(QUIVER.get(), new ResourceLocation("mortius_weaponry_redux:quiver_quiver_full"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) QuiverPropertyValueProviderProcedure.execute(itemStackToRender));
 			ItemProperties.register(ORNATE_QUIVER.get(), new ResourceLocation("mortius_weaponry_redux:ornate_quiver_quiver_full"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) QuiverPropertyValueProviderProcedure.execute(itemStackToRender));
 			ItemProperties.register(NETHERITE_QUIVER.get(), new ResourceLocation("mortius_weaponry_redux:netherite_quiver_quiver_full"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) QuiverPropertyValueProviderProcedure.execute(itemStackToRender));
-			ItemProperties.register(MUSKET_BALL_POUCH.get(), new ResourceLocation("mortius_weaponry_redux:musket_ball_pouch_quiver_full"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) QuiverPropertyValueProviderProcedure.execute(itemStackToRender));
+			ItemProperties.register(MUSKET_BALL_POUCH.get(), new ResourceLocation("mortius_weaponry_redux:musket_ball_pouch_state"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) MusketBallPouchPropertyValueProviderProcedure.execute(itemStackToRender));
 			ItemProperties.register(SEALED_SHIELD.get(), new ResourceLocation("blocking"), ItemProperties.getProperty(Items.SHIELD, new ResourceLocation("blocking")));
-			ItemProperties.register(COPPER_BOW.get(), new ResourceLocation("mortius_weaponry_redux:copper_bow_pulling"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) CopperBowPropertyProcedure.execute(entity));
+			ItemProperties.register(COPPER_BOW.get(), new ResourceLocation("mortius_weaponry_redux:copper_bow_pulling"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) CopperBowPropertyProcedure.execute(itemStackToRender));
+			ItemProperties.register(ENDER_BOW.get(), new ResourceLocation("mortius_weaponry_redux:ender_bow_pulling"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnderBowPropertyProcedure.execute(itemStackToRender));
 		});
 	}
 }

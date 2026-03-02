@@ -79,5 +79,59 @@
         "stream": false
       }
     ]
+  },
+  "flintlock_trigger": {
+    "subtitle": "subtitles.flintlock_trigger",
+    "sounds": [
+      {
+        "name": "mortius_weaponry_redux:flintlock_trigger_pull",
+        "stream": false
+      }
+    ]
+  },
+  "flintlock_hammer": {
+    "subtitle": "subtitles.flintlock_hammer",
+    "sounds": [
+      {
+        "name": "mortius_weaponry_redux:flintlock_pull_back",
+        "stream": false
+      }
+    ]
+  },
+  "flintlock_ramrod": {
+    "subtitle": "subtitles.flintlock_ramrod",
+    "sounds": [
+      {
+        "name": "mortius_weaponry_redux:flintlock_ramrod",
+        "stream": false
+      }
+    ]
+  },
+  "hand_cannon_shoot": {
+    "subtitle": "subtitles.hand_cannon_shoot",
+    "sounds": [
+      {
+        "name": "mortius_weaponry_redux:hand_cannon_fire",
+        "stream": false
+      }
+    ]
+  },
+  "hand_cannon_fire": {
+    "subtitle": "subtitles.hand_cannon_fire",
+    "sounds": [
+      {
+        "name": "mortius_weaponry_redux:hand_cannon_flame",
+        "stream": false
+      }
+    ]
+  },
+  "heartbeat": {
+    "subtitle": "subtitles.heartbeat",
+    "sounds": [
+      {
+        "name": "mortius_weaponry_redux:heartbeat_ambience",
+        "stream": false
+      }
+    ]
   }
 }

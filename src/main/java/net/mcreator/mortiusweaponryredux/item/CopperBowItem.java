@@ -48,7 +48,7 @@ public class CopperBowItem extends Item {
 			ar = InteractionResultHolder.success(entity.getItemInHand(hand));
 			entity.startUsingItem(hand);
 		}
-		CopperBowRightClickProcedure.execute(entity);
+		CopperBowRightClickProcedure.execute(ar.getObject());
 		return ar;
 	}
 
@@ -60,7 +60,7 @@ public class CopperBowItem extends Item {
 
 	@Override
 	public void releaseUsing(ItemStack itemstack, Level world, LivingEntity entity, int time) {
-		CopperBowUsedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
+		CopperBowUsedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), itemstack);
 		if (!world.isClientSide() && entity instanceof ServerPlayer player) {
 			float pullingPower = BowItem.getPowerForTime(this.getUseDuration(itemstack) - time);
 			if (pullingPower < 0.1)

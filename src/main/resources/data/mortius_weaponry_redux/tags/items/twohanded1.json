@@ -6,6 +6,7 @@
     "#mortius_weaponry_redux:katana",
     "#mortius_weaponry_redux:longsword",
     "mortius_weaponry_redux:estoc",
-    "#mortius_weaponry_redux:quarterstaff"
+    "#mortius_weaponry_redux:quarterstaff",
+    "mortius_weaponry_redux:blunderbuss"
   ]
 }

@@ -18,6 +18,7 @@ import net.mcreator.mortiusweaponryredux.client.renderer.StoneThrowingKnifeProjR
 import net.mcreator.mortiusweaponryredux.client.renderer.StoneJavelinProjRenderer;
 import net.mcreator.mortiusweaponryredux.client.renderer.StoneChakramProjRenderer;
 import net.mcreator.mortiusweaponryredux.client.renderer.SteelJavelinProjRenderer;
+import net.mcreator.mortiusweaponryredux.client.renderer.SlugRenderer;
 import net.mcreator.mortiusweaponryredux.client.renderer.SilverJavelinProjRenderer;
 import net.mcreator.mortiusweaponryredux.client.renderer.RoseGoldJavelinProjRenderer;
 import net.mcreator.mortiusweaponryredux.client.renderer.ObsidianKnifeProjRenderer;
@@ -39,6 +40,7 @@ import net.mcreator.mortiusweaponryredux.client.renderer.DiamondChakramProjRende
 import net.mcreator.mortiusweaponryredux.client.renderer.DiamondArrowRenderer;
 import net.mcreator.mortiusweaponryredux.client.renderer.CopperJavelinProjRenderer;
 import net.mcreator.mortiusweaponryredux.client.renderer.CopperArrowRenderer;
+import net.mcreator.mortiusweaponryredux.client.renderer.CannonballRenderer;
 import net.mcreator.mortiusweaponryredux.client.renderer.BronzeJavelinProjRenderer;
 import net.mcreator.mortiusweaponryredux.client.renderer.AutoArrowRenderer;
 
@@ -92,5 +94,9 @@ public class MortiusWeaponryReduxModEntityRenderers {
 		event.registerEntityRenderer(MortiusWeaponryReduxModEntities.ROSE_GOLD_JAVELIN_PROJ.get(), RoseGoldJavelinProjRenderer::new);
 		event.registerEntityRenderer(MortiusWeaponryReduxModEntities.COPPER_JAVELIN_PROJ.get(), CopperJavelinProjRenderer::new);
 		event.registerEntityRenderer(MortiusWeaponryReduxModEntities.COPPER_ARROW.get(), CopperArrowRenderer::new);
+		event.registerEntityRenderer(MortiusWeaponryReduxModEntities.SLUG.get(), SlugRenderer::new);
+		event.registerEntityRenderer(MortiusWeaponryReduxModEntities.CANNONBALL.get(), CannonballRenderer::new);
+		event.registerEntityRenderer(MortiusWeaponryReduxModEntities.TIME_BULLET.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(MortiusWeaponryReduxModEntities.ENDER_FIREBALL.get(), ThrownItemRenderer::new);
 	}
 }

@@ -4,7 +4,7 @@ license="MIT License"
 
 [[mods]]
 modId="mortius_weaponry_redux"
-version="1.12.1"
+version="1.14"
 displayName="Sombrius's Weaponry Redux"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/mortius-weaponry-redux"
 logoFile="logo.png"
@@ -25,6 +25,12 @@ description="A mod that adds a ton of weapons for more variety"
 
 [[dependencies.mortius_weaponry_redux]]
     modId="bettercombat"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.mortius_weaponry_redux]]
+    modId="geckolib"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"

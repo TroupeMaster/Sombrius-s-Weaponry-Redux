@@ -56,7 +56,7 @@ public class AssaultShieldRightclickedProcedure {
 						entityiterator.setDeltaMovement(new Vec3((Math.sin(Math.toRadians(entity.getYRot() + 180)) * 2.5), 0.2, (Math.cos(Math.toRadians(entity.getYRot())) * 2.5)));
 						entityiterator.hurt(
 								new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("mortius_weaponry_redux:weapon_attack"))), entity),
-								(float) (EnchantmentHelper.getItemEnchantmentLevel(MortiusWeaponryReduxModEnchantments.BASHING.get(), itemstack) != 0 ? 4 + itemstack.getEnchantmentLevel(MortiusWeaponryReduxModEnchantments.BASHING.get()) : 4));
+								(float) (4 + itemstack.getEnchantmentLevel(MortiusWeaponryReduxModEnchantments.BASHING.get())));
 						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 35, 3));
 						if (world instanceof Level _level) {

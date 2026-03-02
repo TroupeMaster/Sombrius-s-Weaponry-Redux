@@ -16,6 +16,8 @@ import net.minecraft.util.Mth;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.ParticleTypes;
 
+import net.mcreator.mortiusweaponryredux.init.MortiusWeaponryReduxModEnchantments;
+
 import java.util.List;
 import java.util.Comparator;
 
@@ -26,7 +28,7 @@ public class SunFuryEntitySwingsItemProcedure {
 		double distance = 0;
 		if ((entity instanceof Player _plrCldRem1 ? _plrCldRem1.getCooldowns().getCooldownPercent(itemstack.getItem(), 0f) * 100 : 0) == 0) {
 			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(itemstack.getItem(), 5);
+				_player.getCooldowns().addCooldown(itemstack.getItem(), (int) (5 / (itemstack.getEnchantmentLevel(MortiusWeaponryReduxModEnchantments.SWIFTNESS.get()) + 1)));
 			for (int index0 = 0; index0 < 5; index0++) {
 				world.addParticle(ParticleTypes.FLAME, x, (y + 1.56), z, (Math.sin(Math.toRadians(entity.getYRot() + 180)) * Mth.nextDouble(RandomSource.create(), 0.1, 1)),
 						(Math.sin(Math.toRadians(0 - entity.getXRot())) * Mth.nextDouble(RandomSource.create(), 0.1, 1)), (Math.cos(Math.toRadians(entity.getYRot())) * Mth.nextDouble(RandomSource.create(), 0.1, 1)));
@@ -41,7 +43,8 @@ public class SunFuryEntitySwingsItemProcedure {
 					if (entityiterator instanceof LivingEntity && !(entityiterator == entity) && !(entityiterator instanceof TamableAnimal _tamIsTamedBy && entity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false)
 							&& !((entity.getVehicle()) == entityiterator)) {
 						entityiterator.setSecondsOnFire(4);
-						entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.IN_FIRE)), 2);
+						entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.IN_FIRE), entity),
+								(float) (((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).getValue() / 2));
 					}
 				}
 			}

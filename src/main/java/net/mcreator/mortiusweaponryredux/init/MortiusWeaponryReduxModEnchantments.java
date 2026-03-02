@@ -15,6 +15,7 @@ import net.mcreator.mortiusweaponryredux.enchantment.SpikedEnchantment;
 import net.mcreator.mortiusweaponryredux.enchantment.SoldiersInstinctEnchantment;
 import net.mcreator.mortiusweaponryredux.enchantment.QuickBladeEnchantment;
 import net.mcreator.mortiusweaponryredux.enchantment.OpenWoundsEnchantment;
+import net.mcreator.mortiusweaponryredux.enchantment.MarksmanEnchantment;
 import net.mcreator.mortiusweaponryredux.enchantment.HeavyBlowEnchantment;
 import net.mcreator.mortiusweaponryredux.enchantment.ExecutionEnchantment;
 import net.mcreator.mortiusweaponryredux.enchantment.DarkHarvestEnchantment;
@@ -36,4 +37,5 @@ public class MortiusWeaponryReduxModEnchantments {
 	public static final RegistryObject<Enchantment> SWIFTNESS = REGISTRY.register("swiftness", () -> new SwiftnessEnchantment());
 	public static final RegistryObject<Enchantment> BASHING = REGISTRY.register("bashing", () -> new BashingEnchantment());
 	public static final RegistryObject<Enchantment> SPIKED = REGISTRY.register("spiked", () -> new SpikedEnchantment());
+	public static final RegistryObject<Enchantment> MARKSMAN = REGISTRY.register("marksman", () -> new MarksmanEnchantment());
 }

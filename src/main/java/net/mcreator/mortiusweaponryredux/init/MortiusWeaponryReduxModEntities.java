@@ -20,11 +20,13 @@ import net.mcreator.mortiusweaponryredux.entity.WoodenThrowingKnifeProjEntity;
 import net.mcreator.mortiusweaponryredux.entity.WoodenJavelinProjEntity;
 import net.mcreator.mortiusweaponryredux.entity.WoodenChakramProjEntity;
 import net.mcreator.mortiusweaponryredux.entity.WaterWaveEntity;
+import net.mcreator.mortiusweaponryredux.entity.TimeBulletEntity;
 import net.mcreator.mortiusweaponryredux.entity.StoneThrowingKnifeProjEntity;
 import net.mcreator.mortiusweaponryredux.entity.StoneJavelinProjEntity;
 import net.mcreator.mortiusweaponryredux.entity.StoneChakramProjEntity;
 import net.mcreator.mortiusweaponryredux.entity.SteelJavelinProjEntity;
 import net.mcreator.mortiusweaponryredux.entity.SpikedMusketBallProjEntity;
+import net.mcreator.mortiusweaponryredux.entity.SlugEntity;
 import net.mcreator.mortiusweaponryredux.entity.SilverJavelinProjEntity;
 import net.mcreator.mortiusweaponryredux.entity.RoseGoldJavelinProjEntity;
 import net.mcreator.mortiusweaponryredux.entity.PhantomBallProjEntity;
@@ -49,6 +51,7 @@ import net.mcreator.mortiusweaponryredux.entity.GhostlyDaggerEntity;
 import net.mcreator.mortiusweaponryredux.entity.FieryMusketBallProjEntity;
 import net.mcreator.mortiusweaponryredux.entity.ExplosiveMusketBallProjEntity;
 import net.mcreator.mortiusweaponryredux.entity.EstocPointProjEntity;
+import net.mcreator.mortiusweaponryredux.entity.EnderFireballEntity;
 import net.mcreator.mortiusweaponryredux.entity.EnderBallProjEntity;
 import net.mcreator.mortiusweaponryredux.entity.DiamondThrowingKnifeProjEntity;
 import net.mcreator.mortiusweaponryredux.entity.DiamondJavelinProjEntity;
@@ -60,6 +63,7 @@ import net.mcreator.mortiusweaponryredux.entity.CrystalPieceProjEntity;
 import net.mcreator.mortiusweaponryredux.entity.CrackedMusketBallProjEntity;
 import net.mcreator.mortiusweaponryredux.entity.CopperJavelinProjEntity;
 import net.mcreator.mortiusweaponryredux.entity.CopperArrowEntity;
+import net.mcreator.mortiusweaponryredux.entity.CannonballEntity;
 import net.mcreator.mortiusweaponryredux.entity.BronzeJavelinProjEntity;
 import net.mcreator.mortiusweaponryredux.entity.AutoArrowEntity;
 import net.mcreator.mortiusweaponryredux.MortiusWeaponryReduxMod;
@@ -167,6 +171,14 @@ public class MortiusWeaponryReduxModEntities {
 			.setCustomClientFactory(CopperJavelinProjEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<CopperArrowEntity>> COPPER_ARROW = register("copper_arrow",
 			EntityType.Builder.<CopperArrowEntity>of(CopperArrowEntity::new, MobCategory.MISC).setCustomClientFactory(CopperArrowEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<SlugEntity>> SLUG = register("slug",
+			EntityType.Builder.<SlugEntity>of(SlugEntity::new, MobCategory.MISC).setCustomClientFactory(SlugEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<CannonballEntity>> CANNONBALL = register("cannonball",
+			EntityType.Builder.<CannonballEntity>of(CannonballEntity::new, MobCategory.MISC).setCustomClientFactory(CannonballEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<TimeBulletEntity>> TIME_BULLET = register("time_bullet",
+			EntityType.Builder.<TimeBulletEntity>of(TimeBulletEntity::new, MobCategory.MISC).setCustomClientFactory(TimeBulletEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<EnderFireballEntity>> ENDER_FIREBALL = register("ender_fireball",
+			EntityType.Builder.<EnderFireballEntity>of(EnderFireballEntity::new, MobCategory.MISC).setCustomClientFactory(EnderFireballEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

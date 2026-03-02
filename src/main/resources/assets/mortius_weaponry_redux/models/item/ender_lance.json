@@ -1,0 +1,7 @@
+{
+  "parent": "mortius_weaponry_redux:custom/ender_lance",
+  "textures": {
+    "0": "mortius_weaponry_redux:block/ender_lance",
+    "particle": "mortius_weaponry_redux:item/ender_lance"
+  }
+}
