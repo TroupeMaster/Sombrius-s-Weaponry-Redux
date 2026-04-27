@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "mortius_weaponry_redux:gun",
+    "mortius_weaponry_redux:out_of_time",
+    "bad_respawn_point",
+    "cramming",
+    "dragon_breath",
+    "drown",
+    "indirect_magic",
+    "lightning_bolt",
+    "magic",
+    "out_of_world",
+    "outside_border",
+    "sonic_boom",
+    "starve",
+    "thorns",
+    "wither",
+    "mortius_weaponry_redux:aggressive_attack"
+  ]
+}
