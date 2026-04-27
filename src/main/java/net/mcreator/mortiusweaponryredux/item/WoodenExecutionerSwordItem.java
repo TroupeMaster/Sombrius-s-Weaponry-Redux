@@ -34,6 +34,6 @@ public class WoodenExecutionerSwordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("minecraft:planks")));
 			}
-		}, 3, -2.8f, new Item.Properties());
+		}, 3, -3.1f, new Item.Properties());
 	}
 }

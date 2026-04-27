@@ -25,8 +25,11 @@ import net.mcreator.mortiusweaponryredux.client.particle.TimeLeft10Particle;
 import net.mcreator.mortiusweaponryredux.client.particle.TimeLeft0Particle;
 import net.mcreator.mortiusweaponryredux.client.particle.TimeFlashParticle;
 import net.mcreator.mortiusweaponryredux.client.particle.TimeDustParticle;
+import net.mcreator.mortiusweaponryredux.client.particle.SmallBloodSweepParticle;
+import net.mcreator.mortiusweaponryredux.client.particle.SmallBloodSweepLeftParticle;
 import net.mcreator.mortiusweaponryredux.client.particle.FrostShardParticle;
 import net.mcreator.mortiusweaponryredux.client.particle.EstocPointParticle;
+import net.mcreator.mortiusweaponryredux.client.particle.BloodyCritParticle;
 import net.mcreator.mortiusweaponryredux.client.particle.BloodSweepParticle;
 import net.mcreator.mortiusweaponryredux.client.particle.BellRingParticle;
 import net.mcreator.mortiusweaponryredux.client.particle.BellCloseParticle;
@@ -58,5 +61,8 @@ public class MortiusWeaponryReduxModParticles {
 		event.registerSpriteSet(MortiusWeaponryReduxModParticleTypes.TIME_LEFT_0.get(), TimeLeft0Particle::provider);
 		event.registerSpriteSet(MortiusWeaponryReduxModParticleTypes.ARMOR_PIERCE_INDICATOR.get(), ArmorPierceIndicatorParticle::provider);
 		event.registerSpriteSet(MortiusWeaponryReduxModParticleTypes.BLOOD_SWEEP.get(), BloodSweepParticle::provider);
+		event.registerSpriteSet(MortiusWeaponryReduxModParticleTypes.BLOODY_CRIT.get(), BloodyCritParticle::provider);
+		event.registerSpriteSet(MortiusWeaponryReduxModParticleTypes.SMALL_BLOOD_SWEEP.get(), SmallBloodSweepParticle::provider);
+		event.registerSpriteSet(MortiusWeaponryReduxModParticleTypes.SMALL_BLOOD_SWEEP_LEFT.get(), SmallBloodSweepLeftParticle::provider);
 	}
 }

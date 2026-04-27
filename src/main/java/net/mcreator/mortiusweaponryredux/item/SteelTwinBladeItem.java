@@ -20,7 +20,7 @@ public class SteelTwinBladeItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 2.5f;
+				return 1.5f;
 			}
 
 			public int getLevel() {
@@ -34,6 +34,6 @@ public class SteelTwinBladeItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("forge:ingots/steel")));
 			}
-		}, 3, -2.6f, new Item.Properties());
+		}, 3, -2.8f, new Item.Properties());
 	}
 }

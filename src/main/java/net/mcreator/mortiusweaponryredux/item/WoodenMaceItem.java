@@ -34,6 +34,6 @@ public class WoodenMaceItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("minecraft:planks")));
 			}
-		}, 3, -3.2f, new Item.Properties());
+		}, 3, -3.4f, new Item.Properties());
 	}
 }

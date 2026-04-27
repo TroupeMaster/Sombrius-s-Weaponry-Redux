@@ -34,6 +34,6 @@ public class DiamondExecutionerSwordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.DIAMOND));
 			}
-		}, 3, -2.8f, new Item.Properties());
+		}, 3, -2.9f, new Item.Properties());
 	}
 }

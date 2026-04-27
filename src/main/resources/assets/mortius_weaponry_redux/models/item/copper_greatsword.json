@@ -1,7 +1,7 @@
 {
-  "parent": "mortius_weaponry_redux:custom/copper_greatsword",
+  "parent": "mortius_weaponry_redux:custom/copper_zweihander",
   "textures": {
-    "0": "mortius_weaponry_redux:block/copper_greatsword",
-    "particle": "mortius_weaponry_redux:item/copper_gladius"
+    "2": "mortius_weaponry_redux:block/copper_zweihander",
+    "particle": "mortius_weaponry_redux:item/copper_zweihander"
   }
 }

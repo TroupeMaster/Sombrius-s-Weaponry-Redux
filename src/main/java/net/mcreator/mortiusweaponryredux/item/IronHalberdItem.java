@@ -20,7 +20,7 @@ public class IronHalberdItem extends AxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 5f;
+				return 6f;
 			}
 
 			public int getLevel() {
@@ -34,6 +34,6 @@ public class IronHalberdItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.IRON_INGOT));
 			}
-		}, 1, -2.8f, new Item.Properties());
+		}, 1, -3f, new Item.Properties());
 	}
 }

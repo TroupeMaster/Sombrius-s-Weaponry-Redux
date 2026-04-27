@@ -1,7 +1,7 @@
 {
-  "parent": "mortius_weaponry_redux:custom/stone_greatsword",
+  "parent": "mortius_weaponry_redux:custom/stone_zweihander",
   "textures": {
-    "0": "mortius_weaponry_redux:block/stone_greatsword",
-    "particle": "mortius_weaponry_redux:item/stone_sword"
+    "1": "mortius_weaponry_redux:block/stone_zweihander",
+    "particle": "mortius_weaponry_redux:item/stone_zweihander"
   }
 }

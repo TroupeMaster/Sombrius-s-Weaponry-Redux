@@ -20,7 +20,7 @@ public class NetheriteHalberdItem extends AxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 7f;
+				return 8f;
 			}
 
 			public int getLevel() {
@@ -34,6 +34,6 @@ public class NetheriteHalberdItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.NETHERITE_INGOT));
 			}
-		}, 1, -2.8f, new Item.Properties().fireResistant());
+		}, 1, -2.9f, new Item.Properties().fireResistant());
 	}
 }

@@ -32,6 +32,6 @@ public class NecrostaffItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of();
 			}
-		}, 3, -2.4f, new Item.Properties().fireResistant());
+		}, 3, -2.2f, new Item.Properties().fireResistant());
 	}
 }

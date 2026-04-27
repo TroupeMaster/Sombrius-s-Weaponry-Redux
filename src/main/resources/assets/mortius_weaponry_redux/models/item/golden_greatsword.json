@@ -1,7 +1,7 @@
 {
-  "parent": "mortius_weaponry_redux:custom/golden_greatsword",
+  "parent": "mortius_weaponry_redux:custom/golden_zweihander",
   "textures": {
-    "0": "mortius_weaponry_redux:block/golden_greatsword",
-    "particle": "mortius_weaponry_redux:item/golden_sword"
+    "3": "mortius_weaponry_redux:block/golden_zweihander",
+    "particle": "mortius_weaponry_redux:item/golden_zweihander"
   }
 }

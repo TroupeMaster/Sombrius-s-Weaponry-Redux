@@ -80,7 +80,7 @@ public class PepperboxRightClickProcedure {
 								(float) Mth.nextDouble(RandomSource.create(), 1.1, 1.15), false);
 					}
 				}
-				FlintlockPistolShootBallProcedure.execute(entity, itemstack, 1.6 + itemstack.getEnchantmentLevel(MortiusWeaponryReduxModEnchantments.MARKSMAN.get()) / 1.7, 0, 1, 2);
+				FlintlockPistolShootBallProcedure.execute(entity, itemstack, 1.6 + itemstack.getEnchantmentLevel(MortiusWeaponryReduxModEnchantments.MARKSMAN.get()) / 1.7, 0, 0, 2);
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.POOF, entity.getX() + entity.getLookAngle().x * 0.5, entity.getY() + entity.getLookAngle().y + 1.6 * 0.5, entity.getZ() + entity.getLookAngle().z * 0.5, Mth.nextInt(RandomSource.create(), 6, 10),
 							(Math.sin(Math.toRadians(entity.getYRot() + 180)) * 1), (Math.sin(Math.toRadians(0 - entity.getXRot())) * 1), (Math.cos(Math.toRadians(entity.getYRot())) * 1), 0.1);

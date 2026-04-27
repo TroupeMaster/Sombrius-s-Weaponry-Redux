@@ -20,7 +20,7 @@ public class StoneTwinBladeItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 1f;
+				return 0f;
 			}
 
 			public int getLevel() {
@@ -34,6 +34,6 @@ public class StoneTwinBladeItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("minecraft:stone_tool_materials")));
 			}
-		}, 3, -2.6f, new Item.Properties());
+		}, 3, -2.8f, new Item.Properties());
 	}
 }

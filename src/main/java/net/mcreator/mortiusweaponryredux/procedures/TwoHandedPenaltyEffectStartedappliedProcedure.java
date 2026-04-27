@@ -45,9 +45,9 @@ public class TwoHandedPenaltyEffectStartedappliedProcedure {
 									AttributeModifier.Operation.ADDITION)));
 			} else {
 				if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE)
-						.hasModifier((new AttributeModifier(UUID.fromString("efe7d52c-ae2d-4c26-9e19-148cb405c6b6"), "twohanded_damage", (-2), AttributeModifier.Operation.ADDITION)))))
+						.hasModifier((new AttributeModifier(UUID.fromString("efe7d52c-ae2d-4c26-9e19-148cb405c6b6"), "twohanded_damage", (-1), AttributeModifier.Operation.ADDITION)))))
 					((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE)
-							.addTransientModifier((new AttributeModifier(UUID.fromString("efe7d52c-ae2d-4c26-9e19-148cb405c6b6"), "twohanded_damage", (-2), AttributeModifier.Operation.ADDITION)));
+							.addTransientModifier((new AttributeModifier(UUID.fromString("efe7d52c-ae2d-4c26-9e19-148cb405c6b6"), "twohanded_damage", (-1), AttributeModifier.Operation.ADDITION)));
 			}
 		}
 	}

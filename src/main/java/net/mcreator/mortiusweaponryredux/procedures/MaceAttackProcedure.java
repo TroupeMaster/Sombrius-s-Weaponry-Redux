@@ -22,9 +22,11 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.mortiusweaponryredux.init.MortiusWeaponryReduxModParticleTypes;
 import net.mcreator.mortiusweaponryredux.init.MortiusWeaponryReduxModEnchantments;
 
 import javax.annotation.Nullable;
@@ -34,15 +36,15 @@ public class MaceAttackProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
 		if (event != null && event.getEntity() != null) {
-			execute(event, event.getEntity().level(), event.getSource(), event.getEntity(), event.getSource().getEntity(), event.getAmount());
+			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getZ(), event.getSource(), event.getEntity(), event.getSource().getEntity(), event.getAmount());
 		}
 	}
 
-	public static void execute(LevelAccessor world, DamageSource damagesource, Entity entity, Entity sourceentity, double amount) {
-		execute(null, world, damagesource, entity, sourceentity, amount);
+	public static void execute(LevelAccessor world, double x, double z, DamageSource damagesource, Entity entity, Entity sourceentity, double amount) {
+		execute(null, world, x, z, damagesource, entity, sourceentity, amount);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, DamageSource damagesource, Entity entity, Entity sourceentity, double amount) {
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double z, DamageSource damagesource, Entity entity, Entity sourceentity, double amount) {
 		if (damagesource == null || entity == null || sourceentity == null)
 			return;
 		double amplifier = 0;
@@ -63,6 +65,9 @@ public class MaceAttackProcedure {
 						_level.sendParticles(ParticleTypes.ENCHANTED_HIT, (entity.getX()), (entity.getY() + 1.65), (entity.getZ()), 18, 0.5, 0.5, 0.5, 0.5);
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.CRIT, (entity.getX()), (entity.getY() + 1.65), (entity.getZ()), 10, 0.5, 0.5, 0.5, 0.5);
+					if (world instanceof ServerLevel _level)
+						_level.sendParticles((SimpleParticleType) (MortiusWeaponryReduxModParticleTypes.BLOODY_CRIT.get()), sourceentity.getX() + sourceentity.getLookAngle().x * 1, (sourceentity.getY() + 1),
+								sourceentity.getZ() + sourceentity.getLookAngle().z * 1, 1, 0, 0, 0, 0);
 				}
 			}
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() instanceof ArmorItem) {
@@ -101,9 +106,9 @@ public class MaceAttackProcedure {
 					}
 				}
 			}
-			if ((entity instanceof LivingEntity _entUseItem39 ? _entUseItem39.getUseItem() : ItemStack.EMPTY).getItem() instanceof ShieldItem) {
+			if ((entity instanceof LivingEntity _entUseItem43 ? _entUseItem43.getUseItem() : ItemStack.EMPTY).getItem() instanceof ShieldItem) {
 				{
-					ItemStack _ist = (entity instanceof LivingEntity _entUseItem41 ? _entUseItem41.getUseItem() : ItemStack.EMPTY);
+					ItemStack _ist = (entity instanceof LivingEntity _entUseItem45 ? _entUseItem45.getUseItem() : ItemStack.EMPTY);
 					if (_ist.hurt((int) Math.floor(amount / 5), RandomSource.create(), null)) {
 						_ist.shrink(1);
 						_ist.setDamageValue(0);

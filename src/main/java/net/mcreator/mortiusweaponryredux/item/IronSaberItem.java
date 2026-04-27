@@ -1,16 +1,12 @@
 
 package net.mcreator.mortiusweaponryredux.item;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.mortiusweaponryredux.procedures.SaberSetTagProcedure;
 
 public class IronSaberItem extends SwordItem {
 	public IronSaberItem() {
@@ -39,11 +35,5 @@ public class IronSaberItem extends SwordItem {
 				return Ingredient.of(new ItemStack(Items.IRON_INGOT));
 			}
 		}, 3, -2.4f, new Item.Properties());
-	}
-
-	@Override
-	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-		super.inventoryTick(itemstack, world, entity, slot, selected);
-		SaberSetTagProcedure.execute(itemstack);
 	}
 }

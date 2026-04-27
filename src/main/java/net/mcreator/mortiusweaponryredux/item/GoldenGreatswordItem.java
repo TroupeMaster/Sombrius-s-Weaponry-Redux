@@ -34,6 +34,6 @@ public class GoldenGreatswordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.GOLD_INGOT));
 			}
-		}, 3, -2.7f, new Item.Properties());
+		}, 3, -2.8f, new Item.Properties());
 	}
 }

@@ -4,7 +4,7 @@ package net.mcreator.mortiusweaponryredux.item;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.Entity;
@@ -13,7 +13,7 @@ import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.mortiusweaponryredux.procedures.SilverWeaponsInInventoryProcedure;
 
-public class SilverSpearItem extends PickaxeItem {
+public class SilverSpearItem extends SwordItem {
 	public SilverSpearItem() {
 		super(new Tier() {
 			public int getUses() {
@@ -21,11 +21,11 @@ public class SilverSpearItem extends PickaxeItem {
 			}
 
 			public float getSpeed() {
-				return 0f;
+				return 6f;
 			}
 
 			public float getAttackDamageBonus() {
-				return 3f;
+				return 1f;
 			}
 
 			public int getLevel() {
@@ -39,7 +39,7 @@ public class SilverSpearItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("forge:ingots/silver")));
 			}
-		}, 1, -2.6f, new Item.Properties());
+		}, 3, -2.6f, new Item.Properties());
 	}
 
 	@Override

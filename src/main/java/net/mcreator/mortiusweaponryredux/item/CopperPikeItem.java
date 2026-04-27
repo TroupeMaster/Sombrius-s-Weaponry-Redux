@@ -16,11 +16,11 @@ public class CopperPikeItem extends PickaxeItem {
 			}
 
 			public float getSpeed() {
-				return 0f;
+				return 5f;
 			}
 
 			public float getAttackDamageBonus() {
-				return 2f;
+				return 3f;
 			}
 
 			public int getLevel() {
@@ -34,6 +34,6 @@ public class CopperPikeItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.COPPER_INGOT));
 			}
-		}, 1, -2.8f, new Item.Properties());
+		}, 1, -2.9f, new Item.Properties());
 	}
 }

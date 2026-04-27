@@ -20,7 +20,7 @@ public class NetheriteTwinBladeItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 4f;
+				return 3f;
 			}
 
 			public int getLevel() {
@@ -34,6 +34,6 @@ public class NetheriteTwinBladeItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.NETHERITE_INGOT));
 			}
-		}, 3, -2.6f, new Item.Properties().fireResistant());
+		}, 3, -2.8f, new Item.Properties().fireResistant());
 	}
 }

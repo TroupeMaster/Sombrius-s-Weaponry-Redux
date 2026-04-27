@@ -34,6 +34,6 @@ public class DiamondOdachiItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.DIAMOND));
 			}
-		}, 3, -2.2f, new Item.Properties());
+		}, 3, -2.4f, new Item.Properties());
 	}
 }

@@ -34,6 +34,6 @@ public class NetheriteExecutionerSwordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.NETHERITE_INGOT));
 			}
-		}, 3, -2.8f, new Item.Properties().fireResistant());
+		}, 3, -2.9f, new Item.Properties().fireResistant());
 	}
 }

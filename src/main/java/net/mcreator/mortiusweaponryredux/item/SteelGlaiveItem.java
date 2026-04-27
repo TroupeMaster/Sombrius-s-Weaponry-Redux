@@ -20,7 +20,7 @@ public class SteelGlaiveItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 1.5f;
+				return 2.5f;
 			}
 
 			public int getLevel() {

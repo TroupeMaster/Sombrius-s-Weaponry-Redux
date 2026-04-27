@@ -34,6 +34,6 @@ public class StoneGreatswordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("minecraft:stone_tool_materials")));
 			}
-		}, 3, -2.8f, new Item.Properties());
+		}, 3, -3f, new Item.Properties());
 	}
 }

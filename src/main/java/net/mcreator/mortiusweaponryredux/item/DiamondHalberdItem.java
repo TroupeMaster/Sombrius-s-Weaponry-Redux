@@ -20,7 +20,7 @@ public class DiamondHalberdItem extends AxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 6f;
+				return 7f;
 			}
 
 			public int getLevel() {
@@ -34,6 +34,6 @@ public class DiamondHalberdItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.DIAMOND));
 			}
-		}, 1, -2.8f, new Item.Properties());
+		}, 1, -2.9f, new Item.Properties());
 	}
 }

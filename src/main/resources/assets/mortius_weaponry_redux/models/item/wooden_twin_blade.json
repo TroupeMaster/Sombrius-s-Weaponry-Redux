@@ -1,7 +1,7 @@
 {
-  "parent": "mortius_weaponry_redux:custom/wooden_twin_blade",
+  "parent": "mortius_weaponry_redux:custom/wooden_twinblade",
   "textures": {
-    "0": "mortius_weaponry_redux:block/wooden_twin_blade",
-    "particle": "mortius_weaponry_redux:item/wooden_sword"
+    "0": "mortius_weaponry_redux:block/wooden_twinblade",
+    "particle": "mortius_weaponry_redux:item/wooden_twinblade"
   }
 }

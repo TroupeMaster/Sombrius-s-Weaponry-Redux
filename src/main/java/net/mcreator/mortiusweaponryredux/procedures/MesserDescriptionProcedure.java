@@ -35,8 +35,6 @@ public class MesserDescriptionProcedure {
 		if (tooltip == null)
 			return;
 		if (itemstack.is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:messer")))) {
-			tooltip.add(Component.literal(("\u00A77" + Component.translatable("item.mortius_weaponry_redux.on_hit").getString())));
-			tooltip.add(Component.literal((" \u00A72" + Component.translatable("item.mortius_weaponry_redux.sweep").getString())));
 			tooltip.add(Component.literal(("\u00A77" + Component.translatable("item.mortius_weaponry_redux.when_attack").getString())));
 			tooltip.add(Component.literal((" \u00A72" + Component.translatable("item.mortius_weaponry_redux.messer.special1").getString())));
 		}

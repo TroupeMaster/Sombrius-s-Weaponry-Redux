@@ -34,6 +34,6 @@ public class GoldenOdachiItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.GOLD_INGOT));
 			}
-		}, 3, -2.1f, new Item.Properties());
+		}, 3, -2.3f, new Item.Properties());
 	}
 }

@@ -20,7 +20,7 @@ public class CopperHalberdItem extends AxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 4f;
+				return 5f;
 			}
 
 			public int getLevel() {
@@ -34,6 +34,6 @@ public class CopperHalberdItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.COPPER_INGOT));
 			}
-		}, 1, -2.8f, new Item.Properties());
+		}, 1, -3.1f, new Item.Properties());
 	}
 }

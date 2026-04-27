@@ -51,8 +51,6 @@ public class GladiusShieldBlockProcedure {
 				if (Math.random() < 0.25 + (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(MortiusWeaponryReduxModEnchantments.SOLDIERS_INSTINCT.get()) / 10) {
 					if (event != null && event.isCancelable()) {
 						event.setCanceled(true);
-					} else if (event != null && event.hasResult()) {
-						event.setResult(Event.Result.DENY);
 					}
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
@@ -70,8 +68,6 @@ public class GladiusShieldBlockProcedure {
 				if (Math.random() < 0.25 + (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(MortiusWeaponryReduxModEnchantments.SOLDIERS_INSTINCT.get()) / 10) {
 					if (event != null && event.isCancelable()) {
 						event.setCanceled(true);
-					} else if (event != null && event.hasResult()) {
-						event.setResult(Event.Result.DENY);
 					}
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {

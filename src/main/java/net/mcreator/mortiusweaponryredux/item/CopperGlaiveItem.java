@@ -20,7 +20,7 @@ public class CopperGlaiveItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 0f;
+				return 1f;
 			}
 
 			public int getLevel() {

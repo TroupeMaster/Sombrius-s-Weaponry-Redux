@@ -1,7 +1,7 @@
 {
-  "parent": "mortius_weaponry_redux:custom/stone_longsword",
+  "parent": "mortius_weaponry_redux:custom/stone_bastard_sword",
   "textures": {
-    "0": "mortius_weaponry_redux:block/stone_longsword",
-    "particle": "mortius_weaponry_redux:item/stone_sword"
+    "1": "mortius_weaponry_redux:block/stone_bastard_sword",
+    "particle": "mortius_weaponry_redux:item/stone_bastard_sword"
   }
 }

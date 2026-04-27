@@ -34,6 +34,6 @@ public class RoseGoldExecutionerSwordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("forge:ingots/rose_gold")));
 			}
-		}, 3, -2.7f, new Item.Properties());
+		}, 3, -2.8f, new Item.Properties());
 	}
 }

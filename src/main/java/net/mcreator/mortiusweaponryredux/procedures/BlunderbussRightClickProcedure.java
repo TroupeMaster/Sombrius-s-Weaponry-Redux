@@ -61,7 +61,7 @@ public class BlunderbussRightClickProcedure {
 					}
 				}
 				for (int index0 = 0; index0 < (int) (itemstack.getOrCreateTag().getDouble("musketBall") == 10 ? 3 : 8); index0++) {
-					FlintlockPistolShootBallProcedure.execute(entity, itemstack, 2.4 + itemstack.getEnchantmentLevel(MortiusWeaponryReduxModEnchantments.MARKSMAN.get()) / 1.7, 14, 0, 1.4);
+					FlintlockPistolShootBallProcedure.execute(entity, itemstack, 1.2 + itemstack.getEnchantmentLevel(MortiusWeaponryReduxModEnchantments.MARKSMAN.get()) / 10, 14, 0, 1.4);
 				}
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.POOF, entity.getX() + entity.getLookAngle().x * 0.5, entity.getY() + entity.getLookAngle().y + 1.5 * 0.5, entity.getZ() + entity.getLookAngle().z * 0.5,

@@ -1,7 +1,7 @@
 {
-  "parent": "mortius_weaponry_redux:custom/netherite_scythe_newer",
+  "parent": "mortius_weaponry_redux:custom/netherite_scythe",
   "textures": {
-    "0": "mortius_weaponry_redux:block/netherite_scythe_newer",
-    "particle": "mortius_weaponry_redux:item/netherite_sword"
+    "6": "mortius_weaponry_redux:block/netherite_scythe",
+    "particle": "mortius_weaponry_redux:item/netherite_scythe"
   }
 }

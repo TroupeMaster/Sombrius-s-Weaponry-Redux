@@ -34,6 +34,6 @@ public class SteelOdachiItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("forge:ingots/steel")));
 			}
-		}, 3, -2.2f, new Item.Properties());
+		}, 3, -2.4f, new Item.Properties());
 	}
 }

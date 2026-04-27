@@ -1,7 +1,7 @@
 {
-  "parent": "mortius_weaponry_redux:custom/diamond_twin_blade",
+  "parent": "mortius_weaponry_redux:custom/diamond_twinblade",
   "textures": {
-    "missing": "mortius_weaponry_redux:block/diamond_twin_blade",
-    "particle": "mortius_weaponry_redux:item/diamond_sword"
+    "5": "mortius_weaponry_redux:block/diamond_twinblade",
+    "particle": "mortius_weaponry_redux:item/diamond_twinblade"
   }
 }

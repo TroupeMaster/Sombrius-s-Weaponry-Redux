@@ -1,7 +1,7 @@
 {
-  "parent": "mortius_weaponry_redux:custom/rose_gold_longsword",
+  "parent": "mortius_weaponry_redux:custom/rose_gold_bastard_sword",
   "textures": {
-    "0": "mortius_weaponry_redux:block/rose_gold_longsword",
-    "particle": "mortius_weaponry_redux:item/rose_gold_sword"
+    "9": "mortius_weaponry_redux:block/rose_gold_bastard_sword",
+    "particle": "mortius_weaponry_redux:item/rose_gold_bastard_sword"
   }
 }

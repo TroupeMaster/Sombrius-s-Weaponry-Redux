@@ -2,6 +2,6 @@
   "parent": "mortius_weaponry_redux:custom/wooden_odachi",
   "textures": {
     "0": "mortius_weaponry_redux:block/wooden_odachi",
-    "particle": "mortius_weaponry_redux:item/iron_odachi"
+    "particle": "mortius_weaponry_redux:item/wooden_odachi"
   }
 }

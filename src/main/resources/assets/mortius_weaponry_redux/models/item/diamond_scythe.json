@@ -1,7 +1,7 @@
 {
-  "parent": "mortius_weaponry_redux:custom/diamond_scythe_newer",
+  "parent": "mortius_weaponry_redux:custom/diamond_scythe",
   "textures": {
-    "0": "mortius_weaponry_redux:block/diamond_scythe_newer",
-    "particle": "mortius_weaponry_redux:item/diamond_sword"
+    "5": "mortius_weaponry_redux:block/diamond_scythe",
+    "particle": "mortius_weaponry_redux:item/diamond_scythe"
   }
 }

@@ -20,7 +20,7 @@ public class BronzeTwinBladeItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 2f;
+				return 1f;
 			}
 
 			public int getLevel() {
@@ -34,6 +34,6 @@ public class BronzeTwinBladeItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("forge:ingots/bronze")));
 			}
-		}, 3, -2.6f, new Item.Properties());
+		}, 3, -2.8f, new Item.Properties());
 	}
 }

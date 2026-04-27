@@ -34,6 +34,6 @@ public class CopperExecutionerSwordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.COPPER_INGOT));
 			}
-		}, 3, -2.8f, new Item.Properties());
+		}, 3, -3.1f, new Item.Properties());
 	}
 }

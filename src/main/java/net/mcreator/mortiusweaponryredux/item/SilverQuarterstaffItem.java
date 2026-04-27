@@ -7,12 +7,10 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 
-import net.mcreator.mortiusweaponryredux.procedures.WoodenQuarterstaffLivingEntityIsHitWithToolProcedure;
 import net.mcreator.mortiusweaponryredux.procedures.SilverWeaponsInInventoryProcedure;
 
 public class SilverQuarterstaffItem extends SwordItem {
@@ -41,14 +39,7 @@ public class SilverQuarterstaffItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("forge:ingots/silver")));
 			}
-		}, 3, -2.4f, new Item.Properties());
-	}
-
-	@Override
-	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		WoodenQuarterstaffLivingEntityIsHitWithToolProcedure.execute(entity);
-		return retval;
+		}, 3, -2.2f, new Item.Properties());
 	}
 
 	@Override

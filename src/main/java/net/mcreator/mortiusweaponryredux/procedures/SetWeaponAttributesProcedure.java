@@ -49,7 +49,7 @@ public class SetWeaponAttributesProcedure {
 				_event.addModifier(ForgeMod.ENTITY_REACH.get(), (new AttributeModifier(UUID.fromString("9b3aa14c-9fe1-4f3b-90ed-d0f15c0f6ebd"), "longsword_reach", 0.55, AttributeModifier.Operation.ADDITION)));
 			}
 			if (itemstack.is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:spear")))) {
-				_event.addModifier(ForgeMod.ENTITY_REACH.get(), (new AttributeModifier(UUID.fromString("09355bd7-23d8-4077-91f6-b26789822956"), "spear_reach", 1.1, AttributeModifier.Operation.ADDITION)));
+				_event.addModifier(ForgeMod.ENTITY_REACH.get(), (new AttributeModifier(UUID.fromString("09355bd7-23d8-4077-91f6-b26789822956"), "spear_reach", 1, AttributeModifier.Operation.ADDITION)));
 			}
 			if (itemstack.is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:throwingknife")))) {
 				_event.addModifier(ForgeMod.ENTITY_REACH.get(), (new AttributeModifier(UUID.fromString("1d9d7697-3080-4d3f-bdda-adb659874057"), "throwingknife_reach", (-1), AttributeModifier.Operation.ADDITION)));
@@ -72,7 +72,7 @@ public class SetWeaponAttributesProcedure {
 				_event.addModifier(ForgeMod.ENTITY_REACH.get(), (new AttributeModifier(UUID.fromString("b8cc36a4-2975-4405-99a1-766623d56c04"), "parryingdagger_reach", (-1), AttributeModifier.Operation.ADDITION)));
 			}
 			if (itemstack.is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:pike")))) {
-				_event.addModifier(ForgeMod.ENTITY_REACH.get(), (new AttributeModifier(UUID.fromString("a33a5637-fb3e-48b0-afe1-19a0448b83ab"), "pike_reach", 2.15, AttributeModifier.Operation.ADDITION)));
+				_event.addModifier(ForgeMod.ENTITY_REACH.get(), (new AttributeModifier(UUID.fromString("a33a5637-fb3e-48b0-afe1-19a0448b83ab"), "pike_reach", 2, AttributeModifier.Operation.ADDITION)));
 			}
 			if (itemstack.is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:greatsword")))) {
 				_event.addModifier(ForgeMod.ENTITY_REACH.get(), (new AttributeModifier(UUID.fromString("7857c6df-5460-42c6-ade9-a4913e43382e"), "greatsword_reach", 0.55, AttributeModifier.Operation.ADDITION)));
@@ -81,7 +81,7 @@ public class SetWeaponAttributesProcedure {
 				_event.addModifier(ForgeMod.ENTITY_REACH.get(), (new AttributeModifier(UUID.fromString("ece604ff-18eb-49e8-8796-5be214c5447e"), "javelin_reach", 0.68, AttributeModifier.Operation.ADDITION)));
 			}
 			if (itemstack.is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:quarterstaff")))) {
-				_event.addModifier(ForgeMod.ENTITY_REACH.get(), (new AttributeModifier(UUID.fromString("f4bcdbbb-f83f-4e75-bb5d-7133f21afcf9"), "quarterstaff_reach", 1, AttributeModifier.Operation.ADDITION)));
+				_event.addModifier(ForgeMod.ENTITY_REACH.get(), (new AttributeModifier(UUID.fromString("f4bcdbbb-f83f-4e75-bb5d-7133f21afcf9"), "quarterstaff_reach", 0.68, AttributeModifier.Operation.ADDITION)));
 			}
 			if (itemstack.is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:odachi")))) {
 				_event.addModifier(ForgeMod.ENTITY_REACH.get(), (new AttributeModifier(UUID.fromString("c55a7f3a-027a-4692-b54a-8da8447afdfa"), "odachi_reach", 0.55, AttributeModifier.Operation.ADDITION)));

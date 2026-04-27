@@ -37,4 +37,7 @@ public class MortiusWeaponryReduxModParticleTypes {
 	public static final RegistryObject<SimpleParticleType> TIME_LEFT_0 = REGISTRY.register("time_left_0", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> ARMOR_PIERCE_INDICATOR = REGISTRY.register("armor_pierce_indicator", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> BLOOD_SWEEP = REGISTRY.register("blood_sweep", () -> new SimpleParticleType(true));
+	public static final RegistryObject<SimpleParticleType> BLOODY_CRIT = REGISTRY.register("bloody_crit", () -> new SimpleParticleType(true));
+	public static final RegistryObject<SimpleParticleType> SMALL_BLOOD_SWEEP = REGISTRY.register("small_blood_sweep", () -> new SimpleParticleType(true));
+	public static final RegistryObject<SimpleParticleType> SMALL_BLOOD_SWEEP_LEFT = REGISTRY.register("small_blood_sweep_left", () -> new SimpleParticleType(true));
 }

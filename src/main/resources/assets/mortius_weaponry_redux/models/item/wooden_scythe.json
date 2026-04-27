@@ -1,7 +1,7 @@
 {
-  "parent": "mortius_weaponry_redux:custom/wooden_scythe_newer",
+  "parent": "mortius_weaponry_redux:custom/wooden_scythe",
   "textures": {
-    "0": "mortius_weaponry_redux:block/wooden_scythe_newer",
-    "particle": "mortius_weaponry_redux:item/wooden_sword"
+    "0": "mortius_weaponry_redux:block/wooden_scythe",
+    "particle": "mortius_weaponry_redux:item/wooden_scythe"
   }
 }

@@ -34,6 +34,6 @@ public class RoseGoldOdachiItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("forge:ingots/rose_gold")));
 			}
-		}, 3, -2.1f, new Item.Properties());
+		}, 3, -2.3f, new Item.Properties());
 	}
 }

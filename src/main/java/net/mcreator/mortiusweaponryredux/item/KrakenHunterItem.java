@@ -18,7 +18,7 @@ public class KrakenHunterItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 3f;
+				return 4f;
 			}
 
 			public int getLevel() {

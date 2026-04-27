@@ -1,7 +1,7 @@
 {
   "parent": "mortius_weaponry_redux:custom/rose_gold_halberd",
   "textures": {
-    "0": "mortius_weaponry_redux:block/rose_gold_halberd",
-    "particle": "mortius_weaponry_redux:item/rose_gold_sword"
+    "10": "mortius_weaponry_redux:block/rose_gold_halberd",
+    "particle": "mortius_weaponry_redux:item/copper_halberd"
   }
 }

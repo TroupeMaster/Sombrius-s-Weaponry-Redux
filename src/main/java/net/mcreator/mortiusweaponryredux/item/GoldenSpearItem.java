@@ -3,12 +3,12 @@ package net.mcreator.mortiusweaponryredux.item;
 
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
-public class GoldenSpearItem extends PickaxeItem {
+public class GoldenSpearItem extends SwordItem {
 	public GoldenSpearItem() {
 		super(new Tier() {
 			public int getUses() {
@@ -20,7 +20,7 @@ public class GoldenSpearItem extends PickaxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 2f;
+				return 0f;
 			}
 
 			public int getLevel() {
@@ -34,6 +34,6 @@ public class GoldenSpearItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.GOLD_INGOT));
 			}
-		}, 1, -2.5f, new Item.Properties());
+		}, 3, -2.5f, new Item.Properties());
 	}
 }

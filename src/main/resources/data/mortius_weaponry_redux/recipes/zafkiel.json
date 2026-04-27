@@ -3,8 +3,8 @@
   "category": "equipment",
   "pattern": [
     "abc",
-    "dee",
-    "df "
+    "ddd",
+    "ef "
   ],
   "key": {
     "a": {
@@ -17,13 +17,13 @@
       "item": "mortius_weaponry_redux:short_barrel"
     },
     "d": {
-      "item": "minecraft:netherite_ingot"
-    },
-    "e": {
       "item": "minecraft:nether_brick"
     },
+    "e": {
+      "item": "minecraft:netherite_ingot"
+    },
     "f": {
-      "item": "minecraft:nether_star"
+      "item": "minecraft:tripwire_hook"
     }
   },
   "result": {

@@ -7,17 +7,11 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.mortiusweaponryredux.procedures.SilverWeaponsInInventoryProcedure;
-import net.mcreator.mortiusweaponryredux.procedures.ParryingDaggerSwingProcedure;
-import net.mcreator.mortiusweaponryredux.procedures.ParryingDaggerRightClickProcedure;
 
 public class SilverParryingDaggerItem extends SwordItem {
 	public SilverParryingDaggerItem() {
@@ -46,20 +40,6 @@ public class SilverParryingDaggerItem extends SwordItem {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("forge:ingots/silver")));
 			}
 		}, 3, -1f, new Item.Properties());
-	}
-
-	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		ParryingDaggerRightClickProcedure.execute(entity, ar.getObject());
-		return ar;
-	}
-
-	@Override
-	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
-		boolean retval = super.onEntitySwing(itemstack, entity);
-		ParryingDaggerSwingProcedure.execute(entity, itemstack);
-		return retval;
 	}
 
 	@Override

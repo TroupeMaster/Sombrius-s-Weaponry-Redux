@@ -35,7 +35,7 @@ public class ScytheDescriptionProcedure {
 		if (tooltip == null)
 			return;
 		if (itemstack.is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:scythe")))) {
-			tooltip.add(Component.literal((" \u00A74" + Component.translatable("item.mortius_weaponry_redux.two_handed1").getString())));
+			tooltip.add(Component.literal((" \u00A74" + Component.translatable("item.mortius_weaponry_redux.two_handed2").getString())));
 			tooltip.add(Component.literal(("\u00A77" + Component.translatable("item.mortius_weaponry_redux.on_hit").getString())));
 			tooltip.add(Component.literal((" \u00A72" + Component.translatable("item.mortius_weaponry_redux.sweep").getString())));
 			tooltip.add(Component.literal((" \u00A72" + Component.translatable("item.mortius_weaponry_redux.scythe.special1").getString())));

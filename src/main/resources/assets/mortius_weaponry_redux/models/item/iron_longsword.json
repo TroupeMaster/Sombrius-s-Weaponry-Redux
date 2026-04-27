@@ -1,7 +1,7 @@
 {
-  "parent": "mortius_weaponry_redux:custom/iron_longsword",
+  "parent": "mortius_weaponry_redux:custom/iron_bastard_sword",
   "textures": {
-    "0": "mortius_weaponry_redux:block/iron_longsword",
-    "particle": "mortius_weaponry_redux:item/iron_sword"
+    "4": "mortius_weaponry_redux:block/iron_bastard_sword",
+    "particle": "mortius_weaponry_redux:item/iron_bastard_sword"
   }
 }

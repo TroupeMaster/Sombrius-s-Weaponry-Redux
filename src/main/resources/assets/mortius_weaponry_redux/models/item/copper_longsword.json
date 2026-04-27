@@ -1,7 +1,7 @@
 {
-  "parent": "mortius_weaponry_redux:custom/copper_longsword",
+  "parent": "mortius_weaponry_redux:custom/copper_bastard_sword",
   "textures": {
-    "0": "mortius_weaponry_redux:block/copper_longsword",
-    "particle": "mortius_weaponry_redux:item/copper_gladius"
+    "2": "mortius_weaponry_redux:block/copper_bastard_sword",
+    "particle": "mortius_weaponry_redux:item/copper_bastard_sword"
   }
 }

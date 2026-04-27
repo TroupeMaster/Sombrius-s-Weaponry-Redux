@@ -4,7 +4,7 @@ package net.mcreator.mortiusweaponryredux.item;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
@@ -17,7 +17,7 @@ import net.mcreator.mortiusweaponryredux.procedures.SeraphTickProcedure;
 import net.mcreator.mortiusweaponryredux.procedures.SeraphRightclickedProcedure;
 import net.mcreator.mortiusweaponryredux.procedures.SeraphLivingEntityIsHitWithToolProcedure;
 
-public class SeraphItem extends PickaxeItem {
+public class SeraphItem extends SwordItem {
 	public SeraphItem() {
 		super(new Tier() {
 			public int getUses() {
@@ -25,11 +25,11 @@ public class SeraphItem extends PickaxeItem {
 			}
 
 			public float getSpeed() {
-				return 0f;
+				return 9f;
 			}
 
 			public float getAttackDamageBonus() {
-				return 13f;
+				return 12f;
 			}
 
 			public int getLevel() {
@@ -43,7 +43,7 @@ public class SeraphItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of();
 			}
-		}, 1, -2.6f, new Item.Properties().fireResistant());
+		}, 3, -2.6f, new Item.Properties().fireResistant());
 	}
 
 	@Override

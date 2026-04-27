@@ -20,7 +20,7 @@ public class IronTwinBladeItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 2f;
+				return 1f;
 			}
 
 			public int getLevel() {
@@ -34,6 +34,6 @@ public class IronTwinBladeItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.IRON_INGOT));
 			}
-		}, 3, -2.6f, new Item.Properties());
+		}, 3, -2.8f, new Item.Properties());
 	}
 }

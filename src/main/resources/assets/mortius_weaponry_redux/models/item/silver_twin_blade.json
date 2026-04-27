@@ -1,7 +1,7 @@
 {
-  "parent": "mortius_weaponry_redux:custom/silver_twin_blade",
+  "parent": "mortius_weaponry_redux:custom/silver_twinblade",
   "textures": {
-    "0": "mortius_weaponry_redux:block/silver_twin_blade",
-    "particle": "mortius_weaponry_redux:item/silver_gladius"
+    "8": "mortius_weaponry_redux:block/silver_twinblade",
+    "particle": "mortius_weaponry_redux:item/silver_twinblade"
   }
 }

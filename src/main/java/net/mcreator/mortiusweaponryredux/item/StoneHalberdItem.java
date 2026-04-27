@@ -20,7 +20,7 @@ public class StoneHalberdItem extends AxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 4f;
+				return 5f;
 			}
 
 			public int getLevel() {
@@ -34,6 +34,6 @@ public class StoneHalberdItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("minecraft:stone_tool_materials")));
 			}
-		}, 1, -2.8f, new Item.Properties());
+		}, 1, -3.1f, new Item.Properties());
 	}
 }

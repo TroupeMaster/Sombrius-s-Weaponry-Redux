@@ -1,7 +1,7 @@
 {
-  "parent": "mortius_weaponry_redux:custom/silver_greatsword",
+  "parent": "mortius_weaponry_redux:custom/silver_zweihander",
   "textures": {
-    "0": "mortius_weaponry_redux:block/silver_greatsword",
-    "particle": "mortius_weaponry_redux:item/silver_gladius"
+    "8": "mortius_weaponry_redux:block/silver_zweihander",
+    "particle": "mortius_weaponry_redux:item/silver_zweihander"
   }
 }

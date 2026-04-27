@@ -20,7 +20,7 @@ public class WoodenHalberdItem extends AxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 3f;
+				return 4f;
 			}
 
 			public int getLevel() {
@@ -34,6 +34,6 @@ public class WoodenHalberdItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("minecraft:planks")));
 			}
-		}, 1, -2.8f, new Item.Properties());
+		}, 1, -3.1f, new Item.Properties());
 	}
 }

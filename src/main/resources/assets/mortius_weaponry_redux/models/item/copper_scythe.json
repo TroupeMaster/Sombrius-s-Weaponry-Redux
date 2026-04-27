@@ -1,7 +1,7 @@
 {
-  "parent": "mortius_weaponry_redux:custom/copper_scythe_newer",
+  "parent": "mortius_weaponry_redux:custom/copper_scythe",
   "textures": {
-    "0": "mortius_weaponry_redux:block/copper_scythe_newer",
-    "particle": "mortius_weaponry_redux:item/copper_gladius"
+    "2": "mortius_weaponry_redux:block/copper_scythe",
+    "particle": "mortius_weaponry_redux:item/copper_scythe"
   }
 }

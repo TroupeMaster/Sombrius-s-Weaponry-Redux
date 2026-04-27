@@ -34,6 +34,6 @@ public class NetheriteOdachiItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.NETHERITE_INGOT));
 			}
-		}, 3, -2.2f, new Item.Properties().fireResistant());
+		}, 3, -2.4f, new Item.Properties().fireResistant());
 	}
 }

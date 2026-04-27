@@ -34,6 +34,6 @@ public class SteelExecutionerSwordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("forge:ingots/steel")));
 			}
-		}, 3, -2.8f, new Item.Properties());
+		}, 3, -2.9f, new Item.Properties());
 	}
 }

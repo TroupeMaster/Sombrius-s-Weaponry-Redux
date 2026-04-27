@@ -34,6 +34,6 @@ public class IronGreatswordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.IRON_INGOT));
 			}
-		}, 3, -2.8f, new Item.Properties());
+		}, 3, -2.9f, new Item.Properties());
 	}
 }

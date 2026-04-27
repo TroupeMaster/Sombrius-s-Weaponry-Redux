@@ -1,7 +1,7 @@
 {
-  "parent": "mortius_weaponry_redux:custom/wooden_longsword",
+  "parent": "mortius_weaponry_redux:custom/wooden_bastard_sword",
   "textures": {
-    "0": "mortius_weaponry_redux:block/wooden_longsword",
-    "particle": "mortius_weaponry_redux:item/wooden_sword"
+    "0": "mortius_weaponry_redux:block/wooden_bastard_sword",
+    "particle": "mortius_weaponry_redux:item/wooden_bastard_sword"
   }
 }

@@ -20,7 +20,7 @@ public class BronzeHalberdItem extends AxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 5f;
+				return 6f;
 			}
 
 			public int getLevel() {
@@ -34,6 +34,6 @@ public class BronzeHalberdItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("forge:ingots/bronze")));
 			}
-		}, 1, -2.8f, new Item.Properties());
+		}, 1, -2.9f, new Item.Properties());
 	}
 }

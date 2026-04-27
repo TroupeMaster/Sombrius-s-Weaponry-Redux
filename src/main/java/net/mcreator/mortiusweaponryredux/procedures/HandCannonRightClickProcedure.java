@@ -58,10 +58,10 @@ public class HandCannonRightClickProcedure {
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == itemstack.getItem()) && itemstack.getOrCreateTag().getBoolean("cancel") == false) {
 					itemstack.getOrCreateTag().putBoolean("recoil", true);
 					if (itemstack.getOrCreateTag().getDouble("musketBall") == 0) {
-						HandCannonShootCannonballProcedure.execute(entity, 5.15 + itemstack.getEnchantmentLevel(MortiusWeaponryReduxModEnchantments.MARKSMAN.get()) / 1.7, 5, 0, 4);
+						HandCannonShootCannonballProcedure.execute(entity, 5.5 + itemstack.getEnchantmentLevel(MortiusWeaponryReduxModEnchantments.MARKSMAN.get()) / 1.7, 5, 0, 4);
 					} else {
 						for (int index0 = 0; index0 < 12; index0++) {
-							FlintlockPistolShootBallProcedure.execute(entity, itemstack, 2.5 + itemstack.getEnchantmentLevel(MortiusWeaponryReduxModEnchantments.MARKSMAN.get()) / 1.7, 20, 0, 3);
+							FlintlockPistolShootBallProcedure.execute(entity, itemstack, 0.4 + itemstack.getEnchantmentLevel(MortiusWeaponryReduxModEnchantments.MARKSMAN.get()) / 10.5, 20, 0, 2);
 						}
 					}
 					if (world instanceof ServerLevel _level)

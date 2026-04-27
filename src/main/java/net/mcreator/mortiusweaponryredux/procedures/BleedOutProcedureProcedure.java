@@ -30,8 +30,6 @@ public class BleedOutProcedureProcedure {
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(MortiusWeaponryReduxModMobEffects.BLEED_OUT.get()) && !(entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(MobEffects.HEAL))) {
 			if (event != null && event.isCancelable()) {
 				event.setCanceled(true);
-			} else if (event != null && event.hasResult()) {
-				event.setResult(Event.Result.DENY);
 			}
 		}
 	}

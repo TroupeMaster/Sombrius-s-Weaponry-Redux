@@ -20,7 +20,7 @@ public class GoldenTwinBladeItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 1f;
+				return 0f;
 			}
 
 			public int getLevel() {
@@ -34,6 +34,6 @@ public class GoldenTwinBladeItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.GOLD_INGOT));
 			}
-		}, 3, -2.5f, new Item.Properties());
+		}, 3, -2.7f, new Item.Properties());
 	}
 }

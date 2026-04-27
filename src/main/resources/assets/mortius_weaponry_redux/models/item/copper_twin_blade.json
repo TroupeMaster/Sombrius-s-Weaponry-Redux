@@ -1,7 +1,7 @@
 {
-  "parent": "mortius_weaponry_redux:custom/copper_twin_blade",
+  "parent": "mortius_weaponry_redux:custom/copper_twinblade",
   "textures": {
-    "0": "mortius_weaponry_redux:block/copper_twin_blade",
-    "particle": "mortius_weaponry_redux:item/copper_gladius"
+    "2": "mortius_weaponry_redux:block/copper_twinblade",
+    "particle": "mortius_weaponry_redux:item/copper_twinblade"
   }
 }

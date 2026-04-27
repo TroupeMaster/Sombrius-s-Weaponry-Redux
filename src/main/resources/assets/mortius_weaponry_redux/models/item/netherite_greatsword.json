@@ -1,7 +1,7 @@
 {
-  "parent": "mortius_weaponry_redux:custom/netherite_greatsword",
+  "parent": "mortius_weaponry_redux:custom/netherite_zweihander",
   "textures": {
-    "missing": "mortius_weaponry_redux:block/netherite_greatsword",
-    "particle": "mortius_weaponry_redux:item/netherite_sword"
+    "6": "mortius_weaponry_redux:block/netherite_zweihander",
+    "particle": "mortius_weaponry_redux:item/netherite_zweihander"
   }
 }

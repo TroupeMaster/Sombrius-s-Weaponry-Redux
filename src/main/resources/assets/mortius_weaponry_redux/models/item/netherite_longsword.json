@@ -1,7 +1,7 @@
 {
-  "parent": "mortius_weaponry_redux:custom/netherite_longsword",
+  "parent": "mortius_weaponry_redux:custom/netherite_bastard_sword",
   "textures": {
-    "0": "mortius_weaponry_redux:block/netherite_longsword",
-    "particle": "mortius_weaponry_redux:item/netherite_sword"
+    "6": "mortius_weaponry_redux:block/netherite_bastard_sword",
+    "particle": "mortius_weaponry_redux:item/netherite_bastard_sword"
   }
 }

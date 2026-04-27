@@ -8,7 +8,6 @@ import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
@@ -39,11 +38,11 @@ public class DaggerStealthAttackProcedure {
 			return;
 		double duration = 0;
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:dagger")))) {
-			if ((!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == sourceentity) || sourceentity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(MobEffects.INVISIBILITY))
+			if ((sourceentity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(MobEffects.INVISIBILITY) || entity.getYRot() >= sourceentity.getYRot() - 45 && entity.getYRot() <= sourceentity.getYRot() + 45)
 					&& damagesource.is(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("mortius_weaponry_redux:weapon_attack"))) == false && entity instanceof Player == false) {
 				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("mortius_weaponry_redux:weapon_attack"))), sourceentity),
 						(float) (amount * 2));
-				if (sourceentity instanceof LivingEntity _livEnt9 && _livEnt9.hasEffect(MobEffects.INVISIBILITY)) {
+				if (sourceentity instanceof LivingEntity _livEnt11 && _livEnt11.hasEffect(MobEffects.INVISIBILITY)) {
 					duration = sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.INVISIBILITY) ? _livEnt.getEffect(MobEffects.INVISIBILITY).getDuration() : 0;
 					if (sourceentity instanceof LivingEntity _entity)
 						_entity.removeEffect(MobEffects.INVISIBILITY);
