@@ -1,57 +1,67 @@
 plugins {
     id 'eclipse'
-    id 'net.minecraftforge.gradle' version '[6.0.16,6.2)'
+    id 'net.neoforged.moddev.legacyforge' version '2.0.143'
 }
 
 version = '1.0'
-group = 'com.yourname.modid'
-archivesBaseName = 'modid'
+base.archivesName = "modid"
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
-minecraft {
-    mappings channel: 'official', version: '1.20.1'
-
-    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
-
-    copyIdeResources = true
+legacyForge {
+    version = "1.20.1-47.4.22"
 
     runs {
         client {
-            workingDirectory project.file('run')
+            client()
 
-            property 'forge.logging.markers', 'REGISTRIES'
-            property 'forge.logging.console.level', 'debug'
-
-            mods {
-                examplemod {
-                    source sourceSets.main
+            def mcreatorJvmOptions = System.getenv('MCREATOR_JVM_OPTIONS')
+            if (mcreatorJvmOptions) {
+                mcreatorJvmOptions.split("\\s+").findAll { it.trim() }.each { arg ->
+                    jvmArgument(arg)
                 }
             }
         }
-
         server {
-            workingDirectory project.file('run')
+            server()
+        }
 
-            property 'forge.logging.markers', 'REGISTRIES'
-            property 'forge.logging.console.level', 'debug'
-
-            mods {
-                examplemod {
-                    source sourceSets.main
-                }
-            }
+        configureEach {
+            systemProperty 'forge.logging.markers', 'REGISTRIES'
+            logLevel = org.slf4j.event.Level.DEBUG
         }
     }
-}
 
-dependencies {
-    minecraft 'net.minecraftforge:forge:1.20.1-47.2.0'
+    mods {
+        mcreator {
+            sourceSet sourceSets.main
+        }
+    }
 }
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
 }
 
-apply from: 'mcreator.gradle'
+mixin {
+    if (file("src/main/resources/mortius_weaponry_redux.mixins.json").exists()) {
+        add sourceSets.main, "mortius_weaponry_redux.refmap.json"
+        config "mortius_weaponry_redux.mixins.json"
+    }
+}
 
+dependencies {
+    compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.5.0"))
+    implementation(jarJar("io.github.llamalad7:mixinextras-forge:0.5.0"))
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+}
+
+jar {
+    if (file("src/main/resources/mortius_weaponry_redux.mixins.json").exists()) {
+        manifest.attributes([
+                "MixinConfigs": "mortius_weaponry_redux.mixins.json"
+        ])
+    }
+}
+
+apply from: 'mcreator.gradle'

@@ -1,9 +1,22 @@
 {
   "replace": false,
   "values": [
-    "#mortius_weaponry_redux:schiavona",
-    "#mortius_weaponry_redux:rapier",
-    "#mortius_weaponry_redux:parryingdagger",
-    "mortius_weaponry_redux:estoc"
+    "mortius_weaponry_redux:estoc",
+    {
+      "id": "#mortius_weaponry_redux:rapier",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:schiavona",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:parryingdagger",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:stiletto",
+      "required": false
+    }
   ]
 }

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#mortius_weaponry_redux:allweapons",
+      "required": false
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "mortius_weaponry_redux:diamond_arrow",
     "mortius_weaponry_redux:iron_arrow",
+    "mortius_weaponry_redux:copper_arrow",
     "mortius_weaponry_redux:netherite_arrow",
-    "mortius_weaponry_redux:copper_arrow"
+    "mortius_weaponry_redux:diamond_arrow"
   ]
 }

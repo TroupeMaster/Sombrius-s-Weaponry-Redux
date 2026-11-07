@@ -4,11 +4,11 @@ license="MIT License"
 
 [[mods]]
 modId="mortius_weaponry_redux"
-version="1.15.3"
+version="1.17"
 displayName="Sombrius's Weaponry Redux"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/mortius-weaponry-redux"
 logoFile="logo.png"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
+credits="Made with MCreator"
 authors="Sombrius"
 description="A mod that adds a ton of weapons for more variety"
 

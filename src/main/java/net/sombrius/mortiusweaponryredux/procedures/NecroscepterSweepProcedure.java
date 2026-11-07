@@ -1,0 +1,70 @@
+package net.sombrius.mortiusweaponryredux.procedures;
+
+import net.sombrius.mortiusweaponryredux.init.MortiusWeaponryReduxModMobEffects;
+import net.sombrius.mortiusweaponryredux.init.MortiusWeaponryReduxModItems;
+
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.entity.living.LivingAttackEvent;
+
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.TamableAnimal;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
+
+import javax.annotation.Nullable;
+
+import java.util.Comparator;
+
+@Mod.EventBusSubscriber
+public class NecroscepterSweepProcedure {
+	@SubscribeEvent
+	public static void onEntityAttacked(LivingAttackEvent event) {
+		if (event != null && event.getEntity() != null) {
+			execute(event, event.getEntity().level(), event.getSource(), event.getEntity(), event.getSource().getEntity(), event.getAmount());
+		}
+	}
+
+	public static void execute(LevelAccessor world, DamageSource damagesource, Entity entity, Entity sourceentity, double amount) {
+		execute(null, world, damagesource, entity, sourceentity, amount);
+	}
+
+	private static void execute(@Nullable Event event, LevelAccessor world, DamageSource damagesource, Entity entity, Entity sourceentity, double amount) {
+		if (damagesource == null || entity == null || sourceentity == null)
+			return;
+		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:quarterstaff")))
+				&& !((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == MortiusWeaponryReduxModItems.NECROSTAFF.get())) {
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MortiusWeaponryReduxModMobEffects.INCAPACITATED.get(), 10, 0));
+		} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == MortiusWeaponryReduxModItems.NECROSTAFF.get()) {
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MortiusWeaponryReduxModMobEffects.INCAPACITATED.get(), 20, 1));
+			if (!damagesource.is(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("mortius_weaponry_redux:weapon_attack")))) {
+				{
+					final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
+					for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
+						if (entityiterator instanceof LivingEntity && !(entityiterator == sourceentity) && !(entityiterator == entity) && !(entityiterator == (sourceentity.getVehicle()))
+								&& !(entityiterator instanceof TamableAnimal _tamIsTamedBy17 && sourceentity instanceof LivingEntity _livEnt17 && _tamIsTamedBy17.isOwnedBy(_livEnt17))) {
+							entityiterator.hurt(
+									new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("mortius_weaponry_redux:weapon_attack"))),
+											sourceentity),
+									(float) (amount / 2 + amount * ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(Enchantments.SWEEPING_EDGE)
+											/ ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(Enchantments.SWEEPING_EDGE) + 2))));
+						}
+					}
+				}
+			}
+		}
+	}
+}

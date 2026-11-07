@@ -1,35 +1,122 @@
 {
   "replace": false,
   "values": [
-    "#mortius_weaponry_redux:executionersword",
-    "#mortius_weaponry_redux:longsword",
-    "#mortius_weaponry_redux:mace",
-    "#mortius_weaponry_redux:warhammer",
-    "#mortius_weaponry_redux:schiavona",
-    "#mortius_weaponry_redux:twinblade",
-    "#mortius_weaponry_redux:battleaxe",
-    "#mortius_weaponry_redux:glaive",
-    "#mortius_weaponry_redux:falchion",
-    "#mortius_weaponry_redux:saber",
-    "#mortius_weaponry_redux:quarterstaff",
-    "#mortius_weaponry_redux:throwingknife",
-    "#mortius_weaponry_redux:parryingdagger",
-    "#mortius_weaponry_redux:scythe",
-    "#mortius_weaponry_redux:gladius",
-    "#mortius_weaponry_redux:greatsword",
-    "#mortius_weaponry_redux:katana",
-    "#mortius_weaponry_redux:flail",
-    "#mortius_weaponry_redux:dagger",
-    "#mortius_weaponry_redux:pike",
-    "#mortius_weaponry_redux:khopesh",
-    "#mortius_weaponry_redux:messer",
-    "#mortius_weaponry_redux:rapier",
-    "#mortius_weaponry_redux:chakram",
-    "#mortius_weaponry_redux:sickle",
-    "#mortius_weaponry_redux:lance",
-    "#mortius_weaponry_redux:spear",
-    "#mortius_weaponry_redux:javelin",
-    "#mortius_weaponry_redux:halberd",
-    "mortius_weaponry_redux:estoc"
+    {
+      "id": "#mortius_weaponry_redux:spear",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:rapier",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:battleaxe",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:sickle",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:chakram",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:saber",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:javelin",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:gladius",
+      "required": false
+    },
+    "mortius_weaponry_redux:estoc",
+    {
+      "id": "#mortius_weaponry_redux:mace",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:schiavona",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:halberd",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:parryingdagger",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:dagger",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:longsword",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:quarterstaff",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:warhammer",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:khopesh",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:executionersword",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:glaive",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:messer",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:twinblade",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:falchion",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:flail",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:pike",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:lance",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:scythe",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:throwingknife",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:katana",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:greatsword",
+      "required": false
+    }
   ]
 }

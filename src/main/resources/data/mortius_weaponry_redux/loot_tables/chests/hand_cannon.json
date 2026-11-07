@@ -7,7 +7,7 @@
         {
           "type": "minecraft:item",
           "name": "mortius_weaponry_redux:hand_cannon",
-          "weight": 8,
+          "weight": 5,
           "functions": [
             {
               "function": "set_count",
@@ -21,7 +21,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:air",
-          "weight": 92,
+          "weight": 95,
           "functions": [
             {
               "function": "set_count",

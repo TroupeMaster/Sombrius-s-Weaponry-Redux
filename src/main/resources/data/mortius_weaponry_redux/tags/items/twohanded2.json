@@ -1,15 +1,36 @@
 {
   "replace": false,
   "values": [
-    "#mortius_weaponry_redux:twinblade",
-    "#mortius_weaponry_redux:halberd",
-    "#mortius_weaponry_redux:greatsword",
-    "#mortius_weaponry_redux:pike",
-    "#mortius_weaponry_redux:scythe",
-    "#mortius_weaponry_redux:glaive",
-    "#mortius_weaponry_redux:odachi",
-    "mortius_weaponry_redux:musket",
+    {
+      "id": "#mortius_weaponry_redux:pike",
+      "required": false
+    },
     "mortius_weaponry_redux:bayonet_musket",
-    "mortius_weaponry_redux:hand_cannon"
+    "mortius_weaponry_redux:hand_cannon",
+    {
+      "id": "#mortius_weaponry_redux:glaive",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:scythe",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:odachi",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:twinblade",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:halberd",
+      "required": false
+    },
+    "mortius_weaponry_redux:musket",
+    {
+      "id": "#mortius_weaponry_redux:greatsword",
+      "required": false
+    }
   ]
 }

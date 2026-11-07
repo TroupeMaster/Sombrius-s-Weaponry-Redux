@@ -1,15 +1,42 @@
 {
   "replace": false,
   "values": [
+    {
+      "id": "#mortius_weaponry_redux:spear",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:longsword",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:pike",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:lance",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:glaive",
+      "required": false
+    },
     "mortius_weaponry_redux:estoc",
-    "#mortius_weaponry_redux:lance",
-    "#mortius_weaponry_redux:halberd",
-    "#mortius_weaponry_redux:greatsword",
-    "#mortius_weaponry_redux:pike",
-    "#mortius_weaponry_redux:spear",
-    "#mortius_weaponry_redux:glaive",
-    "#mortius_weaponry_redux:longsword",
-    "#mortius_weaponry_redux:flail",
-    "#mortius_weaponry_redux:odachi"
+    {
+      "id": "#mortius_weaponry_redux:odachi",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:halberd",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:greatsword",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:flail",
+      "required": false
+    }
   ]
 }

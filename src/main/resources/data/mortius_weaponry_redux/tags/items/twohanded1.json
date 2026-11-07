@@ -1,12 +1,27 @@
 {
   "replace": false,
   "values": [
-    "#mortius_weaponry_redux:lance",
-    "#mortius_weaponry_redux:warhammer",
-    "#mortius_weaponry_redux:katana",
-    "#mortius_weaponry_redux:longsword",
+    {
+      "id": "#mortius_weaponry_redux:longsword",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:quarterstaff",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:warhammer",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:lance",
+      "required": false
+    },
+    "mortius_weaponry_redux:blunderbuss",
     "mortius_weaponry_redux:estoc",
-    "#mortius_weaponry_redux:quarterstaff",
-    "mortius_weaponry_redux:blunderbuss"
+    {
+      "id": "#mortius_weaponry_redux:katana",
+      "required": false
+    }
   ]
 }

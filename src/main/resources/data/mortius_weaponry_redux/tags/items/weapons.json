@@ -1,9 +1,18 @@
 {
   "replace": false,
   "values": [
-    "#minecraft:axes",
-    "#minecraft:swords",
-    "#mortius_weaponry_redux:allweapons",
-    "minecraft:trident"
+    {
+      "id": "#mortius_weaponry_redux:allweapons",
+      "required": false
+    },
+    {
+      "id": "#minecraft:axes",
+      "required": false
+    },
+    "minecraft:trident",
+    {
+      "id": "#minecraft:swords",
+      "required": false
+    }
   ]
 }

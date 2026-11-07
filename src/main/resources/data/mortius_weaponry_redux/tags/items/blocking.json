@@ -1,10 +1,25 @@
 {
   "replace": false,
   "values": [
-    "#mortius_weaponry_redux:schiavona",
-    "#mortius_weaponry_redux:falchion",
-    "#mortius_weaponry_redux:rapier",
-    "#mortius_weaponry_redux:parryingdagger",
-    "#mortius_weaponry_redux:saber"
+    {
+      "id": "#mortius_weaponry_redux:saber",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:rapier",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:schiavona",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:falchion",
+      "required": false
+    },
+    {
+      "id": "#mortius_weaponry_redux:parryingdagger",
+      "required": false
+    }
   ]
 }
