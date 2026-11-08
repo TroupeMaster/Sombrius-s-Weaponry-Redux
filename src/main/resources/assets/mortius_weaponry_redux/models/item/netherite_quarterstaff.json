@@ -1,7 +1,31 @@
 {
-  "parent": "mortius_weaponry_redux:custom/netherite_quarterstaff",
-  "textures": {
-    "6": "mortius_weaponry_redux:block/netherite_quarterstaff",
-    "particle": "mortius_weaponry_redux:item/netherite_quarterstaff"
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "parent": "mortius_weaponry_redux:custom/netherite_quarterstaff",
+    "textures": {
+      "6": "mortius_weaponry_redux:block/netherite_quarterstaff",
+      "particle": "mortius_weaponry_redux:item/netherite_quarterstaff_item"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/netherite_quarterstaff_item"
+      }
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/netherite_quarterstaff_item"
+      }
+    },
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/netherite_quarterstaff_item"
+      }
+    }
   }
 }

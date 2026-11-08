@@ -1,7 +1,31 @@
 {
-  "parent": "mortius_weaponry_redux:custom/copper_lance",
-  "textures": {
-    "3": "mortius_weaponry_redux:block/copper_lance",
-    "particle": "mortius_weaponry_redux:item/copper_lance"
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "parent": "mortius_weaponry_redux:custom/copper_lance",
+    "textures": {
+      "3": "mortius_weaponry_redux:block/copper_lance",
+      "particle": "mortius_weaponry_redux:item/copper_lance_item"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/copper_lance_item"
+      }
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/copper_lance_item"
+      }
+    },
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/copper_lance_item"
+      }
+    }
   }
 }

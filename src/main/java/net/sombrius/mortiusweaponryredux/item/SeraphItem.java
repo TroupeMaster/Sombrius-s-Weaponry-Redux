@@ -85,6 +85,6 @@ public class SeraphItem extends SwordItem {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		SeraphToolInInventoryTickProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
+		SeraphToolInInventoryTickProcedure.execute(world, entity, itemstack);
 	}
 }

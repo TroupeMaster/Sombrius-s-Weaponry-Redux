@@ -32,7 +32,7 @@ public class SilverHalberdItem extends AxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 6f;
+				return 7f;
 			}
 
 			public int getLevel() {
@@ -46,7 +46,7 @@ public class SilverHalberdItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("forge:ingots/silver")));
 			}
-		}, 1, -2.9f, new Item.Properties());
+		}, 1, -3f, new Item.Properties());
 	}
 
 	private static final UUID UUID_0 = UUID.fromString("27e4ab7a-972e-3ee3-8aed-6202443b5fe2");

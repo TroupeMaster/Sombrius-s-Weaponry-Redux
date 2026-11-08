@@ -1,7 +1,31 @@
 {
-  "parent": "mortius_weaponry_redux:custom/silver_spear",
-  "textures": {
-    "8": "mortius_weaponry_redux:block/silver_spear",
-    "particle": "mortius_weaponry_redux:item/silver_spear"
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "parent": "mortius_weaponry_redux:custom/silver_spear",
+    "textures": {
+      "8": "mortius_weaponry_redux:block/silver_spear",
+      "particle": "mortius_weaponry_redux:item/silver_spear"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/silver_spear"
+      }
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/silver_spear"
+      }
+    },
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/silver_spear"
+      }
+    }
   }
 }

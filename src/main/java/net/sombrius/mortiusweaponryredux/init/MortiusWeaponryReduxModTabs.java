@@ -125,14 +125,14 @@ public class MortiusWeaponryReduxModTabs {
 				tabData.accept(MortiusWeaponryReduxModItems.BRONZE_QUARTERSTAFF.get());
 				tabData.accept(MortiusWeaponryReduxModItems.SILVER_QUARTERSTAFF.get());
 				tabData.accept(MortiusWeaponryReduxModItems.ROSE_GOLD_QUARTERSTAFF.get());
-				tabData.accept(MortiusWeaponryReduxModItems.STEEL_JAVELIN.get());
-				tabData.accept(MortiusWeaponryReduxModItems.BRONZE_JAVELIN.get());
-				tabData.accept(MortiusWeaponryReduxModItems.SILVER_JAVELIN.get());
-				tabData.accept(MortiusWeaponryReduxModItems.ROSE_GOLD_JAVELIN.get());
 				tabData.accept(MortiusWeaponryReduxModItems.STEEL_STILETTO.get());
 				tabData.accept(MortiusWeaponryReduxModItems.BRONZE_STILETTO.get());
 				tabData.accept(MortiusWeaponryReduxModItems.SILVER_STILETTO.get());
 				tabData.accept(MortiusWeaponryReduxModItems.ROSE_GOLD_STILETTO.get());
+				tabData.accept(MortiusWeaponryReduxModItems.STEEL_JAVELIN.get());
+				tabData.accept(MortiusWeaponryReduxModItems.BRONZE_JAVELIN.get());
+				tabData.accept(MortiusWeaponryReduxModItems.SILVER_JAVELIN.get());
+				tabData.accept(MortiusWeaponryReduxModItems.ROSE_GOLD_JAVELIN.get());
 			}).build());
 	public static final RegistryObject<CreativeModeTab> MORTIUS_WEAPONRY_REDUX = REGISTRY.register("mortius_weaponry_redux", () -> CreativeModeTab.builder().title(Component.translatable("item_group.mortius_weaponry_redux.mortius_weaponry_redux"))
 			.icon(() -> new ItemStack(MortiusWeaponryReduxModItems.NETHERITE_RAPIER.get())).displayItems((parameters, tabData) -> {
@@ -341,13 +341,6 @@ public class MortiusWeaponryReduxModTabs {
 				tabData.accept(MortiusWeaponryReduxModItems.GOLDEN_THROWING_KNIFE.get());
 				tabData.accept(MortiusWeaponryReduxModItems.DIAMOND_THROWING_KNIFE.get());
 				tabData.accept(MortiusWeaponryReduxModItems.NETHERITE_THROWING_KNIFE.get());
-				tabData.accept(MortiusWeaponryReduxModItems.WOODEN_STILETTO.get());
-				tabData.accept(MortiusWeaponryReduxModItems.STONE_STILETTO.get());
-				tabData.accept(MortiusWeaponryReduxModItems.COPPER_STILETTO.get());
-				tabData.accept(MortiusWeaponryReduxModItems.GOLDEN_STILETTO.get());
-				tabData.accept(MortiusWeaponryReduxModItems.IRON_STILETTO.get());
-				tabData.accept(MortiusWeaponryReduxModItems.DIAMOND_STILETTO.get());
-				tabData.accept(MortiusWeaponryReduxModItems.NETHERITE_STILETTO.get());
 				tabData.accept(MortiusWeaponryReduxModItems.WOODEN_JAVELIN.get());
 				tabData.accept(MortiusWeaponryReduxModItems.STONE_JAVELIN.get());
 				tabData.accept(MortiusWeaponryReduxModItems.COPPER_JAVELIN.get());
@@ -355,6 +348,13 @@ public class MortiusWeaponryReduxModTabs {
 				tabData.accept(MortiusWeaponryReduxModItems.IRON_JAVELIN.get());
 				tabData.accept(MortiusWeaponryReduxModItems.DIAMOND_JAVELIN.get());
 				tabData.accept(MortiusWeaponryReduxModItems.NETHERITE_JAVELIN.get());
+				tabData.accept(MortiusWeaponryReduxModItems.WOODEN_STILETTO.get());
+				tabData.accept(MortiusWeaponryReduxModItems.STONE_STILETTO.get());
+				tabData.accept(MortiusWeaponryReduxModItems.COPPER_STILETTO.get());
+				tabData.accept(MortiusWeaponryReduxModItems.GOLDEN_STILETTO.get());
+				tabData.accept(MortiusWeaponryReduxModItems.IRON_STILETTO.get());
+				tabData.accept(MortiusWeaponryReduxModItems.DIAMOND_STILETTO.get());
+				tabData.accept(MortiusWeaponryReduxModItems.NETHERITE_STILETTO.get());
 				tabData.accept(MortiusWeaponryReduxModItems.DIAMOND_SHIELD.get());
 				tabData.accept(MortiusWeaponryReduxModItems.NETHERITE_SHIELD.get());
 				tabData.accept(MortiusWeaponryReduxModItems.EXPLOSIVE_SHIELD.get());
@@ -409,9 +409,12 @@ public class MortiusWeaponryReduxModTabs {
 				tabData.accept(MortiusWeaponryReduxModItems.SERAPH.get());
 				tabData.accept(MortiusWeaponryReduxModItems.SUN_FURY.get());
 				tabData.accept(MortiusWeaponryReduxModItems.CLOCHER.get());
+				tabData.accept(MortiusWeaponryReduxModItems.LIL_AXE.get());
 				tabData.accept(MortiusWeaponryReduxModItems.NECROSTAFF.get());
 				tabData.accept(MortiusWeaponryReduxModItems.SADIST.get());
 				tabData.accept(MortiusWeaponryReduxModItems.OBSIDIAN_KNIFE.get());
+				tabData.accept(MortiusWeaponryReduxModItems.BOLAS.get());
+				tabData.accept(MortiusWeaponryReduxModItems.WOODEN_STAFF.get());
 				tabData.accept(MortiusWeaponryReduxModItems.COPPER_BOW.get());
 				tabData.accept(MortiusWeaponryReduxModItems.IRON_BOW.get());
 				tabData.accept(MortiusWeaponryReduxModItems.DIAMOND_BOW.get());

@@ -1,5 +1,6 @@
 package net.sombrius.mortiusweaponryredux.procedures;
 
+import net.sombrius.mortiusweaponryredux.init.MortiusWeaponryReduxModEnchantments;
 import net.sombrius.mortiusweaponryredux.MortiusWeaponryReduxMod;
 
 import net.minecraftforge.registries.ForgeRegistries;
@@ -9,6 +10,9 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ClipContext;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
@@ -25,10 +29,13 @@ import net.minecraft.core.BlockPos;
 import java.util.Comparator;
 
 public class ThousandCutsRightclickedProcedure {
-	public static void execute(LevelAccessor world, double y, Entity entity) {
+	public static void execute(LevelAccessor world, double y, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		if (!entity.isPassenger()) {
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(itemstack.getItem(),
+						(int) (EnchantmentHelper.getItemEnchantmentLevel(MortiusWeaponryReduxModEnchantments.SWIFTNESS.get(), itemstack) != 0 ? 180d / (itemstack.getEnchantmentLevel(MortiusWeaponryReduxModEnchantments.SWIFTNESS.get()) + 1) : 180));
 			entity.setDeltaMovement(new Vec3((Math.sin(Math.toRadians(entity.getYRot() + 180)) * 2.2), 0.25, (Math.cos(Math.toRadians(entity.getYRot())) * 2.2)));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 60, 1, false, false));
@@ -55,8 +62,12 @@ public class ThousandCutsRightclickedProcedure {
 												1, 1, false);
 									}
 								}
-								entityiterator.hurt(new DamageSource(
-										world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("mortius_weaponry_redux:weapon_attack"))), entity), (float) 10.5);
+								for (int _i1 = 0; _i1 < 10; _i1++) {
+									entityiterator.hurt(
+											new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("mortius_weaponry_redux:cut_to_pieces"))),
+													entity),
+											(float) 1.05);
+								}
 								if (world instanceof ServerLevel _level)
 									_level.sendParticles(ParticleTypes.END_ROD, (entityiterator.getX()), (entityiterator.getY() + entityiterator.getEyeHeight() / 1.5), (entityiterator.getZ()), 4, 0.1, 0.1, 0.1, 0.1);
 							}

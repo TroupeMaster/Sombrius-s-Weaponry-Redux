@@ -54,7 +54,7 @@ public class WoodenDaggerItem extends SwordItem {
 		if (equipmentSlot == EquipmentSlot.MAINHAND) {
 			ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
 			builder.putAll(super.getAttributeModifiers(equipmentSlot, stack));
-			builder.put(ForgeMod.ENTITY_REACH.get(), new AttributeModifier(UUID_0, "Tool modifier", -1, AttributeModifier.Operation.ADDITION));
+			builder.put(ForgeMod.ENTITY_REACH.get(), new AttributeModifier(UUID_0, "Tool modifier", -0.5, AttributeModifier.Operation.ADDITION));
 			return builder.build();
 		}
 		return super.getAttributeModifiers(equipmentSlot, stack);

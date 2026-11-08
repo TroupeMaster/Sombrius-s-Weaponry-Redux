@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "abb",
+    " ca",
+    "bb "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:smooth_stone"
+    },
+    "b": {
+      "item": "minecraft:string"
+    },
+    "c": {
+      "item": "minecraft:sugar_cane"
+    }
+  },
+  "result": {
+    "item": "mortius_weaponry_redux:bolas",
+    "count": 1
+  }
+}

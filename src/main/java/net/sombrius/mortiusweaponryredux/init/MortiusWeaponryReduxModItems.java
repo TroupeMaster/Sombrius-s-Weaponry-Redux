@@ -359,16 +359,6 @@ public class MortiusWeaponryReduxModItems {
 	public static final RegistryObject<Item> DIAMOND_THROWING_KNIFE;
 	public static final RegistryObject<Item> NETHERITE_THROWING_KNIFE;
 	public static final RegistryObject<Item> OBSIDIAN_KNIFE;
-	public static final RegistryObject<Item> WOODEN_JAVELIN;
-	public static final RegistryObject<Item> STONE_JAVELIN;
-	public static final RegistryObject<Item> GOLDEN_JAVELIN;
-	public static final RegistryObject<Item> IRON_JAVELIN;
-	public static final RegistryObject<Item> DIAMOND_JAVELIN;
-	public static final RegistryObject<Item> NETHERITE_JAVELIN;
-	public static final RegistryObject<Item> STEEL_JAVELIN;
-	public static final RegistryObject<Item> BRONZE_JAVELIN;
-	public static final RegistryObject<Item> SILVER_JAVELIN;
-	public static final RegistryObject<Item> ROSE_GOLD_JAVELIN;
 	public static final RegistryObject<Item> WOODEN_QUARTERSTAFF;
 	public static final RegistryObject<Item> STONE_QUARTERSTAFF;
 	public static final RegistryObject<Item> GOLDEN_QUARTERSTAFF;
@@ -415,7 +405,6 @@ public class MortiusWeaponryReduxModItems {
 	public static final RegistryObject<Item> COPPER_GREATSWORD;
 	public static final RegistryObject<Item> COPPER_EXECUTIONER_SWORD;
 	public static final RegistryObject<Item> COPPER_TWIN_BLADE;
-	public static final RegistryObject<Item> COPPER_JAVELIN;
 	public static final RegistryObject<Item> COPPER_QUARTERSTAFF;
 	public static final RegistryObject<Item> COPPER_ODACHI;
 	public static final RegistryObject<Item> COPPER_BOW;
@@ -446,6 +435,20 @@ public class MortiusWeaponryReduxModItems {
 	public static final RegistryObject<Item> SILVER_STILETTO;
 	public static final RegistryObject<Item> ROSE_GOLD_STILETTO;
 	public static final RegistryObject<Item> SADIST;
+	public static final RegistryObject<Item> BOLAS;
+	public static final RegistryObject<Item> WOODEN_STAFF;
+	public static final RegistryObject<Item> WOODEN_JAVELIN;
+	public static final RegistryObject<Item> STONE_JAVELIN;
+	public static final RegistryObject<Item> GOLDEN_JAVELIN;
+	public static final RegistryObject<Item> IRON_JAVELIN;
+	public static final RegistryObject<Item> DIAMOND_JAVELIN;
+	public static final RegistryObject<Item> NETHERITE_JAVELIN;
+	public static final RegistryObject<Item> STEEL_JAVELIN;
+	public static final RegistryObject<Item> BRONZE_JAVELIN;
+	public static final RegistryObject<Item> SILVER_JAVELIN;
+	public static final RegistryObject<Item> ROSE_GOLD_JAVELIN;
+	public static final RegistryObject<Item> COPPER_JAVELIN;
+	public static final RegistryObject<Item> LIL_AXE;
 	static {
 		WOODEN_GLADIUS = REGISTRY.register("wooden_gladius", WoodenGladiusItem::new);
 		STONE_GLADIUS = REGISTRY.register("stone_gladius", StoneGladiusItem::new);
@@ -782,16 +785,6 @@ public class MortiusWeaponryReduxModItems {
 		DIAMOND_THROWING_KNIFE = REGISTRY.register("diamond_throwing_knife", DiamondThrowingKnifeItem::new);
 		NETHERITE_THROWING_KNIFE = REGISTRY.register("netherite_throwing_knife", NetheriteThrowingKnifeItem::new);
 		OBSIDIAN_KNIFE = REGISTRY.register("obsidian_knife", ObsidianKnifeItem::new);
-		WOODEN_JAVELIN = REGISTRY.register("wooden_javelin", WoodenJavelinItem::new);
-		STONE_JAVELIN = REGISTRY.register("stone_javelin", StoneJavelinItem::new);
-		GOLDEN_JAVELIN = REGISTRY.register("golden_javelin", GoldenJavelinItem::new);
-		IRON_JAVELIN = REGISTRY.register("iron_javelin", IronJavelinItem::new);
-		DIAMOND_JAVELIN = REGISTRY.register("diamond_javelin", DiamondJavelinItem::new);
-		NETHERITE_JAVELIN = REGISTRY.register("netherite_javelin", NetheriteJavelinItem::new);
-		STEEL_JAVELIN = REGISTRY.register("steel_javelin", SteelJavelinItem::new);
-		BRONZE_JAVELIN = REGISTRY.register("bronze_javelin", BronzeJavelinItem::new);
-		SILVER_JAVELIN = REGISTRY.register("silver_javelin", SilverJavelinItem::new);
-		ROSE_GOLD_JAVELIN = REGISTRY.register("rose_gold_javelin", RoseGoldJavelinItem::new);
 		WOODEN_QUARTERSTAFF = REGISTRY.register("wooden_quarterstaff", WoodenQuarterstaffItem::new);
 		STONE_QUARTERSTAFF = REGISTRY.register("stone_quarterstaff", StoneQuarterstaffItem::new);
 		GOLDEN_QUARTERSTAFF = REGISTRY.register("golden_quarterstaff", GoldenQuarterstaffItem::new);
@@ -838,7 +831,6 @@ public class MortiusWeaponryReduxModItems {
 		COPPER_GREATSWORD = REGISTRY.register("copper_greatsword", CopperGreatswordItem::new);
 		COPPER_EXECUTIONER_SWORD = REGISTRY.register("copper_executioner_sword", CopperExecutionerSwordItem::new);
 		COPPER_TWIN_BLADE = REGISTRY.register("copper_twin_blade", CopperTwinBladeItem::new);
-		COPPER_JAVELIN = REGISTRY.register("copper_javelin", CopperJavelinItem::new);
 		COPPER_QUARTERSTAFF = REGISTRY.register("copper_quarterstaff", CopperQuarterstaffItem::new);
 		COPPER_ODACHI = REGISTRY.register("copper_odachi", CopperOdachiItem::new);
 		COPPER_BOW = REGISTRY.register("copper_bow", CopperBowItem::new);
@@ -869,6 +861,20 @@ public class MortiusWeaponryReduxModItems {
 		SILVER_STILETTO = REGISTRY.register("silver_stiletto", SilverStilettoItem::new);
 		ROSE_GOLD_STILETTO = REGISTRY.register("rose_gold_stiletto", RoseGoldStilettoItem::new);
 		SADIST = REGISTRY.register("sadist", SadistItem::new);
+		BOLAS = REGISTRY.register("bolas", BolasItem::new);
+		WOODEN_STAFF = REGISTRY.register("wooden_staff", WoodenStaffItem::new);
+		WOODEN_JAVELIN = REGISTRY.register("wooden_javelin", WoodenJavelinItem::new);
+		STONE_JAVELIN = REGISTRY.register("stone_javelin", StoneJavelinItem::new);
+		GOLDEN_JAVELIN = REGISTRY.register("golden_javelin", GoldenJavelinItem::new);
+		IRON_JAVELIN = REGISTRY.register("iron_javelin", IronJavelinItem::new);
+		DIAMOND_JAVELIN = REGISTRY.register("diamond_javelin", DiamondJavelinItem::new);
+		NETHERITE_JAVELIN = REGISTRY.register("netherite_javelin", NetheriteJavelinItem::new);
+		STEEL_JAVELIN = REGISTRY.register("steel_javelin", SteelJavelinItem::new);
+		BRONZE_JAVELIN = REGISTRY.register("bronze_javelin", BronzeJavelinItem::new);
+		SILVER_JAVELIN = REGISTRY.register("silver_javelin", SilverJavelinItem::new);
+		ROSE_GOLD_JAVELIN = REGISTRY.register("rose_gold_javelin", RoseGoldJavelinItem::new);
+		COPPER_JAVELIN = REGISTRY.register("copper_javelin", CopperJavelinItem::new);
+		LIL_AXE = REGISTRY.register("lil_axe", LilAxeItem::new);
 	}
 
 	// Start of user code block custom items
@@ -902,6 +908,8 @@ public class MortiusWeaponryReduxModItems {
 			ItemProperties.register(SEALED_SHIELD.get(), ResourceLocation.parse("blocking"), ItemProperties.getProperty(Items.SHIELD, ResourceLocation.parse("blocking")));
 			ItemProperties.register(COPPER_BOW.get(), ResourceLocation.parse("mortius_weaponry_redux:copper_bow_pulling"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) CopperBowPropertyProcedure.execute(itemStackToRender));
 			ItemProperties.register(ENDER_BOW.get(), ResourceLocation.parse("mortius_weaponry_redux:ender_bow_pulling"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnderBowPropertyProcedure.execute(itemStackToRender));
+			ItemProperties.register(WOODEN_STAFF.get(), ResourceLocation.parse("mortius_weaponry_redux:wooden_staff_state"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) WoodenStaffPropertyValueProviderProcedure.execute(itemStackToRender));
 		});
 	}
 }

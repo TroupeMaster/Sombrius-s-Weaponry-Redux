@@ -30,7 +30,7 @@ public class BronzeHalberdItem extends AxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 6f;
+				return 7f;
 			}
 
 			public int getLevel() {
@@ -44,7 +44,7 @@ public class BronzeHalberdItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("forge:ingots/bronze")));
 			}
-		}, 1, -2.9f, new Item.Properties());
+		}, 1, -3f, new Item.Properties());
 	}
 
 	private static final UUID UUID_0 = UUID.fromString("c11fbe90-774f-30ef-958f-83456024ae7f");

@@ -66,5 +66,6 @@ public class MortiusWeaponryReduxModEntityRenderers {
 		event.registerEntityRenderer(MortiusWeaponryReduxModEntities.CANNONBALL.get(), CannonballRenderer::new);
 		event.registerEntityRenderer(MortiusWeaponryReduxModEntities.TIME_BULLET.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(MortiusWeaponryReduxModEntities.ENDER_FIREBALL.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(MortiusWeaponryReduxModEntities.THROWN_BOLAS.get(), ThrownBolasRenderer::new);
 	}
 }

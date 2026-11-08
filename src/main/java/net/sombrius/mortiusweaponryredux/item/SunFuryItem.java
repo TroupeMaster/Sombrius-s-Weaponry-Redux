@@ -76,14 +76,14 @@ public class SunFuryItem extends SwordItem {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		SunFuryEntitySwingsItemProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
+		SunFuryEntitySwingsItemProcedure.execute(world, entity.getY(), entity, ar.getObject());
 		return ar;
 	}
 
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		SunFuryEntitySwingsItemProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
+		SunFuryEntitySwingsItemProcedure.execute(entity.level(), entity.getY(), entity, itemstack);
 		return retval;
 	}
 }

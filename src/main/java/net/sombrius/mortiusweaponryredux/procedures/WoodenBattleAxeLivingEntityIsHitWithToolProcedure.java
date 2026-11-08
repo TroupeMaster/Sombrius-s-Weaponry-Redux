@@ -1,6 +1,7 @@
 package net.sombrius.mortiusweaponryredux.procedures;
 
 import net.sombrius.mortiusweaponryredux.init.MortiusWeaponryReduxModMobEffects;
+import net.sombrius.mortiusweaponryredux.init.MortiusWeaponryReduxModItems;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -32,8 +33,12 @@ public class WoodenBattleAxeLivingEntityIsHitWithToolProcedure {
 	private static void execute(@Nullable Event event, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:battleaxe")))) {
-			if (!(entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(MortiusWeaponryReduxModMobEffects.BLEED_OUT.get()))) {
+		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:battleaxe")))
+				&& !(entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(MortiusWeaponryReduxModMobEffects.BLEED_OUT.get()))) {
+			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == MortiusWeaponryReduxModItems.LIL_AXE.get()) {
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(MortiusWeaponryReduxModMobEffects.BLEED_OUT.get(), 140, 0));
+			} else {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MortiusWeaponryReduxModMobEffects.BLEED_OUT.get(), 60, 0));
 			}

@@ -19,9 +19,11 @@
     },
     "mortius_weaponry_redux:blunderbuss",
     "mortius_weaponry_redux:estoc",
+    "mortius_weaponry_redux:lil_axe",
     {
       "id": "#mortius_weaponry_redux:katana",
       "required": false
-    }
+    },
+    "mortius_weaponry_redux:wooden_staff"
   ]
 }

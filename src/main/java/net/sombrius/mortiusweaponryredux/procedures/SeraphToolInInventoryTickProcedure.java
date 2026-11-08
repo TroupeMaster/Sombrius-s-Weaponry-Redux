@@ -6,7 +6,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
@@ -27,9 +26,13 @@ import net.minecraft.core.BlockPos;
 import java.util.Comparator;
 
 public class SeraphToolInInventoryTickProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
+	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
+		double xRadius = 0;
+		double loop = 0;
+		double zRadius = 0;
+		double particleAmount = 0;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MortiusWeaponryReduxModMobEffects.VULNERABILITY.get(), 20, 0, true, true));
 		if (itemstack.getOrCreateTag().getBoolean("seraphRage") == true) {
@@ -38,23 +41,18 @@ public class SeraphToolInInventoryTickProcedure {
 				_entity.addEffect(new MobEffectInstance(MortiusWeaponryReduxModMobEffects.INVULNERABILITY.get(), 20, 0, true, true));
 			if (entity.onGround()) {
 				itemstack.getOrCreateTag().putBoolean("seraphRage", false);
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.LAVA, (entity.getX() + Mth.nextDouble(RandomSource.create(), -5, 5)), (entity.getY() + 0.1), (entity.getZ() + Mth.nextDouble(RandomSource.create(), -5, 5)), 64, 0.1, 4, 0.1, 0.6);
-				int horizontalRadiusSphere = (int) 4 - 1;
-				int verticalRadiusSphere = (int) 4 - 1;
-				int yIterationsSphere = verticalRadiusSphere;
-				for (int i = -yIterationsSphere; i <= yIterationsSphere; i++) {
-					for (int xi = -horizontalRadiusSphere; xi <= horizontalRadiusSphere; xi++) {
-						for (int zi = -horizontalRadiusSphere; zi <= horizontalRadiusSphere; zi++) {
-							double distanceSq = (xi * xi) / (double) (horizontalRadiusSphere * horizontalRadiusSphere) + (i * i) / (double) (verticalRadiusSphere * verticalRadiusSphere)
-									+ (zi * zi) / (double) (horizontalRadiusSphere * horizontalRadiusSphere);
-							if (distanceSq <= 1.0) {
-								if (world.getBlockFloorHeight(BlockPos.containing(x + xi, y + i, z + zi)) > 0 && !(world.getBlockFloorHeight(BlockPos.containing(x + xi, y + i + 1, z + zi)) > 0)) {
-									world.levelEvent(2001, BlockPos.containing(x + xi, y + i + 0.7, z + zi), Block.getId((world.getBlockState(BlockPos.containing(x + xi, y + i, z + zi)))));
-								}
-							}
-						}
-					}
+				for (int _i1 = 0; _i1 < 48; _i1++) {
+					if (world instanceof ServerLevel _level)
+						_level.sendParticles(ParticleTypes.LAVA, (entity.getX() + Mth.nextDouble(RandomSource.create(), -4, 4)), (entity.getY() + 0.1), (entity.getZ() + Mth.nextDouble(RandomSource.create(), -4, 4)), 1, 0.1, 4, 0.1, 0.6);
+				}
+				loop = 0;
+				particleAmount = 32;
+				xRadius = 4;
+				zRadius = 4;
+				while (loop < particleAmount) {
+					world.addParticle(ParticleTypes.CRIT, (entity.getX() + 0.5 + Math.cos(((Math.PI * 2) / particleAmount) * loop) * xRadius), (entity.getY() + 0.5), (entity.getZ() + 0.5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius),
+							0.01, 0.05, 0.01);
+					loop = loop + 1;
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {

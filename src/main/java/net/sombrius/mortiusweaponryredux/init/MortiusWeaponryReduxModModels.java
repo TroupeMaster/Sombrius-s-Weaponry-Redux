@@ -22,5 +22,6 @@ public class MortiusWeaponryReduxModModels {
 		event.registerLayerDefinition(Modeltraitor_dagger.LAYER_LOCATION, Modeltraitor_dagger::createBodyLayer);
 		event.registerLayerDefinition(Modelthrowing_knife.LAYER_LOCATION, Modelthrowing_knife::createBodyLayer);
 		event.registerLayerDefinition(Modeltime_castle.LAYER_LOCATION, Modeltime_castle::createBodyLayer);
+		event.registerLayerDefinition(Modelbolas.LAYER_LOCATION, Modelbolas::createBodyLayer);
 	}
 }

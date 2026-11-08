@@ -1,5 +1,7 @@
 package net.sombrius.mortiusweaponryredux.procedures;
 
+import net.sombrius.mortiusweaponryredux.init.MortiusWeaponryReduxModItems;
+
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -32,6 +34,9 @@ public class BattleAxeDescriptionProcedure {
 		if (tooltip == null)
 			return;
 		if (itemstack.is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:battleaxe")))) {
+			if (itemstack.getItem() == MortiusWeaponryReduxModItems.LIL_AXE.get()) {
+				tooltip.add(Component.literal((" \u00A74" + Component.translatable("item.mortius_weaponry_redux.two_handed1").getString())));
+			}
 			tooltip.add(Component.literal(("\u00A77" + Component.translatable("item.mortius_weaponry_redux.on_hit").getString())));
 			tooltip.add(Component.literal((" \u00A72" + Component.translatable("item.mortius_weaponry_redux.battle_axe.special1").getString())));
 		}

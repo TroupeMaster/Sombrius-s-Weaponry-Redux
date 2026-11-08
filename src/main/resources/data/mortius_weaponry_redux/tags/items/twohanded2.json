@@ -8,6 +8,10 @@
     "mortius_weaponry_redux:bayonet_musket",
     "mortius_weaponry_redux:hand_cannon",
     {
+      "id": "#mortius_weaponry_redux:executionersword",
+      "required": false
+    },
+    {
       "id": "#mortius_weaponry_redux:glaive",
       "required": false
     },

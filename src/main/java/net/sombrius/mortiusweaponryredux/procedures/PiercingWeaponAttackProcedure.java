@@ -70,8 +70,15 @@ public class PiercingWeaponAttackProcedure {
 							_level.sendParticles(ParticleTypes.CRIMSON_SPORE, (entity.getX()), (entity.getY() + 1.6), (entity.getZ()), Mth.nextInt(RandomSource.create(), 8, 14), Math.sin(Math.toRadians(entity.getYRot() + 180)),
 									(Mth.nextDouble(RandomSource.create(), -0.01, 0.01)), Math.cos(Math.toRadians(entity.getYRot())), 0.1);
 					} else {
-						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("mortius_weaponry_redux:piercing"))), sourceentity),
-								(float) (amount * 0.75));
+						if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == MortiusWeaponryReduxModItems.SADIST.get()) {
+							entity.hurt(
+									new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("mortius_weaponry_redux:piercing"))), sourceentity),
+									(float) (amount * 0.9));
+						} else {
+							entity.hurt(
+									new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("mortius_weaponry_redux:piercing"))), sourceentity),
+									(float) (amount * 0.75));
+						}
 					}
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:rapier")))
 						|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:parryingdagger")))) {

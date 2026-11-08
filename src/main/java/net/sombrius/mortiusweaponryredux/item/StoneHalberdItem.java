@@ -30,7 +30,7 @@ public class StoneHalberdItem extends AxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 5f;
+				return 6f;
 			}
 
 			public int getLevel() {
@@ -44,7 +44,7 @@ public class StoneHalberdItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("minecraft:stone_tool_materials")));
 			}
-		}, 1, -3.1f, new Item.Properties());
+		}, 1, -3.2f, new Item.Properties());
 	}
 
 	private static final UUID UUID_0 = UUID.fromString("d7e63457-e3db-3f7b-9f56-99cdcde6b59e");

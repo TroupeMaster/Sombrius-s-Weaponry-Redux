@@ -29,7 +29,7 @@ public class NetheriteHalberdItem extends AxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 8f;
+				return 9f;
 			}
 
 			public int getLevel() {
@@ -43,7 +43,7 @@ public class NetheriteHalberdItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.NETHERITE_INGOT));
 			}
-		}, 1, -2.9f, new Item.Properties().fireResistant());
+		}, 1, -3f, new Item.Properties().fireResistant());
 	}
 
 	private static final UUID UUID_0 = UUID.fromString("953b2be1-a4b5-33f4-96e8-551fca4875a4");

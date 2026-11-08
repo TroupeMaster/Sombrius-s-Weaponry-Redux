@@ -1,7 +1,31 @@
 {
-  "parent": "mortius_weaponry_redux:custom/silver_pike",
-  "textures": {
-    "8": "mortius_weaponry_redux:block/silver_pike",
-    "particle": "mortius_weaponry_redux:item/silver_pike"
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "parent": "mortius_weaponry_redux:custom/silver_pike",
+    "textures": {
+      "8": "mortius_weaponry_redux:block/silver_pike",
+      "particle": "mortius_weaponry_redux:item/silver_pike"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/silver_pike"
+      }
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/silver_pike"
+      }
+    },
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/silver_pike"
+      }
+    }
   }
 }

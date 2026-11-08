@@ -43,6 +43,9 @@ public class SickleAttackPileUpProcedure {
 						: 0) >= 6) {
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeEffect(MortiusWeaponryReduxModMobEffects.SICKLE_DAMAGE_BUILD_UP.get());
+					if (event instanceof LivingDamageEvent _event) {
+						_event.setAmount((float) (amount * 0.9));
+					}
 				} else {
 					if (event instanceof LivingDamageEvent _event) {
 						_event.setAmount((float) (amount + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MortiusWeaponryReduxModMobEffects.SICKLE_DAMAGE_BUILD_UP.get())
@@ -63,6 +66,9 @@ public class SickleAttackPileUpProcedure {
 						: 0) >= 4) {
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeEffect(MortiusWeaponryReduxModMobEffects.SICKLE_DAMAGE_BUILD_UP.get());
+					if (event instanceof LivingDamageEvent _event) {
+						_event.setAmount((float) (amount * 0.8));
+					}
 				} else {
 					if (event instanceof LivingDamageEvent _event) {
 						_event.setAmount((float) (amount + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MortiusWeaponryReduxModMobEffects.SICKLE_DAMAGE_BUILD_UP.get())

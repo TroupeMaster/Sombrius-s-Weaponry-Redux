@@ -34,7 +34,7 @@ public class ObsidianKnifeItem extends Item {
 			builder.putAll(super.getAttributeModifiers(equipmentSlot, stack));
 			builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Item modifier", 6, AttributeModifier.Operation.ADDITION));
 			builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Item modifier", -1.4, AttributeModifier.Operation.ADDITION));
-			builder.put(ForgeMod.ENTITY_REACH.get(), new AttributeModifier(UUID_0, "Item modifier", -1, AttributeModifier.Operation.ADDITION));
+			builder.put(ForgeMod.ENTITY_REACH.get(), new AttributeModifier(UUID_0, "Item modifier", -0.25, AttributeModifier.Operation.ADDITION));
 			return builder.build();
 		}
 		return super.getAttributeModifiers(equipmentSlot, stack);

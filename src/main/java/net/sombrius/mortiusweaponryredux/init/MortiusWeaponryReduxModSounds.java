@@ -29,4 +29,5 @@ public class MortiusWeaponryReduxModSounds {
 	public static final RegistryObject<SoundEvent> HAND_CANNON_SHOOT = REGISTRY.register("hand_cannon_shoot", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mortius_weaponry_redux", "hand_cannon_shoot")));
 	public static final RegistryObject<SoundEvent> HAND_CANNON_FIRE = REGISTRY.register("hand_cannon_fire", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mortius_weaponry_redux", "hand_cannon_fire")));
 	public static final RegistryObject<SoundEvent> HEARTBEAT = REGISTRY.register("heartbeat", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mortius_weaponry_redux", "heartbeat")));
+	public static final RegistryObject<SoundEvent> WOODEN_STAFF_HIT = REGISTRY.register("wooden_staff_hit", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mortius_weaponry_redux", "wooden_staff_hit")));
 }

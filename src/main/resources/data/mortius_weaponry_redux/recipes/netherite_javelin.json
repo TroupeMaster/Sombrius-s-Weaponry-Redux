@@ -4,12 +4,12 @@
     "item": "minecraft:netherite_upgrade_smithing_template"
   },
   "base": {
-    "item": "mortius_weaponry_redux:diamond_javelin"
+    "item": "mortius_weaponry_redux:deleted_mod_element"
   },
   "addition": {
     "item": "minecraft:netherite_ingot"
   },
   "result": {
-    "item": "mortius_weaponry_redux:netherite_javelin"
+    "item": "mortius_weaponry_redux:deleted_mod_element"
   }
 }

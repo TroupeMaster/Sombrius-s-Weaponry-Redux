@@ -1,7 +1,31 @@
 {
-  "parent": "mortius_weaponry_redux:custom/iron_bastard_sword",
-  "textures": {
-    "4": "mortius_weaponry_redux:block/iron_bastard_sword",
-    "particle": "mortius_weaponry_redux:item/iron_bastard_sword"
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "parent": "mortius_weaponry_redux:custom/iron_bastard_sword",
+    "textures": {
+      "4": "mortius_weaponry_redux:block/iron_bastard_sword",
+      "particle": "mortius_weaponry_redux:item/iron_bastard_sword_item"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/iron_bastard_sword_item"
+      }
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/iron_bastard_sword_item"
+      }
+    },
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/iron_bastard_sword_item"
+      }
+    }
   }
 }

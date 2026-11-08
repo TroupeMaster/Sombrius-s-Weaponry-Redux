@@ -1,7 +1,31 @@
 {
-  "parent": "mortius_weaponry_redux:custom/steel_twinblade",
-  "textures": {
-    "7": "mortius_weaponry_redux:block/steel_twinblade",
-    "particle": "mortius_weaponry_redux:item/steel_twinblade"
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "parent": "mortius_weaponry_redux:custom/steel_twinblade",
+    "textures": {
+      "7": "mortius_weaponry_redux:block/steel_twinblade",
+      "particle": "mortius_weaponry_redux:item/steel_twinblade_item"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/steel_twinblade_item"
+      }
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/steel_twinblade_item"
+      }
+    },
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/steel_twinblade_item"
+      }
+    }
   }
 }

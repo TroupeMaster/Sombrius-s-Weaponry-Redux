@@ -32,7 +32,6 @@ public class JavelinDescriptionProcedure {
 		if (tooltip == null)
 			return;
 		if (itemstack.is(ItemTags.create(new ResourceLocation("mortius_weaponry_redux:javelin")))) {
-			tooltip.add(Component.literal(""));
 			tooltip.add(Component.literal((" \u00A72" + Component.translatable("item.mortius_weaponry_redux.javelin.special1").getString())));
 		}
 	}

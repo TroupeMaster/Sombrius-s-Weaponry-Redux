@@ -30,7 +30,7 @@ public class WoodenHalberdItem extends AxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 4f;
+				return 5f;
 			}
 
 			public int getLevel() {
@@ -44,7 +44,7 @@ public class WoodenHalberdItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("minecraft:planks")));
 			}
-		}, 1, -3.1f, new Item.Properties());
+		}, 1, -3.2f, new Item.Properties());
 	}
 
 	private static final UUID UUID_0 = UUID.fromString("f6968b04-9613-36fc-8404-e1622172b3ab");

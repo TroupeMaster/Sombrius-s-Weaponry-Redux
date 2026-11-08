@@ -29,7 +29,7 @@ public class DiamondHalberdItem extends AxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 7f;
+				return 8f;
 			}
 
 			public int getLevel() {
@@ -43,7 +43,7 @@ public class DiamondHalberdItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.DIAMOND));
 			}
-		}, 1, -2.9f, new Item.Properties());
+		}, 1, -3f, new Item.Properties());
 	}
 
 	private static final UUID UUID_0 = UUID.fromString("50917a7b-a35e-3df8-81e1-0b707f29e83d");

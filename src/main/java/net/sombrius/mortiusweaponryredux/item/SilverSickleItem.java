@@ -58,7 +58,7 @@ public class SilverSickleItem extends SwordItem {
 			ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
 			builder.putAll(super.getAttributeModifiers(equipmentSlot, stack));
 			builder.put(MortiusWeaponryReduxModAttributes.SMITE.get(), new AttributeModifier(UUID_0, "Tool modifier", 3, AttributeModifier.Operation.ADDITION));
-			builder.put(ForgeMod.ENTITY_REACH.get(), new AttributeModifier(UUID_1, "Tool modifier", -0.8, AttributeModifier.Operation.ADDITION));
+			builder.put(ForgeMod.ENTITY_REACH.get(), new AttributeModifier(UUID_1, "Tool modifier", -0.25, AttributeModifier.Operation.ADDITION));
 			return builder.build();
 		}
 		return super.getAttributeModifiers(equipmentSlot, stack);

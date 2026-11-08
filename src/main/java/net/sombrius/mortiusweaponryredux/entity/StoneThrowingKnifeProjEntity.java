@@ -71,11 +71,11 @@ public class StoneThrowingKnifeProjEntity extends AbstractArrow implements ItemS
 	}
 
 	public static StoneThrowingKnifeProjEntity shoot(Level world, LivingEntity entity, RandomSource source) {
-		return shoot(world, entity, source, 1.4f, 1.2, 0);
+		return shoot(world, entity, source, 1.4f, 1.4, 0);
 	}
 
 	public static StoneThrowingKnifeProjEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
-		return shoot(world, entity, source, pullingPower * 1.4f, 1.2, 0);
+		return shoot(world, entity, source, pullingPower * 1.4f, 1.4, 0);
 	}
 
 	public static StoneThrowingKnifeProjEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
@@ -97,7 +97,7 @@ public class StoneThrowingKnifeProjEntity extends AbstractArrow implements ItemS
 		double dz = target.getZ() - entity.getZ();
 		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 1.4f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(1.2);
+		entityarrow.setBaseDamage(1.4);
 		entityarrow.setKnockback(0);
 		entityarrow.setCritArrow(false);
 		entity.level().addFreshEntity(entityarrow);

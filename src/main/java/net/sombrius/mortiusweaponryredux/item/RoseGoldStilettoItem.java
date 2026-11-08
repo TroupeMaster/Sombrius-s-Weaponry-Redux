@@ -1,11 +1,22 @@
 package net.sombrius.mortiusweaponryredux.item;
 
+import net.minecraftforge.common.ForgeMod;
+
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
+
+import java.util.UUID;
+
+import com.google.common.collect.Multimap;
+import com.google.common.collect.ImmutableMultimap;
 
 public class RoseGoldStilettoItem extends SwordItem {
 	public RoseGoldStilettoItem() {
@@ -34,5 +45,18 @@ public class RoseGoldStilettoItem extends SwordItem {
 				return Ingredient.of(ItemTags.create(new ResourceLocation("forge:ingots/rose_gold")));
 			}
 		}, 3, -2.3f, new Item.Properties());
+	}
+
+	private static final UUID UUID_0 = UUID.fromString("27e8b545-54ab-30d5-8863-01f6852e5163");
+
+	@Override
+	public Multimap<Attribute, AttributeModifier> getAttributeModifiers(EquipmentSlot equipmentSlot, ItemStack stack) {
+		if (equipmentSlot == EquipmentSlot.MAINHAND) {
+			ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
+			builder.putAll(super.getAttributeModifiers(equipmentSlot, stack));
+			builder.put(ForgeMod.ENTITY_REACH.get(), new AttributeModifier(UUID_0, "Tool modifier", -1, AttributeModifier.Operation.ADDITION));
+			return builder.build();
+		}
+		return super.getAttributeModifiers(equipmentSlot, stack);
 	}
 }

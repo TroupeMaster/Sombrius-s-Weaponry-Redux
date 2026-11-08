@@ -29,7 +29,7 @@ public class IronHalberdItem extends AxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 6f;
+				return 7f;
 			}
 
 			public int getLevel() {

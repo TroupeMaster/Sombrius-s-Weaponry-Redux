@@ -133,5 +133,22 @@
         "stream": false
       }
     ]
+  },
+  "wooden_staff_hit": {
+    "subtitle": "subtitles.wooden_staff_hit",
+    "sounds": [
+      {
+        "name": "mortius_weaponry_redux:p1_sfx_item_battlestaffattack04-003",
+        "stream": false
+      },
+      {
+        "name": "mortius_weaponry_redux:p1_sfx_item_battlestaffattack04-002",
+        "stream": false
+      },
+      {
+        "name": "mortius_weaponry_redux:p1_sfx_item_battlestaffattack04-001",
+        "stream": false
+      }
+    ]
   }
 }

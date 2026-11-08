@@ -126,6 +126,8 @@ public class MortiusWeaponryReduxModEntities {
 			EntityType.Builder.<TimeBulletEntity>of(TimeBulletEntity::new, MobCategory.MISC).setCustomClientFactory(TimeBulletEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<EnderFireballEntity>> ENDER_FIREBALL = register("ender_fireball",
 			EntityType.Builder.<EnderFireballEntity>of(EnderFireballEntity::new, MobCategory.MISC).setCustomClientFactory(EnderFireballEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ThrownBolasEntity>> THROWN_BOLAS = register("thrown_bolas",
+			EntityType.Builder.<ThrownBolasEntity>of(ThrownBolasEntity::new, MobCategory.MISC).setCustomClientFactory(ThrownBolasEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.8f, 0.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

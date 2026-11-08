@@ -91,6 +91,10 @@
       "required": false
     },
     {
+      "id": "#mortius_weaponry_redux:stiletto",
+      "required": false
+    },
+    {
       "id": "#mortius_weaponry_redux:flail",
       "required": false
     },
@@ -114,6 +118,7 @@
       "id": "#mortius_weaponry_redux:katana",
       "required": false
     },
+    "mortius_weaponry_redux:wooden_staff",
     {
       "id": "#mortius_weaponry_redux:greatsword",
       "required": false

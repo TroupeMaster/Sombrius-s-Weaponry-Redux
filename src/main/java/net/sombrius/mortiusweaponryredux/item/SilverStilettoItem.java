@@ -2,6 +2,8 @@ package net.sombrius.mortiusweaponryredux.item;
 
 import net.sombrius.mortiusweaponryredux.init.MortiusWeaponryReduxModAttributes;
 
+import net.minecraftforge.common.ForgeMod;
+
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
@@ -48,6 +50,7 @@ public class SilverStilettoItem extends SwordItem {
 	}
 
 	private static final UUID UUID_0 = UUID.fromString("5d0f09a3-f130-3af9-857c-2affa9d74b1c");
+	private static final UUID UUID_1 = UUID.fromString("c6e51488-290b-30cb-9f92-3ba776bc171b");
 
 	@Override
 	public Multimap<Attribute, AttributeModifier> getAttributeModifiers(EquipmentSlot equipmentSlot, ItemStack stack) {
@@ -55,6 +58,7 @@ public class SilverStilettoItem extends SwordItem {
 			ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
 			builder.putAll(super.getAttributeModifiers(equipmentSlot, stack));
 			builder.put(MortiusWeaponryReduxModAttributes.SMITE.get(), new AttributeModifier(UUID_0, "Tool modifier", 3, AttributeModifier.Operation.ADDITION));
+			builder.put(ForgeMod.ENTITY_REACH.get(), new AttributeModifier(UUID_1, "Tool modifier", -1, AttributeModifier.Operation.ADDITION));
 			return builder.build();
 		}
 		return super.getAttributeModifiers(equipmentSlot, stack);

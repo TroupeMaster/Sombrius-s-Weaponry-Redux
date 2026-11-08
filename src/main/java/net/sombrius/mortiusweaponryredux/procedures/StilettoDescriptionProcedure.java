@@ -13,6 +13,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.gui.screens.Screen;
 
 import javax.annotation.Nullable;
 
@@ -39,8 +40,12 @@ public class StilettoDescriptionProcedure {
 		if (itemstack.getItem() == MortiusWeaponryReduxModItems.SADIST.get()) {
 			tooltip.add(Component.literal((" \u00A72" + Component.translatable("item.mortius_weaponry_redux.sadist.stat1").getString())));
 			tooltip.add(Component.literal(""));
-			tooltip.add(Component.literal(("\u00A76" + Component.translatable("item.mortius_weaponry_redux.special_ability").getString())));
-			tooltip.add(Component.literal((" \u00A7a-" + Component.translatable("item.mortius_weaponry_redux.sadist.desc1").getString())));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal(("\u00A76" + Component.translatable("item.mortius_weaponry_redux.special_ability").getString())));
+				tooltip.add(Component.literal((" \u00A7a-" + Component.translatable("item.mortius_weaponry_redux.sadist.desc1").getString())));
+			} else {
+				tooltip.add(Component.literal(("\u00A77" + Component.translatable("item.mortius_weaponry_redux.show_tooltip").getString())));
+			}
 		}
 	}
 }

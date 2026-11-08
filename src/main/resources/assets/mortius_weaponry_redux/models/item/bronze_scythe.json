@@ -1,7 +1,31 @@
 {
-  "parent": "mortius_weaponry_redux:custom/bronze_scythe",
-  "textures": {
-    "10": "mortius_weaponry_redux:block/bronze_scythe",
-    "particle": "mortius_weaponry_redux:item/bronze_scythe"
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "parent": "mortius_weaponry_redux:custom/bronze_scythe",
+    "textures": {
+      "10": "mortius_weaponry_redux:block/bronze_scythe",
+      "particle": "mortius_weaponry_redux:item/bronze_scythe_item"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/bronze_scythe_item"
+      }
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/bronze_scythe_item"
+      }
+    },
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/bronze_scythe_item"
+      }
+    }
   }
 }

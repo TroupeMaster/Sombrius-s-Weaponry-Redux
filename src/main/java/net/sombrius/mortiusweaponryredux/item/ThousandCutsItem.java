@@ -24,7 +24,7 @@ public class ThousandCutsItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 3f;
+				return 2f;
 			}
 
 			public int getLevel() {
@@ -38,13 +38,13 @@ public class ThousandCutsItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of();
 			}
-		}, 3, -1f, new Item.Properties().fireResistant());
+		}, 3, -1.6f, new Item.Properties().fireResistant());
 	}
 
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		ThousandCutsRightclickedProcedure.execute(world, entity.getY(), entity);
+		ThousandCutsRightclickedProcedure.execute(world, entity.getY(), entity, ar.getObject());
 		return ar;
 	}
 }

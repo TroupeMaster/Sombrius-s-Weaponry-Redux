@@ -34,14 +34,13 @@ public class SilverJavelinHurtEntityProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, DamageSource damagesource, Entity entity, Entity immediatesourceentity, Entity sourceentity, double amount) {
 		if (damagesource == null || entity == null || immediatesourceentity == null || sourceentity == null)
 			return;
-		if (immediatesourceentity instanceof SilverJavelinProjEntity && entity instanceof LivingEntity _livEnt1 && _livEnt1.getMobType() == MobType.UNDEAD) {
-			if (!damagesource.is(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("mortius_weaponry_redux:weapon_attack")))) {
-				if (event != null && event.isCancelable()) {
-					event.setCanceled(true);
-				}
-				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("mortius_weaponry_redux:weapon_attack"))), sourceentity),
-						(float) (amount + 5));
+		if (immediatesourceentity instanceof SilverJavelinProjEntity && entity instanceof LivingEntity _livEnt1 && _livEnt1.getMobType() == MobType.UNDEAD
+				&& !damagesource.is(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("mortius_weaponry_redux:weapon_attack")))) {
+			if (event != null && event.isCancelable()) {
+				event.setCanceled(true);
 			}
+			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("mortius_weaponry_redux:weapon_attack"))), sourceentity),
+					(float) (amount + 3));
 		}
 	}
 }

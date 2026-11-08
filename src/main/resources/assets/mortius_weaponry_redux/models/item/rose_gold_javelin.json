@@ -1,7 +1,31 @@
 {
-  "parent": "mortius_weaponry_redux:custom/rose_gold_javelin",
-  "textures": {
-    "0": "mortius_weaponry_redux:block/rose_gold_javelin",
-    "particle": "mortius_weaponry_redux:item/rose_gold_javelin"
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "parent": "mortius_weaponry_redux:custom/rose_gold_javelin",
+    "textures": {
+      "0": "mortius_weaponry_redux:block/rose_gold_javelin",
+      "particle": "mortius_weaponry_redux:item/rose_gold_javelin"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/rose_gold_javelin"
+      }
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/rose_gold_javelin"
+      }
+    },
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mortius_weaponry_redux:item/rose_gold_javelin"
+      }
+    }
   }
 }
